@@ -4,6 +4,6 @@
 		"main": "block/stone",
 		"front": "block/stone",
 		"inner": "block/stone_bricks",
-		"top": "mtr:block/platform_na_2"
+		"top": "mtrus:block/platform_na_3"
 	}
 }
