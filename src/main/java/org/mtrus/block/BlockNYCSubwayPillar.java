@@ -34,15 +34,37 @@ public class BlockNYCSubwayPillar extends BlockExtension implements DirectionHel
     ) {
         Direction facing = IBlock.getStatePropertySafe(state, FACING);
 
-        return IBlock.getVoxelShapeByDirection(
+        VoxelShape vx1 = IBlock.getVoxelShapeByDirection(
                 2,
                 0,
                 0,
                 14,
                 16,
+                2,
+                facing
+        );
+
+        VoxelShape vx2 = IBlock.getVoxelShapeByDirection(
+                2,
+                0,
+                14,
+                14,
+                16,
                 16,
                 facing
         );
+
+        VoxelShape vx3 = IBlock.getVoxelShapeByDirection(
+                7,
+                0,
+                2,
+                9,
+                16,
+                14,
+                facing
+        );
+
+        return VoxelShapes.union(VoxelShapes.union(vx1, vx2), vx3);
     }
 
 

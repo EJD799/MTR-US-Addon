@@ -343,6 +343,13 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_PILLAR_4;
     public static BlockRegistryObject NYC_SUBWAY_PILLAR_5;
     public static BlockRegistryObject NYC_SUBWAY_PILLAR_6;
+    public static BlockRegistryObject NYC_SUBWAY_WALL_TILE_1;
+    public static BlockRegistryObject NYC_SUBWAY_WALL_TILE_2;
+    public static BlockRegistryObject NYC_SUBWAY_WALL_TILE_3;
+    public static BlockRegistryObject NYC_SUBWAY_WALL_TILE_4;
+    public static BlockRegistryObject NYC_SUBWAY_WALL_TILE_5;
+    public static BlockRegistryObject NYC_SUBWAY_WALL_TILE_6;
+    public static BlockRegistryObject NYC_SUBWAY_WALL_TILE_7;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2136,6 +2143,48 @@ public final class ModBlocks {
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_pillar_6"),
                 () -> new Block(new BlockNYCSubwayPillar(createDefaultBlockSettings(false).nonOpaque(), true)),
                 ItemBlockEnchanted::new,
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_WALL_TILE_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_wall_tile_1"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_WALL_TILE_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_wall_tile_2"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_WALL_TILE_3 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_wall_tile_3"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_WALL_TILE_4 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_wall_tile_4"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_WALL_TILE_5 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_wall_tile_5"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_WALL_TILE_6 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_wall_tile_6"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_WALL_TILE_7 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_wall_tile_7"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
                 ModCreativeModeTabs.MAIN
         );
     }

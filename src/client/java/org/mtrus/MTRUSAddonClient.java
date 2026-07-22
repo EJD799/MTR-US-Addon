@@ -189,7 +189,10 @@ public class MTRUSAddonClient implements ClientModInitializer {
         */
 
         registryClient.registerBlockColors((blockState, blockRenderView, blockPos, tintIndex) -> InitClient.getStationColor(blockPos),
-		ModBlocks.NYC_SUBWAY_PILLAR_6
+		ModBlocks.NYC_SUBWAY_PILLAR_6,
+                ModBlocks.NYC_SUBWAY_WALL_TILE_3,
+                ModBlocks.NYC_SUBWAY_WALL_TILE_4,
+                ModBlocks.NYC_SUBWAY_WALL_TILE_7
         );
 
 	registryClient.init();
