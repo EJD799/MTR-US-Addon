@@ -1,6 +1,5 @@
 package org.mtrus.block;
 
-//import org.mtrus.block.BlockDCMetroPSDGlassEntity;
 import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.BlockEntityExtension;
 import org.mtr.mod.block.BlockAPGGlass;

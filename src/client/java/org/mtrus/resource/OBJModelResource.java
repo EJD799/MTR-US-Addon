@@ -36,19 +36,15 @@ public final class OBJModelResource {
 
     private static OptimizedModelWrapper loadModel(String modelPath) {
 
-        MTRUSAddon.LOGGER.info("[MTRUS] Loading OBJ: " + modelPath);
-
         CustomResourceLoader.OPTIMIZED_RENDERER_WRAPPER.beginReload();
 
         if (!OptimizedRenderer.hasOptimizedRendering()) {
-            MTRUSAddon.LOGGER.info("[MTRUS] Optimized rendering unavailable");
             return null;
         }
 
         Identifier identifier = Identifier.tryParse(modelPath);
 
         if (identifier == null) {
-            MTRUSAddon.LOGGER.error("[MTRUS] Invalid OBJ identifier: " + modelPath);
             return null;
         }
 
@@ -74,10 +70,6 @@ public final class OBJModelResource {
                                 texture -> {
                                     String texturePath = directory + texture;
 
-                                    MTRUSAddon.LOGGER.info("[MTRUS] OBJ texture reference: '" + texture + "'");
-                                    MTRUSAddon.LOGGER.info("[MTRUS] Resolved texture: "
-                                            + identifier.getNamespace() + ":" + texturePath);
-
                                     return new Identifier(
                                             identifier.getNamespace(),
                                             texturePath
@@ -89,8 +81,6 @@ public final class OBJModelResource {
                                 true
                         )
                 );
-
-        MTRUSAddon.LOGGER.info("[MTRUS] Raw model keys: " + rawModels.keySet());
 
         ObjectArrayList<OptimizedModelWrapper.ObjModelWrapper> models =
                 new ObjectArrayList<>();
@@ -111,12 +101,8 @@ public final class OBJModelResource {
             models.add(wrapper);
         });
 
-        MTRUSAddon.LOGGER.info("[MTRUS] Loaded OBJ parts: " + rawModels.size());
-
         OptimizedModelWrapper wrapper =
                 OptimizedModelWrapper.fromObjModels(models);
-
-        MTRUSAddon.LOGGER.info("[MTRUS] Wrapper: " + wrapper);
 
         CustomResourceLoader.OPTIMIZED_RENDERER_WRAPPER.finishReload();
         

@@ -146,12 +146,6 @@ public class RenderDCMetroPSDDoor<T extends BlockDCMetroPSDDoorEntity> extends B
 
             bone = createModelPart();
             bone.setTextureUVOffset(0, 0).addCuboid(-8, -16, -7, 16, 16, 1, 0, false);
-            //bone.setTextureUVOffset(0, 17).addCuboid(-8, -6, -8, 16, 6, 1, 0, false);
-
-            /*final ModelPartExtension cube_r1 = bone.addChild();
-            cube_r1.setPivot(0, -6, -8);
-            cube_r1.setRotation(-0.7854F, 0, 0);
-            cube_r1.setTextureUVOffset(0, 24).addCuboid(-8, -2, 0, 16, 2, 1, 0, false);*/
 
             buildModel();
         }

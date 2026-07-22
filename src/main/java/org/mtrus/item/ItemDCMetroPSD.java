@@ -11,9 +11,7 @@ import org.mtrus.ModBlocks;
 
 import java.util.List;
 
-/**
- * Copied from MTR to replace hardcoded block/item reference to our DRL APG
- */
+
 public class ItemDCMetroPSD extends ItemExtension implements IBlock {
     private final EnumPSDAPGItem item;
     private final EnumPSDAPGType type;

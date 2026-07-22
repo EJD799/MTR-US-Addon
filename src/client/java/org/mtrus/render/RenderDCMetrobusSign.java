@@ -50,23 +50,7 @@ public class RenderDCMetrobusSign extends BlockEntityRenderer<BlockDCMetrobusSig
 					platformFound -> {
 						platform[0] = platformFound;
 					});
-
-            /*ObjectAVLTreeSet<Route> routes = platform[0].routes;
-
-            HashSet<String> seenRouteNumbers = new HashSet<>();
-
-            for (Route route : routes) {
-                String routeNumber = route.getRouteNumber();
-
-                if (seenRouteNumbers.add(routeNumber)) { // Only true if it wasn't already present
-                    tempRouteNumbers.add(routeNumber);
-                }
-
-                if (tempRouteNumbers.size() == 6) {
-                    break;
-                }
-            }*/
-
+                    
             tempRouteNumbers = getPlatformRouteNames(platform[0]);
 
             tempRouteNumbers.sort(null);

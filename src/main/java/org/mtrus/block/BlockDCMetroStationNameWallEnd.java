@@ -7,8 +7,6 @@ import org.mtr.mapping.mapper.BlockExtension;
 import org.mtr.mapping.mapper.DirectionHelper;
 import org.mtr.mapping.tool.HolderBase;
 import org.mtr.mod.block.IBlock;
-//import org.mtr.mod.packet.PacketOpenBlockEntityScreen;
-//import org.mtrus.MTRUSAddon;
 
 public class BlockDCMetroStationNameWallEnd extends BlockExtension implements IBlock, DirectionHelper {
 

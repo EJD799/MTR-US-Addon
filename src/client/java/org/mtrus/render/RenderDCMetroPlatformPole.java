@@ -29,7 +29,6 @@ public class RenderDCMetroPlatformPole extends BlockEntityRenderer<BlockDCMetroP
         MTRUSAddon.LOGGER.info("RenderDCMetroPlatformPole constructor called");
     }
 
-    //@SuppressWarnings("deprecation")
 	@Override
     public void render(BlockDCMetroPlatformPoleEntity entity, float tickDelta,
                        GraphicsHolder graphicsHolder, int light, int overlay) {

@@ -8,16 +8,13 @@ import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.BlockEntityRenderer;
 import org.mtr.mapping.mapper.GraphicsHolder;
 import org.mtr.mapping.mapper.SlabBlockExtension;
-//import org.mtr.mod.block.BlockPlatformSlab;
 import org.mtr.mod.InitClient;
-//import org.mtr.mod.block.IBlock;
 import org.mtr.mod.client.IDrawing;
 import org.mtr.mod.data.ArrivalsCacheClient;
 import org.mtr.mod.render.MainRenderer;
 import org.mtr.mod.render.MoreRenderLayers;
 import org.mtr.mod.render.QueuedRenderLayer;
 import org.mtr.mod.render.StoredMatrixTransformations;
-//import org.mtr.mapping.mapper.BlockEntityRenderer.Argument;
 import org.mtr.mod.data.IGui;
 import org.mtrus.MTRUSAddon;
 import org.mtrus.block.BlockPlatformLight;
@@ -42,8 +39,6 @@ public class RenderPlatformLight extends BlockEntityRenderer<BlockPlatformLightE
     public void render(BlockPlatformLightEntity entity, float tickDelta,
                        GraphicsHolder graphicsHolder, int light, int overlay) {
 
-        //MTRUSAddon.LOGGER.info("Platform light renderer running at " + entity.getPos2());
-
         final World world = entity.getWorld2();
         if (world == null) {
             return;
@@ -59,8 +54,6 @@ public class RenderPlatformLight extends BlockEntityRenderer<BlockPlatformLightE
         InitClient.findClosePlatform(pos, 2,
                 platform -> platformIds.add(platform.getId()));
 
-        //MTRUSAddon.LOGGER.info("Found platforms: " + platformIds.size());
-
         if (platformIds.isEmpty()) {
             return;
         }
@@ -72,8 +65,6 @@ public class RenderPlatformLight extends BlockEntityRenderer<BlockPlatformLightE
         final ObjectArrayList<ArrivalResponse> arrivals =
                 ArrivalsCacheClient.INSTANCE.requestArrivals(platformIds);
 
-        //MTRUSAddon.LOGGER.info("Arrivals: " + arrivals.size());
-
 
         boolean flashing = false;
 
@@ -84,15 +75,11 @@ public class RenderPlatformLight extends BlockEntityRenderer<BlockPlatformLightE
                 - ArrivalsCacheClient.INSTANCE.getMillisOffset()
                 - System.currentTimeMillis()) / 1000;
 
-            //MTRUSAddon.LOGGER.info("Arrival seconds: " + seconds);
-
             if (seconds <= 10) {
                 flashing = (((int) InitClient.getGameTick() / 10) % 2) == 0;
                 break;
             }
         }
-
-        //MTRUSAddon.LOGGER.info("Flashing: " + flashing);
 
 
         if (!flashing) {
