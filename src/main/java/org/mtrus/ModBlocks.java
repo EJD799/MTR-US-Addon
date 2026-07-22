@@ -351,6 +351,8 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_WALL_TILE_6;
     public static BlockRegistryObject NYC_SUBWAY_WALL_TILE_7;
     public static BlockRegistryObject NYC_SUBWAY_TRACKBED;
+    public static BlockRegistryObject NYC_SUBWAY_FLOOR_TILE;
+    public static BlockRegistryObject NYC_SUBWAY_FLOOR_TILE_SLAB;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2192,6 +2194,18 @@ public final class ModBlocks {
         NYC_SUBWAY_TRACKBED = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_trackbed"),
                 () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_FLOOR_TILE = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_floor_tile"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_FLOOR_TILE_SLAB = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_tile_slab"),
+                () -> new Block(new net.minecraft.world.level.block.SlabBlock(createDefaultBlockSettings(false).data)),
                 ModCreativeModeTabs.MAIN
         );
     }

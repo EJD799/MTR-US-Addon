@@ -191,8 +191,8 @@
   "block.mtrus.dc_metro_roof_h3": "DC Metro Station Roof Beam (High Peak)",
   "block.mtrus.dc_metro_roof_h4": "DC Metro Station Roof Beam (High Peak, End)",
 
-  "block.mtrus.dc_metro_concrete": "DC Metro Concrete",
-  "block.mtrus.dc_metro_concrete_slab": "DC Metro Concrete Slab",
+  "block.mtrus.dc_metro_concrete": "Concrete",
+  "block.mtrus.dc_metro_concrete_slab": "Concrete Slab",
 
   "block.mtrus.dc_metro_roof_i1": "DC Metro Station Roof (Tysons Peak, Part 1)",
   "block.mtrus.dc_metro_roof_i2": "DC Metro Station Roof (Tysons Peak, Part 2)",
@@ -345,10 +345,8 @@
     "block.mtrus.nyc_subway_platform_ceiling": "NYC Subway Platform Ceiling",
     "block.mtrus.nyc_subway_platform_light": "NYC Subway Platform Light",
     "block.mtrus.nyc_subway_help_point": "NYC Subway Help Point",
-    "block.mtrus.nyc_subway_floor_tile": "NYC Subway Floor Tile",
-    "block.mtrus.nyc_subway_floor_tile_slab": "NYC Subway Floor Tile Slab",
-    "block.mtrus.nyc_subway_concrete": "NYC Subway Concrete",
-    "block.mtrus.nyc_subway_concrete_slab": "NYC Subway Concrete Slab",
+  "block.mtrus.nyc_subway_floor_tile": "NYC Subway Floor Tile",
+  "block.mtrus.nyc_subway_floor_tile_slab": "NYC Subway Floor Tile Slab",
     "block.mtrus.nyc_subway_station_name_pillar": "NYC Subway Station Name Sign (Pillar)",
     "block.mtrus.nyc_subway_station_name_wall_tile_1": "NYC Subway Station Name Sign (Tile, Large)",
     "block.mtrus.nyc_subway_station_name_wall_tile_2": "NYC Subway Station Name Sign (Tile, Small)",

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mtrus:block/nyc_subway_floor_tile_slab_bottom"
+    },
+    "type=top": {
+      "model": "mtrus:block/nyc_subway_floor_tile_slab_top"
+    },
+    "type=double": {
+      "model": "mtrus:block/nyc_subway_floor_tile"
+    }
+  }
+}

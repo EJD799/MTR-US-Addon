@@ -1,0 +1,8 @@
+{
+	"parent": "block/slab",
+	"textures": {
+		"bottom": "mtrus:block/nyc_subway_floor_tile",
+		"top": "mtrus:block/nyc_subway_floor_tile",
+		"side": "mtrus:block/nyc_subway_floor_tile"
+	}
+}
