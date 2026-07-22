@@ -1,0 +1,9 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "mtrus:block/dc_metro_station_pole_1",
+        "top": "mtrus:block/dc_metro_station_pole_1",
+        "side": "mtrus:block/dc_metro_station_pole_1",
+        "particle": "mtrus:block/dc_metro_station_pole_1"
+    }
+}

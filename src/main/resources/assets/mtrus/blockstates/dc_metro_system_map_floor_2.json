@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "mtrus:block/dc_metro_system_map_floor_2", "y": 180 },
+		"facing=east": { "model": "mtrus:block/dc_metro_system_map_floor_2", "y": 270 },
+		"facing=south": { "model": "mtrus:block/dc_metro_system_map_floor_2" },
+		"facing=west": { "model": "mtrus:block/dc_metro_system_map_floor_2", "y": 90 }
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "mtrus:block/dc_metro_new_led_pids",
+		"1": "mtrus:block/light",
+		"particle": "mtrus:block/dc_metro_new_led_pids"
+	},
+	"elements": [
+		{
+			"from": [0, 13, 0],
+			"to": [16, 16, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 3], "texture": "#0"},
+				"east": {"uv": [6, 0, 16, 3], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 3], "texture": "#0"},
+				"west": {"uv": [0, 0, 10, 3], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 10], "texture": "#1"},
+				"down": {"uv": [0, 6, 16, 16], "texture": "#1"}
+			}
+		}
+	]
+}

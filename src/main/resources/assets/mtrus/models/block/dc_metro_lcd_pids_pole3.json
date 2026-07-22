@@ -1,0 +1,49 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "mtrus:block/dc_metro_lcd_pids",
+		"main": "mtrus:block/dc_metro_lcd_pids"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 4],
+			"to": [12, 16, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 16], "texture": "#main"},
+				"east": {"uv": [0, 0, 8, 16], "texture": "#main"},
+				"south": {"uv": [0, 0, 8, 16], "texture": "#main"},
+				"west": {"uv": [0, 0, 8, 16], "texture": "#main"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#main"},
+				"down": {"uv": [0, 0, 8, 8], "texture": "#main"}
+			}
+		},
+		{
+			"from": [-5, 3, 6.5],
+			"to": [4, 15, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 10.5, 14], "texture": "#main"},
+				"east": {"uv": [3, 0, 6, 14], "texture": "#main"},
+				"south": {"uv": [0, 0, 10.5, 14], "texture": "#main"},
+				"west": {"uv": [0, 0, 3, 14], "texture": "#main"},
+				"up": {"uv": [0, 0, 10.5, 3], "texture": "#main"},
+				"down": {"uv": [0, 3, 10.5, 6], "texture": "#main"}
+			}
+		},
+		{
+			"from": [12, 3, 6.5],
+			"to": [21, 15, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 10.5, 14], "texture": "#main"},
+				"east": {"uv": [0, 0, 3, 14], "texture": "#main"},
+				"south": {"uv": [0, 0, 10.5, 14], "texture": "#main"},
+				"west": {"uv": [3, 0, 6, 14], "texture": "#main"},
+				"up": {"uv": [0, 0, 10.5, 3], "rotation": 180, "texture": "#main"},
+				"down": {"uv": [0, 3, 10.5, 6], "rotation": 180, "texture": "#main"}
+			}
+		}
+	]
+}

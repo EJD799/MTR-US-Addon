@@ -1,0 +1,39 @@
+{
+	"multipart": [
+		{
+			"when": {
+				"facing": "north"
+			},
+			"apply": {
+				"model": "mtrus:block/platform_dc_light_indented"
+			}
+		},
+		{
+			"when": {
+				"facing": "east"
+			},
+			"apply": {
+				"model": "mtrus:block/platform_dc_light_indented",
+				"y": 90
+			}
+		},
+		{
+			"when": {
+				"facing": "south"
+			},
+			"apply": {
+				"model": "mtrus:block/platform_dc_light_indented",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"facing": "west"
+			},
+			"apply": {
+				"model": "mtrus:block/platform_dc_light_indented",
+				"y": 270
+			}
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"textures": {
+		"fronttop": "jsblock:block/transparent",
+		"sidetop": "jsblock:block/transparent",
+		"frontbottom": "mtrus:block/dc_metro_psd_glass_bottom",
+		"sidebottom": "mtrus:block/psd_side_light",
+		"sidetriangle": "jsblock:block/transparent"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 0],
+			"to": [6, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 16], "texture": "#frontbottom"},
+				"south": {"uv": [2, 0, 4, 16], "texture": "#sidebottom", "cullface": "south"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#frontbottom"}
+			}
+		}
+	]
+}

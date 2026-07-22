@@ -1,0 +1,8 @@
+{
+	"parent": "block/slab_top",
+	"textures": {
+		"bottom": "mtrus:block/dc_metro_tile",
+		"top": "mtrus:block/dc_metro_tile",
+		"side": "mtrus:block/dc_metro_tile"
+	}
+}

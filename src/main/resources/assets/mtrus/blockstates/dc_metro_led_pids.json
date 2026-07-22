@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "mtrus:block/dc_metro_led_pids" },
+		"facing=east": { "model": "mtrus:block/dc_metro_led_pids", "y": 90 },
+		"facing=south": { "model": "mtrus:block/dc_metro_led_pids", "y": 180 },
+		"facing=west": { "model": "mtrus:block/dc_metro_led_pids", "y": 270 }
+	}
+}

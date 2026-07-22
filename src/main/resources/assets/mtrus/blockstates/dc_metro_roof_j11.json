@@ -1,0 +1,39 @@
+{
+	"multipart": [
+		{
+			"when": {
+				"facing": "north"
+			},
+			"apply": {
+				"model": "mtrus:block/dc_metro_roof_j11",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"facing": "east"
+			},
+			"apply": {
+				"model": "mtrus:block/dc_metro_roof_j11",
+				"y": 270
+			}
+		},
+		{
+			"when": {
+				"facing": "south"
+			},
+			"apply": {
+				"model": "mtrus:block/dc_metro_roof_j11"
+			}
+		},
+		{
+			"when": {
+				"facing": "west"
+			},
+			"apply": {
+				"model": "mtrus:block/dc_metro_roof_j11",
+				"y": 90
+			}
+		}
+	]
+}

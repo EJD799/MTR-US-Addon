@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "mtrus",
+	"version": "${version}",
+	"name": "MTR US Addon",
+	"description": "American-style station building blocks for Minecraft Transit Railway",
+	"authors": [
+		"EJD799"
+	],
+	"contact": {
+		"sources": "https://github.com/EJD799/MTR-US-Addon"
+	},
+	"license": "GPL-3.0-or-later",
+	"icon": "assets/mtrus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.mtrus.MTRUSAddon"
+		],
+		"client": [
+			"org.mtrus.MTRUSAddonClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"mtr": ">=4.0.4 <4.1",
+		"jsblock": ">=2.2.0"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"GitHub": "https://github.com/EJD799/MTR-US-Addon"
+			}
+		}
+	}
+}

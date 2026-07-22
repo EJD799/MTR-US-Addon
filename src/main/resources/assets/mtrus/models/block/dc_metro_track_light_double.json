@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "mtrus:block/dc_metro_track_light_side",
+        "top": "mtrus:block/dc_metro_track_light_top",
+        "side": "mtrus:block/dc_metro_track_light_side"
+    }
+}

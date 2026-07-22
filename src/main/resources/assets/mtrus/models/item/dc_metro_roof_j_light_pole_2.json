@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mtrus:item/dc_metro_roof_j_light_pole_2"
+  }
+}

@@ -1,0 +1,40 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"main": "mtrus:block/dc_metro_station_name_wall",
+		"particle": "mtrus:block/dc_metro_station_name_wall"
+	},
+	"elements": [
+		{
+			"from": [-16, 0, 15],
+			"to": [32, 16, 16],
+			"faces": {
+				"north": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#main"
+				},
+				"east": {
+					"uv": [0, 0, 1, 16],
+					"texture": "#main"
+				},
+				"south": {
+					"uv": [0, 0, 16, 16],
+					"texture": "#main"
+				},
+				"west": {
+					"uv": [0, 0, 1, 16],
+					"texture": "#main"
+				},
+				"up": {
+					"uv": [0, 0, 16, 1],
+					"texture": "#main"
+				},
+				"down": {
+					"uv": [0, 0, 16, 1],
+					"texture": "#main"
+				}
+			}
+		}
+	]
+}

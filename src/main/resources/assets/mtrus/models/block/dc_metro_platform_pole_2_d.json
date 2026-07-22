@@ -1,0 +1,9 @@
+{
+    "parent": "mtrus:block/diagonal_block",
+    "textures": {
+        "bottom": "mtrus:block/dc_metro_platform_pole_1",
+        "top": "mtrus:block/dc_metro_platform_pole_1",
+        "side": "mtrus:block/dc_metro_platform_pole_2",
+        "particle": "mtrus:block/dc_metro_platform_pole_1"
+    }
+}

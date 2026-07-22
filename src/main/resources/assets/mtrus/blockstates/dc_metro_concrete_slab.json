@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mtrus:block/dc_metro_concrete_slab_bottom"
+    },
+    "type=top": {
+      "model": "mtrus:block/dc_metro_concrete_slab_top"
+    },
+    "type=double": {
+      "model": "mtrus:block/dc_metro_concrete"
+    }
+  }
+}

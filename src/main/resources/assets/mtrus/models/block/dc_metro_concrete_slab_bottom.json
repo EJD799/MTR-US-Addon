@@ -1,0 +1,8 @@
+{
+	"parent": "block/slab",
+	"textures": {
+		"bottom": "mtrus:block/concrete",
+		"top": "mtrus:block/concrete",
+		"side": "mtrus:block/concrete"
+	}
+}

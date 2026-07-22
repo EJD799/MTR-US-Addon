@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mtrus:item/dc_metro_led_pids_crossbar"
+  }
+}

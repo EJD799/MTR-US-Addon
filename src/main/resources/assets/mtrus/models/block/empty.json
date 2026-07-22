@@ -1,0 +1,6 @@
+{
+    "textures": {
+        "particle": "mtrus:block/dc_metro_arch"
+    },
+    "ambientocclusion": false
+}

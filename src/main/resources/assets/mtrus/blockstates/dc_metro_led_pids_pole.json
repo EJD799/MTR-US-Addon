@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mtrus:block/dc_metro_led_pids_pole"
+    }
+  }
+}
