@@ -13,7 +13,7 @@ public class BlockDCMetrobusPIDS extends JCMPIDSBlock {
 
     @Override
     public VoxelShape getOutlineShape2(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        VoxelShape shape1 = IBlock.getVoxelShapeByDirection(6, 5, 0, 10, 16, 16, IBlock.getStatePropertySafe(state, FACING));
+        VoxelShape shape1 = IBlock.getVoxelShapeByDirection(6, 8, 0, 10, 19, 16, IBlock.getStatePropertySafe(state, FACING));
         return shape1;
     }
 

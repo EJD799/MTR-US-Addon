@@ -1,0 +1,23 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "mtrus:block/nyc_subway_sign",
+		"particle": "mtrus:block/nyc_subway_sign"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 0],
+			"to": [14, 16, 0.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 0]},
+			"faces": {
+				"north": {"uv": [2, 3.625, 14, 16], "texture": "#0"},
+				"east": {"uv": [1.5, 3.625, 2, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 12, 16], "texture": "#0"},
+				"west": {"uv": [0, 4.125, 0.5, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 12, 0.5], "texture": "#0"},
+				"down": {"uv": [0, 1.5, 12, 2], "texture": "#0"}
+			}
+		}
+	]
+}

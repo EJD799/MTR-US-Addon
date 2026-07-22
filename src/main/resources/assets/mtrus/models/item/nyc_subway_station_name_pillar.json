@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mtrus:item/nyc_subway_station_name_pillar"
+  }
+}

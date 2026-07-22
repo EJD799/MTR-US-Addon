@@ -20,6 +20,10 @@ import org.mtrus.render.RenderDCMetroPSDDoor;
 import org.mtrus.render.RenderDCMetrobusSign;
 import org.mtrus.render.RenderDCMetrobusStationName;
 import org.mtrus.render.RenderDCMetrobusPIDS;
+import org.mtrus.render.RenderNYCSubwayStationNamePillar;
+import org.mtrus.render.RenderNYCSubwayStationNameWall;
+import org.mtrus.render.RenderNYCSubwayStationNameTile1;
+import org.mtrus.render.RenderNYCSubwayStationNameTile2;
 
 public class MTRUSAddonClient implements ClientModInitializer {
 
@@ -184,6 +188,34 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 }
         );
 
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.NYC_SUBWAY_STATION_NAME_PILLAR,
+                argument -> {
+                        return new RenderNYCSubwayStationNamePillar(argument);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.NYC_SUBWAY_STATION_NAME_WALL,
+                argument -> {
+                        return new RenderNYCSubwayStationNameWall(argument);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.NYC_SUBWAY_STATION_NAME_TILE_1,
+                argument -> {
+                        return new RenderNYCSubwayStationNameTile1(argument);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.NYC_SUBWAY_STATION_NAME_TILE_2,
+                argument -> {
+                        return new RenderNYCSubwayStationNameTile2(argument);
+                }
+        );
+
         /*
           REGISTER STATION COLORED BLOCKS
         */
@@ -192,7 +224,8 @@ public class MTRUSAddonClient implements ClientModInitializer {
 		ModBlocks.NYC_SUBWAY_PILLAR_6,
                 ModBlocks.NYC_SUBWAY_WALL_TILE_3,
                 ModBlocks.NYC_SUBWAY_WALL_TILE_4,
-                ModBlocks.NYC_SUBWAY_WALL_TILE_7
+                ModBlocks.NYC_SUBWAY_WALL_TILE_7,
+                ModBlocks.NYC_SUBWAY_STATION_NAME_TILE_1
         );
 
 	registryClient.init();

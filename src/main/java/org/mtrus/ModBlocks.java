@@ -49,6 +49,10 @@ import org.mtrus.block.BlockDCMetrobusSignPole;
 import org.mtrus.block.BlockDCMetrobusStationName;
 import org.mtrus.block.BlockDCMetrobusPIDS;
 import org.mtrus.block.BlockNYCSubwayPillar;
+import org.mtrus.block.BlockNYCSubwayStationNamePillar;
+import org.mtrus.block.BlockNYCSubwayStationNameWall;
+import org.mtrus.block.BlockNYCSubwayStationNameTile1;
+import org.mtrus.block.BlockNYCSubwayStationNameTile2;
 import org.mtrus.block.OBJBlock;
 
 import static org.mtr.mod.Blocks.createDefaultBlockSettings;
@@ -353,6 +357,10 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_TRACKBED;
     public static BlockRegistryObject NYC_SUBWAY_FLOOR_TILE;
     public static BlockRegistryObject NYC_SUBWAY_FLOOR_TILE_SLAB;
+    public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_PILLAR;
+    public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_WALL;
+    public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_TILE_1;
+    public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_TILE_2;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2206,6 +2214,30 @@ public final class ModBlocks {
         NYC_SUBWAY_FLOOR_TILE_SLAB = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_tile_slab"),
                 () -> new Block(new net.minecraft.world.level.block.SlabBlock(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_STATION_NAME_PILLAR = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_station_name_pillar"),
+                () -> new Block(new BlockNYCSubwayStationNamePillar(createDefaultBlockSettings(false).nonOpaque())),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_STATION_NAME_WALL = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_station_name_wall"),
+                () -> new Block(new BlockNYCSubwayStationNameWall(createDefaultBlockSettings(false).nonOpaque())),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_STATION_NAME_TILE_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_station_name_tile_1"),
+                () -> new Block(new BlockNYCSubwayStationNameTile1(createDefaultBlockSettings(false).nonOpaque())),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_STATION_NAME_TILE_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_station_name_tile_1"),
+                () -> new Block(new BlockNYCSubwayStationNameTile2(createDefaultBlockSettings(false).nonOpaque())),
                 ModCreativeModeTabs.MAIN
         );
     }
