@@ -38,10 +38,10 @@ public class BlockNYCSubwayStationNamePillar extends BlockExtension implements I
         Direction facing = IBlock.getStatePropertySafe(state, FACING);
 
         return IBlock.getVoxelShapeByDirection(
-                0,
+                2,
                 0,
                 15,
-                16,
+                14,
                 16,
                 16,
                 facing

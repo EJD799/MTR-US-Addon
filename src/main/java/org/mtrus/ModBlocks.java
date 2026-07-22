@@ -361,6 +361,7 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_WALL;
     public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_TILE_1;
     public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_TILE_2;
+    public static BlockRegistryObject NYC_SUBWAY_CEILING_SUPPORT;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2238,6 +2239,12 @@ public final class ModBlocks {
         NYC_SUBWAY_STATION_NAME_TILE_2 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_station_name_tile_2"),
                 () -> new Block(new BlockNYCSubwayStationNameTile2(createDefaultBlockSettings(false).nonOpaque())),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_CEILING_SUPPORT = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ceiling_support"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_ceiling_support.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
                 ModCreativeModeTabs.MAIN
         );
     }

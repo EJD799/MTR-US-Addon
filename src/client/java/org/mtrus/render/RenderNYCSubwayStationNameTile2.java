@@ -89,7 +89,7 @@ public class RenderNYCSubwayStationNameTile2 extends BlockEntityRenderer<BlockNY
 			graphicsHolderNew.translate(
 					0,
 					3 * tile,
-					0.49
+					0.499
 			);
 		});
 
@@ -104,7 +104,7 @@ public class RenderNYCSubwayStationNameTile2 extends BlockEntityRenderer<BlockNY
 			graphicsHolderNew.translate(
 					0,
 					3 * tile,
-					0.48
+					0.498
 			);
 		});
 
@@ -142,7 +142,7 @@ public class RenderNYCSubwayStationNameTile2 extends BlockEntityRenderer<BlockNY
 
 					for (int i = 0; i < stationNameChars.length; i++) {
 						String chString = String.valueOf(stationNameChars[i]);
-						IDrawingJoban.drawStringWithFont(graphicsHolderNew, chString, new Identifier("mtrus:nyc_subway_mosaic"), HorizontalAlignment.CENTER, VerticalAlignment.CENTER, ((tile / 2) - ((stationName.length() * tile) / 2)) + (i * tile), tile / 2, 0.1F, 0.1F, 0.01F, ARGB_WHITE, false, light, null);
+						IDrawingJoban.drawStringWithFont(graphicsHolderNew, chString, new Identifier("mtrus:nyc_subway_mosaic"), HorizontalAlignment.CENTER, VerticalAlignment.CENTER, ((tile / 2) - ((stationName.length() * tile) / 2)) + (i * tile) + 0.02F, tile / 2, 0.1F, 0.1F, 0.01F, ARGB_WHITE, false, light, null);
 					}
 
                     graphicsHolderNew.pop();
