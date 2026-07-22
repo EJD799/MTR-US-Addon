@@ -362,6 +362,9 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_TILE_1;
     public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_TILE_2;
     public static BlockRegistryObject NYC_SUBWAY_CEILING_SUPPORT;
+    public static BlockRegistryObject NYC_SUBWAY_SYSTEM_MAP_WALL;
+    public static BlockRegistryObject NYC_SUBWAY_SYSTEM_MAP_FLOOR;
+    public static BlockRegistryObject NYC_SUBWAY_SYSTEM_MAP_FLOOR_2;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2244,7 +2247,31 @@ public final class ModBlocks {
 
         NYC_SUBWAY_CEILING_SUPPORT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ceiling_support"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_ceiling_support.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_ceiling_support.obj", 0, new double[][]{{7, 8, 8, 9, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_SYSTEM_MAP_WALL = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_system_map_wall"),
+                () -> new Block(new BlockDCMetroSystemMap(
+                                createDefaultBlockSettings(false).nonOpaque().data
+                        )),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_SYSTEM_MAP_FLOOR = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_system_map_floor"),
+                () -> new Block(new BlockDCMetroSystemMap(
+                                createDefaultBlockSettings(false).nonOpaque().data
+                        )),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_SYSTEM_MAP_FLOOR_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_system_map_floor_2"),
+                () -> new Block(new BlockDCMetroSystemMap2(
+                                createDefaultBlockSettings(false).nonOpaque().data
+                        )),
                 ModCreativeModeTabs.MAIN
         );
     }

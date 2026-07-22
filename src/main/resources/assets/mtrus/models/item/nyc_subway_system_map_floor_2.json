@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mtrus:item/nyc_subway_system_map_floor_2"
+  }
+}

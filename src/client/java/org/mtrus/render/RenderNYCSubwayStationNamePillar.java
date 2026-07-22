@@ -77,7 +77,7 @@ public class RenderNYCSubwayStationNamePillar extends BlockEntityRenderer<BlockN
 			graphicsHolderNew.translate(
 					0,
 					0,
-					0.47
+					0.465
 			);
 		});
 

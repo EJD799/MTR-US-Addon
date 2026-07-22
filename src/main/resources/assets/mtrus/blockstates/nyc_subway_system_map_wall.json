@@ -1,0 +1,8 @@
+{
+	"variants": {
+		"facing=north": { "model": "mtrus:block/nyc_subway_system_map_wall", "y": 180 },
+		"facing=east": { "model": "mtrus:block/nyc_subway_system_map_wall", "y": 270 },
+		"facing=south": { "model": "mtrus:block/nyc_subway_system_map_wall" },
+		"facing=west": { "model": "mtrus:block/nyc_subway_system_map_wall", "y": 90 }
+	}
+}
