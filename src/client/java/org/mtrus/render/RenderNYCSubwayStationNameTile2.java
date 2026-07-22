@@ -62,7 +62,7 @@ public class RenderNYCSubwayStationNameTile2 extends BlockEntityRenderer<BlockNY
          * Render overlay plane.
          */
 
-		float tile = 1F / 6F;
+		float tile = 1F / 8F;
 
         final StoredMatrixTransformations transform =
 				new StoredMatrixTransformations(
@@ -88,7 +88,7 @@ public class RenderNYCSubwayStationNameTile2 extends BlockEntityRenderer<BlockNY
 			// Move text on the sign surface
 			graphicsHolderNew.translate(
 					0,
-					2 * tile,
+					3 * tile,
 					0.49
 			);
 		});
@@ -103,7 +103,7 @@ public class RenderNYCSubwayStationNameTile2 extends BlockEntityRenderer<BlockNY
 			// Move text on the sign surface
 			graphicsHolderNew.translate(
 					0,
-					2 * tile,
+					3 * tile,
 					0.48
 			);
 		});

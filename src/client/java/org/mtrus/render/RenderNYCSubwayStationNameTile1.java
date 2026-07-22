@@ -89,7 +89,7 @@ public class RenderNYCSubwayStationNameTile1 extends BlockEntityRenderer<BlockNY
                     transform.transform(graphicsHolderNew, offset);
 
 
-                    IDrawingJoban.drawStringWithFont(graphicsHolderNew, stationName, new Identifier("mtrus:nyc_subway_mosaic"), HorizontalAlignment.CENTER, VerticalAlignment.CENTER, 0, 0, 2.5F, 0.5F, 0.07F, ARGB_WHITE, false, light, null);	
+                    IDrawingJoban.drawStringWithFont(graphicsHolderNew, stationName, new Identifier("mtrus:nyc_subway_mosaic"), HorizontalAlignment.CENTER, VerticalAlignment.CENTER, 0.0625F, 0, 2.5F, 0.5F, 0.07F, ARGB_WHITE, false, light, null);	
 
                     graphicsHolderNew.pop();
                 });
