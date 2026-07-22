@@ -2252,7 +2252,7 @@ public final class ModBlocks {
         );
 
         NYC_SUBWAY_SYSTEM_MAP_WALL = registry.registerBlockWithBlockItem(
-                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_system_map_wall"),
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_system_map_wall"),
                 () -> new Block(new BlockDCMetroSystemMap(
                                 createDefaultBlockSettings(false).nonOpaque().data
                         )),
