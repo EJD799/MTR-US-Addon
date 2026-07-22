@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.renderer.RenderType;
 
 import org.mtr.mapping.registry.RegistryClient;
+import org.mtr.mod.InitClient;
 import org.mtrus.render.RenderPlatformLight;
 import org.mtrus.render.RenderOBJBlock;
 import org.mtrus.render.RenderDCMetroStationNameWall;
@@ -187,7 +188,7 @@ public class MTRUSAddonClient implements ClientModInitializer {
           REGISTER STATION COLORED BLOCKS
         */
 
-        registryClient.registerBlockColors((blockState, blockRenderView, blockPos, tintIndex) -> getStationColor(blockPos),
+        registryClient.registerBlockColors((blockState, blockRenderView, blockPos, tintIndex) -> InitClient.getStationColor(blockPos),
 		ModBlocks.NYC_SUBWAY_PILLAR_6
         );
 
