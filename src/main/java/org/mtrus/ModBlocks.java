@@ -47,6 +47,7 @@ import org.mtrus.block.BlockDCMetrobusSign;
 import org.mtrus.block.BlockDCMetrobusSignPole;
 import org.mtrus.block.BlockDCMetrobusStationName;
 import org.mtrus.block.BlockDCMetrobusPIDS;
+import org.mtrus.block.BlockNYCSubwayPillar;
 import org.mtrus.block.OBJBlock;
 
 import static org.mtr.mod.Blocks.createDefaultBlockSettings;
@@ -335,6 +336,12 @@ public final class ModBlocks {
     public static BlockRegistryObject DC_METROBUS_ROOF_4L;
     public static BlockRegistryObject DC_METROBUS_STATION_NAME;
     public static BlockRegistryObject DC_METROBUS_PIDS;
+    public static BlockRegistryObject NYC_SUBWAY_PILLAR_1;
+    public static BlockRegistryObject NYC_SUBWAY_PILLAR_2;
+    public static BlockRegistryObject NYC_SUBWAY_PILLAR_3;
+    public static BlockRegistryObject NYC_SUBWAY_PILLAR_4;
+    public static BlockRegistryObject NYC_SUBWAY_PILLAR_5;
+    public static BlockRegistryObject NYC_SUBWAY_PILLAR_6;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2091,6 +2098,42 @@ public final class ModBlocks {
         DC_METROBUS_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metrobus_pids"),
                 () -> new Block(new BlockDCMetrobusPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque())),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_PILLAR_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_pillar_1"),
+                () -> new Block(new BlockNYCSubwayPillar(createDefaultBlockSettings(false).nonOpaque(), false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_PILLAR_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_pillar_2"),
+                () -> new Block(new BlockNYCSubwayPillar(createDefaultBlockSettings(false).nonOpaque(), false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_PILLAR_3 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_pillar_3"),
+                () -> new Block(new BlockNYCSubwayPillar(createDefaultBlockSettings(false).nonOpaque(), false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_PILLAR_4 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_pillar_4"),
+                () -> new Block(new BlockNYCSubwayPillar(createDefaultBlockSettings(false).nonOpaque(), false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_PILLAR_5 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_pillar_5"),
+                () -> new Block(new BlockNYCSubwayPillar(createDefaultBlockSettings(false).nonOpaque(), false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_PILLAR_6 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_pillar_6"),
+                () -> new Block(new BlockNYCSubwayPillar(createDefaultBlockSettings(false).nonOpaque(), true)),
                 ModCreativeModeTabs.MAIN
         );
     }

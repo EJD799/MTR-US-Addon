@@ -85,10 +85,12 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 RenderType.cutout()
         );
 
-
         RegistryClient registryClient =
                 new RegistryClient(MTRUSAddon.registry);
 
+        /*
+          REGISTER BLOCK ENTITY RENDERERS
+        */
 
         registryClient.registerBlockEntityRenderer(
                 ModBlockEntityTypes.PLATFORM_LIGHT,
@@ -179,6 +181,14 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 argument -> {
                         return new RenderDCMetrobusPIDS(argument);
                 }
+        );
+
+        /*
+          REGISTER STATION COLORED BLOCKS
+        */
+
+        registryClient.registerBlockColors((blockState, blockRenderView, blockPos, tintIndex) -> getStationColor(blockPos),
+		ModBlocks.NYC_SUBWAY_PILLAR_6
         );
 
 	registryClient.init();

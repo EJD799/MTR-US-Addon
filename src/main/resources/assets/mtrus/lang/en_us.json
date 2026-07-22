@@ -376,6 +376,10 @@
   "block.mtrus.nyc_subway_bench_1c": "NYC Subway Bench (Style 1, Right)",
   "block.mtrus.nyc_subway_bench_2a": "NYC Subway Bench (Style 2, Left)",
   "block.mtrus.nyc_subway_bench_2b": "NYC Subway Bench (Style 2, Right)",
+  "block.mtrus.nyc_subway_system_map": "NYC Subway System Map",
+  "block.mtrus.nyc_subway_platform_barrier_1": "NYC Subway Platform Barrier (Left)",
+  "block.mtrus.nyc_subway_platform_barrier_2": "NYC Subway Platform Barrier (Middle)",
+  "block.mtrus.nyc_subway_platform_barrier_3": "NYC Subway Platform Barrier (Right)",
 
   "itemGroup.mtrus.main": "MTR US Addon"
 }

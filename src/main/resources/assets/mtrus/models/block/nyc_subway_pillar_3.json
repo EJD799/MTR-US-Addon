@@ -1,0 +1,7 @@
+{
+	"parent": "mtrus:block/nyc_subway_pillar",
+	"textures": {
+		"0": "mtrus:block/nyc_subway_pillar_3",
+		"particle": "mtrus:block/nyc_subway_pillar_3"
+	}
+}
