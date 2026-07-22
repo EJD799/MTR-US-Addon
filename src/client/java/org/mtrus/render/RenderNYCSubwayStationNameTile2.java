@@ -89,7 +89,7 @@ public class RenderNYCSubwayStationNameTile2 extends BlockEntityRenderer<BlockNY
 			graphicsHolderNew.translate(
 					0,
 					2 * tile,
-					0.43
+					0.49
 			);
 		});
 
@@ -104,7 +104,7 @@ public class RenderNYCSubwayStationNameTile2 extends BlockEntityRenderer<BlockNY
 			graphicsHolderNew.translate(
 					0,
 					2 * tile,
-					0.42
+					0.48
 			);
 		});
 

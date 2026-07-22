@@ -77,7 +77,7 @@ public class RenderNYCSubwayStationNameTile1 extends BlockEntityRenderer<BlockNY
 			graphicsHolderNew.translate(
 					0,
 					0,
-					0.43
+					0.49
 			);
 		});
 
