@@ -76,7 +76,7 @@ public class RenderNYCSubwayStationNameWall extends BlockEntityRenderer<BlockNYC
 			// Move text on the sign surface
 			graphicsHolderNew.translate(
 					0,
-					0.2,
+					0,
 					0.465
 			);
 		});

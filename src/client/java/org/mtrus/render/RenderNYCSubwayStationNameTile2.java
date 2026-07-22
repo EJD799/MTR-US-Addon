@@ -44,9 +44,9 @@ public class RenderNYCSubwayStationNameTile2 extends BlockEntityRenderer<BlockNY
 		final Station station = InitClient.findStation(pos);
 		String stationName;
 		if (station == null) {
-			stationName = "Untitled";
+			stationName = "UNTITLED";
 		} else {
-			stationName = station.getName();
+			stationName = station.getName().toUpperCase();
 		}
 		
 
@@ -62,7 +62,7 @@ public class RenderNYCSubwayStationNameTile2 extends BlockEntityRenderer<BlockNY
          * Render overlay plane.
          */
 
-		float tile = 1 / 6;
+		float tile = 1F / 6F;
 
         final StoredMatrixTransformations transform =
 				new StoredMatrixTransformations(

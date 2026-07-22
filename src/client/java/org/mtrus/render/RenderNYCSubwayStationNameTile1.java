@@ -42,9 +42,9 @@ public class RenderNYCSubwayStationNameTile1 extends BlockEntityRenderer<BlockNY
 		final Station station = InitClient.findStation(pos);
 		String stationName;
 		if (station == null) {
-			stationName = "Untitled";
+			stationName = "UNTITLED";
 		} else {
-			stationName = station.getName();
+			stationName = station.getName().toUpperCase();
 		}
 		
 
@@ -77,7 +77,7 @@ public class RenderNYCSubwayStationNameTile1 extends BlockEntityRenderer<BlockNY
 			graphicsHolderNew.translate(
 					0,
 					0,
-					0.49
+					0.48
 			);
 		});
 

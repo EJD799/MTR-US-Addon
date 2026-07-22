@@ -5,7 +5,8 @@
 				"facing": "north"
 			},
 			"apply": {
-				"model": "mtrus:block/nyc_subway_station_name_tile_1"
+				"model": "mtrus:block/nyc_subway_station_name_tile_1",
+				"y": 180
 			}
 		},
 		{
@@ -14,7 +15,7 @@
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_station_name_tile_1",
-				"y": 90
+				"y": 270
 			}
 		},
 		{
@@ -22,8 +23,7 @@
 				"facing": "south"
 			},
 			"apply": {
-				"model": "mtrus:block/nyc_subway_station_name_tile_1",
-				"y": 180
+				"model": "mtrus:block/nyc_subway_station_name_tile_1"
 			}
 		},
 		{
@@ -32,7 +32,7 @@
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_station_name_tile_1",
-				"y": 270
+				"y": 90
 			}
 		}
 	]

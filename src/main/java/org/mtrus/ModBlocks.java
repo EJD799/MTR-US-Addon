@@ -2212,7 +2212,7 @@ public final class ModBlocks {
         );
 
         NYC_SUBWAY_FLOOR_TILE_SLAB = registry.registerBlockWithBlockItem(
-                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_tile_slab"),
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_floor_tile_slab"),
                 () -> new Block(new net.minecraft.world.level.block.SlabBlock(createDefaultBlockSettings(false).data)),
                 ModCreativeModeTabs.MAIN
         );
@@ -2235,8 +2235,8 @@ public final class ModBlocks {
                 ModCreativeModeTabs.MAIN
         );
 
-        NYC_SUBWAY_STATION_NAME_TILE_1 = registry.registerBlockWithBlockItem(
-                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_station_name_tile_1"),
+        NYC_SUBWAY_STATION_NAME_TILE_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_station_name_tile_2"),
                 () -> new Block(new BlockNYCSubwayStationNameTile2(createDefaultBlockSettings(false).nonOpaque())),
                 ModCreativeModeTabs.MAIN
         );
