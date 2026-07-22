@@ -6,6 +6,7 @@ import org.mtr.mapping.registry.BlockRegistryObject;
 import org.mtr.mapping.registry.Registry;
 import org.mtr.mod.block.BlockPlatform;
 import org.mtr.mod.block.BlockPlatformSlab;
+import org.mtr.mod.item.ItemBlockEnchanted;
 import org.mtrus.block.BlockPlatformLight;
 import org.mtrus.block.BlockPlatformLightSlab;
 import org.mtrus.block.BlockDCMetroLEDPIDS;
@@ -2134,6 +2135,7 @@ public final class ModBlocks {
         NYC_SUBWAY_PILLAR_6 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_pillar_6"),
                 () -> new Block(new BlockNYCSubwayPillar(createDefaultBlockSettings(false).nonOpaque(), true)),
+                ItemBlockEnchanted::new,
                 ModCreativeModeTabs.MAIN
         );
     }
