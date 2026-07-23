@@ -2456,61 +2456,61 @@ public final class ModBlocks {
 
         NYC_SUBWAY_FARE_GATE_1_ENTRANCE = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_1_entrance"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_1_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_1_entrance_open.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, true)),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_1_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_1_entrance_open.obj", new double[][]{{0, 0, 0, 4, 16, 16}, {12, 0, 0, 16, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_1_EXIT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_1_exit"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_1_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_1_exit_open.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_1_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_1_exit_open.obj", new double[][]{{0, 0, 0, 4, 16, 16}, {12, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_2_ENTRANCE = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_2_entrance"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_2_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_2_entrance_open.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, true)),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_2_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_2_entrance_open.obj", new double[][]{{0, 0, 0, 4, 16, 16}, {12, 0, 0, 16, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_2_EXIT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_2_exit"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_2_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_2_exit_open.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_2_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_2_exit_open.obj", new double[][]{{0, 0, 0, 4, 16, 16}, {12, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_3_ENTRANCE = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_3_entrance"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_3_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_3_entrance_open.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, true)),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_3_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_3_entrance_open.obj", new double[][]{{0, 0, 0, 4, 16, 16}, {12, 0, 0, 16, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_3_EXIT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_3_exit"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_3_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_3_exit_open.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_3_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_3_exit_open.obj", new double[][]{{0, 0, 0, 4, 16, 16}, {12, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_4_ENTRANCE = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_4_entrance"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_4_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_4_entrance_open.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, true)),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_4_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_4_entrance_open.obj", new double[][]{{0, 0, 0, 4, 16, 16}, {12, 0, 0, 16, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_4_EXIT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_4_exit"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_4_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_4_exit_open.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_4_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_4_exit_open.obj", new double[][]{{0, 0, 0, 4, 16, 16}, {12, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_5_ENTRANCE = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_5_entrance"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_5_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_5_entrance_open.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, true)),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_5_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_5_entrance_open.obj", new double[][]{{0, 0, 0, 4, 16, 16}, {12, 0, 0, 16, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_5_EXIT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_5_exit"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_5_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_5_exit_open.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_5_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_5_exit_open.obj", new double[][]{{0, 0, 0, 4, 16, 16}, {12, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
     }
