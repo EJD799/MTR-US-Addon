@@ -396,6 +396,8 @@
   "block.mtrus.nyc_subway_platform_barrier_4a": "NYC Subway Platform Barrier (Style 4, Left)",
   "block.mtrus.nyc_subway_platform_barrier_4b": "NYC Subway Platform Barrier (Style 4, Middle)",
   "block.mtrus.nyc_subway_platform_barrier_4c": "NYC Subway Platform Barrier (Style 4, Right)",
+    "block.mtrus.nyc_subway_metrocard_vending_machine": "NYC Subway MetroCard Vending Machine",
+    "block.mtrus.nyc_subway_omny_vending_machine": "NYC Subway OMNY Vending Machine",
 
   "itemGroup.mtrus.main": "MTR US Addon"
 }
