@@ -268,7 +268,19 @@ public final class ModBlockEntityTypes {
                 ModBlocks.DC_METROBUS_ROOF_3F::get,
                 ModBlocks.DC_METROBUS_ROOF_4F::get,
                 ModBlocks.DC_METROBUS_ROOF_4L::get,
-                ModBlocks.NYC_SUBWAY_CEILING_SUPPORT::get
+                ModBlocks.NYC_SUBWAY_CEILING_SUPPORT::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_1A::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_1B::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_1C::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_2A::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_2B::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_2C::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_3A::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_3B::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_3C::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_4A::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_4B::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_4C::get
         );
 
         DC_METRO_STATION_NAME_WALL = MTRUSAddon.registry.registerBlockEntityType(

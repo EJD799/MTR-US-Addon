@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mtrus:item/nyc_subway_platform_barrier_1c"
+  }
+}
