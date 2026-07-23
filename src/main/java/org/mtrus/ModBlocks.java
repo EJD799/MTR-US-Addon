@@ -377,6 +377,18 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_PLATFORM_BARRIER_4A;
     public static BlockRegistryObject NYC_SUBWAY_PLATFORM_BARRIER_4B;
     public static BlockRegistryObject NYC_SUBWAY_PLATFORM_BARRIER_4C;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_1A;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_1B;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_1C;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_2A;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_2B;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_2C;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_3A;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_3B;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_3C;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_4A;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_4B;
+    public static BlockRegistryObject NYC_SUBWAY_BENCH_4C;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2343,19 +2355,91 @@ public final class ModBlocks {
 
         NYC_SUBWAY_PLATFORM_BARRIER_4A = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_platform_barrier_4a"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_platform_barrier_3a.obj", 0, new double[][]{{0, 0, 15, 16, 16, 16}})),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_platform_barrier_4a.obj", 0, new double[][]{{0, 0, 15, 16, 16, 16}})),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_PLATFORM_BARRIER_4B = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_platform_barrier_4b"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_platform_barrier_3b.obj", 0, new double[][]{{0, 0, 15, 16, 16, 16}})),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_platform_barrier_4b.obj", 0, new double[][]{{0, 0, 15, 16, 16, 16}})),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_PLATFORM_BARRIER_4C = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_platform_barrier_4c"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_platform_barrier_3c.obj", 0, new double[][]{{0, 0, 15, 16, 16, 16}})),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_platform_barrier_4c.obj", 0, new double[][]{{0, 0, 15, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_1A = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_1a"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_1a.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_1B = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_1b"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_1b.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_1C = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_1c"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_1c.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_2A = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_2a"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_2a.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_2B = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_2b"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_2b.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_2C = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_2c"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_2c.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_3A = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_3a"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_3a.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_3B = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_3b"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_3b.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_3C = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_3c"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_3c.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_4A = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_4a"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4a.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_4B = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_4b"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4b.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BENCH_4C = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_4c"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4c.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
                 ModCreativeModeTabs.MAIN
         );
     }
