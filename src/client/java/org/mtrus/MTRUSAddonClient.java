@@ -8,6 +8,7 @@ import org.mtr.mapping.registry.RegistryClient;
 import org.mtr.mod.InitClient;
 import org.mtrus.render.RenderPlatformLight;
 import org.mtrus.render.RenderOBJBlock;
+import org.mtrus.render.RenderOBJFareGate;
 import org.mtrus.render.RenderDCMetroStationNameWall;
 import org.mtrus.render.RenderDCMetroStationNamePole;
 import org.mtrus.render.RenderDCMetroStationPole;
@@ -108,6 +109,13 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlockEntityTypes.OBJ_BLOCK,
                 argument -> {
                         return new RenderOBJBlock(argument);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.OBJ_FARE_GATE,
+                argument -> {
+                        return new RenderOBJFareGate(argument);
                 }
         );
 
