@@ -2440,13 +2440,13 @@ public final class ModBlocks {
 
         NYC_SUBWAY_BENCH_4A = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_4a"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4a.obj", 0, new double[][]{{0, 0, 7, 16, 13, 16}})),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4a.obj", 0, new double[][]{{0, 7, 0, 16, 13, 16}})),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_BENCH_4B = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_4b"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4b.obj", 0, new double[][]{{0, 0, 7, 16, 13, 16}})),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4b.obj", 0, new double[][]{{0, 7, 0, 16, 13, 16}})),
                 ModCreativeModeTabs.MAIN
         );
 
