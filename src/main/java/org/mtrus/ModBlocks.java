@@ -400,6 +400,8 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_FARE_GATE_4_EXIT;
     public static BlockRegistryObject NYC_SUBWAY_FARE_GATE_5_ENTRANCE;
     public static BlockRegistryObject NYC_SUBWAY_FARE_GATE_5_EXIT;
+    public static BlockRegistryObject NYC_SUBWAY_FARE_GATE_6_ENTRANCE;
+    public static BlockRegistryObject NYC_SUBWAY_FARE_GATE_6_EXIT;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2438,19 +2440,19 @@ public final class ModBlocks {
 
         NYC_SUBWAY_BENCH_4A = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_4a"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4a.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4a.obj", 0, new double[][]{{0, 0, 7, 16, 13, 16}})),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_BENCH_4B = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_4b"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4b.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4b.obj", 0, new double[][]{{0, 0, 7, 16, 13, 16}})),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_BENCH_4C = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_bench_4c"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4c.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_bench_4c.obj", 0, new double[][]{{0, 7, 0, 16, 13, 16}})),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -2511,6 +2513,18 @@ public final class ModBlocks {
         NYC_SUBWAY_FARE_GATE_5_EXIT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_5_exit"),
                 () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_5_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_5_exit_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_FARE_GATE_6_ENTRANCE = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_6_entrance"),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_6_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_6_entrance_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_FARE_GATE_6_EXIT = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_6_exit"),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_6_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_6_exit_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
     }
