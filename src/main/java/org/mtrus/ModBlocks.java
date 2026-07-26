@@ -53,6 +53,7 @@ import org.mtrus.block.BlockNYCSubwayStationNamePillar;
 import org.mtrus.block.BlockNYCSubwayStationNameWall;
 import org.mtrus.block.BlockNYCSubwayStationNameTile1;
 import org.mtrus.block.BlockNYCSubwayStationNameTile2;
+import org.mtrus.block.BlockNYCSubwayCeiling;
 import org.mtrus.block.OBJBlock;
 import org.mtrus.block.OBJFareGate;
 
@@ -402,6 +403,12 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_FARE_GATE_5_EXIT;
     public static BlockRegistryObject NYC_SUBWAY_FARE_GATE_6_ENTRANCE;
     public static BlockRegistryObject NYC_SUBWAY_FARE_GATE_6_EXIT;
+    public static BlockRegistryObject NYC_SUBWAY_PLATFORM_CEILING;
+    public static BlockRegistryObject NYC_SUBWAY_TRACK_CEILING;
+    public static BlockRegistryObject NYC_SUBWAY_PLATFORM_LIGHT;
+    public static BlockRegistryObject NYC_SUBWAY_TRACK_POLE_1;
+    public static BlockRegistryObject NYC_SUBWAY_TRACK_POLE_2;
+    public static BlockRegistryObject NYC_SUBWAY_TRACK_POLE_3;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2525,6 +2532,46 @@ public final class ModBlocks {
         NYC_SUBWAY_FARE_GATE_6_EXIT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_6_exit"),
                 () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_6_exit_closed.obj", "mtrus:obj/nyc_subway_fare_gate_6_exit_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_PLATFORM_CEILING = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_platform_ceiling"),
+                () -> new Block(new BlockNYCSubwayCeiling(
+                                createDefaultBlockSettings(false).nonOpaque().data
+                        )),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TRACK_CEILING = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_track_ceiling"),
+                () -> new Block(new BlockNYCSubwayCeiling(
+                                createDefaultBlockSettings(false).nonOpaque().data
+                        )),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_PLATFORM_LIGHT = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_platform_light"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_platform_light.obj", 15, new double[][]{{6.5, 14.75, 0, 9.5, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TRACK_POLE_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_track_pole_1"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_track_pole_1.obj", 0, new double[][]{{5, 0, 6, 11, 16, 10}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TRACK_POLE_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_track_pole_2"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_track_pole_2.obj", 0, new double[][]{{5, 0, 6, 11, 16, 10}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TRACK_POLE_3 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_track_pole_3"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_track_pole_3.obj", 0, new double[][]{{5, 0, 6, 11, 16, 10}})),
                 ModCreativeModeTabs.MAIN
         );
     }

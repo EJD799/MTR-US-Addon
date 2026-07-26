@@ -294,7 +294,11 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_BENCH_3C::get,
                 ModBlocks.NYC_SUBWAY_BENCH_4A::get,
                 ModBlocks.NYC_SUBWAY_BENCH_4B::get,
-                ModBlocks.NYC_SUBWAY_BENCH_4C::get
+                ModBlocks.NYC_SUBWAY_BENCH_4C::get,
+                ModBlocks.NYC_SUBWAY_PLATFORM_LIGHT::get,
+                ModBlocks.NYC_SUBWAY_TRACK_POLE_1::get,
+                ModBlocks.NYC_SUBWAY_TRACK_POLE_2::get,
+                ModBlocks.NYC_SUBWAY_TRACK_POLE_3::get
         );
 
         OBJ_FARE_GATE = MTRUSAddon.registry.registerBlockEntityType(
