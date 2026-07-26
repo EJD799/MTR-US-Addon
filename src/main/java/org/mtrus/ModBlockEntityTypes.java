@@ -5,6 +5,7 @@ import org.mtr.mapping.registry.BlockEntityTypeRegistryObject;
 import org.mtrus.block.BlockPlatformLightEntity;
 import org.mtrus.block.OBJBlockEntity;
 import org.mtrus.block.OBJFareGateEntity;
+import org.mtrus.block.OBJTicketMachineEntity;
 import org.mtrus.block.BlockDCMetroStationNameWallEntity;
 import org.mtrus.block.BlockDCMetroLCDPIDSEntity;
 import org.mtrus.block.BlockDCMetroLEDPIDSEntity;
@@ -28,6 +29,7 @@ public final class ModBlockEntityTypes {
     public static BlockEntityTypeRegistryObject<BlockPlatformLightEntity> PLATFORM_LIGHT = null;
     public static BlockEntityTypeRegistryObject<OBJBlockEntity> OBJ_BLOCK = null;
     public static BlockEntityTypeRegistryObject<OBJFareGateEntity> OBJ_FARE_GATE = null;
+    public static BlockEntityTypeRegistryObject<OBJTicketMachineEntity> OBJ_TICKET_MACHINE = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNameWallEntity> DC_METRO_STATION_NAME_WALL = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNamePoleEntity> DC_METRO_STATION_NAME_POLE = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationPoleEntity> DC_METRO_STATION_POLE = null;
@@ -316,6 +318,14 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_FARE_GATE_5_EXIT::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_6_ENTRANCE::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_6_EXIT::get
+        );
+
+        OBJ_TICKET_MACHINE = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "obj_ticket_machine"),
+                OBJTicketMachineEntity::new,
+                ModBlocks.DC_METRO_TICKET_MACHINE::get,
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_1::get,
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_2::get
         );
 
         DC_METRO_STATION_NAME_WALL = MTRUSAddon.registry.registerBlockEntityType(

@@ -56,6 +56,7 @@ import org.mtrus.block.BlockNYCSubwayStationNameTile2;
 import org.mtrus.block.BlockNYCSubwayCeiling;
 import org.mtrus.block.OBJBlock;
 import org.mtrus.block.OBJFareGate;
+import org.mtrus.block.OBJTicketMachine;
 
 import static org.mtr.mod.Blocks.createDefaultBlockSettings;
 
@@ -343,6 +344,7 @@ public final class ModBlocks {
     public static BlockRegistryObject DC_METROBUS_ROOF_4L;
     public static BlockRegistryObject DC_METROBUS_STATION_NAME;
     public static BlockRegistryObject DC_METROBUS_PIDS;
+    public static BlockRegistryObject DC_METRO_TICKET_MACHINE;
     public static BlockRegistryObject NYC_SUBWAY_PILLAR_1;
     public static BlockRegistryObject NYC_SUBWAY_PILLAR_2;
     public static BlockRegistryObject NYC_SUBWAY_PILLAR_3;
@@ -409,6 +411,8 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_TRACK_POLE_1;
     public static BlockRegistryObject NYC_SUBWAY_TRACK_POLE_2;
     public static BlockRegistryObject NYC_SUBWAY_TRACK_POLE_3;
+    public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_1;
+    public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_2;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -517,6 +521,12 @@ public final class ModBlocks {
                                         .data.lightLevel(state -> 12)
                         )
                 ),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_TICKET_MACHINE = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_ticket_machine"),
+                () -> new Block(new OBJTicketMachine("mtrus:obj/dc_metro_ticket_machine.obj")),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -2572,6 +2582,18 @@ public final class ModBlocks {
         NYC_SUBWAY_TRACK_POLE_3 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_track_pole_3"),
                 () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_track_pole_3.obj", 0, new double[][]{{5, 0, 6, 11, 16, 10}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TICKET_MACHINE_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ticket_machine_1"),
+                () -> new Block(new OBJTicketMachine("mtrus:obj/nyc_subway_ticket_machine_1.obj")),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TICKET_MACHINE_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ticket_machine_2"),
+                () -> new Block(new OBJTicketMachine("mtrus:obj/nyc_subway_ticket_machine_2.obj")),
                 ModCreativeModeTabs.MAIN
         );
     }

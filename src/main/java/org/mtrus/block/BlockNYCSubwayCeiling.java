@@ -14,7 +14,7 @@ public class BlockNYCSubwayCeiling extends Block {
     public static final DirectionProperty FACING =
             BlockStateProperties.HORIZONTAL_FACING;
 
-    private final double[][] boxes = {{6.5, 0, 0, 9.5, 9, 16}, {0, 9, 0, 16, 16, 16}};
+    private final double[][] boxes = {{0, 0, 6.5, 16, 9, 9.5}, {0, 9, 0, 16, 16, 16}};
 
 
     public BlockNYCSubwayCeiling(BlockBehaviour.Properties properties) {

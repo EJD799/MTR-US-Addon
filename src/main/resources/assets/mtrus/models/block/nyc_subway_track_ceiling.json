@@ -3,7 +3,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "mtrus:block/nyc_subway_track_ceiling",
-		"particle": "mtrus:block/nyc_subway_platform_ceiling"
+		"particle": "mtrus:block/nyc_subway_track_ceiling"
 	},
 	"elements": [
 		{
