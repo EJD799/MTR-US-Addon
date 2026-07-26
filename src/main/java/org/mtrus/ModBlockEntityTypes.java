@@ -309,7 +309,9 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_FARE_GATE_4_ENTRANCE::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_4_EXIT::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_5_ENTRANCE::get,
-                ModBlocks.NYC_SUBWAY_FARE_GATE_5_EXIT::get
+                ModBlocks.NYC_SUBWAY_FARE_GATE_5_EXIT::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_6_ENTRANCE::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_6_EXIT::get
         );
 
         DC_METRO_STATION_NAME_WALL = MTRUSAddon.registry.registerBlockEntityType(
