@@ -4,6 +4,12 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.client.renderer.RenderType;
 
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.Optional;
+import java.io.Reader;
+
+import org.mtr.mapping.holder.MinecraftClient;
 import org.mtr.mapping.registry.RegistryClient;
 import org.mtr.mod.InitClient;
 import org.mtrus.render.RenderPlatformLight;
@@ -27,6 +33,10 @@ import org.mtrus.render.RenderNYCSubwayStationNamePillar;
 import org.mtrus.render.RenderNYCSubwayStationNameWall;
 import org.mtrus.render.RenderNYCSubwayStationNameTile1;
 import org.mtrus.render.RenderNYCSubwayStationNameTile2;
+import org.mtrus.screen.ResourcePackWarningScreen;
+
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 
 public class MTRUSAddonClient implements ClientModInitializer {
 
@@ -251,6 +261,58 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlocks.NYC_SUBWAY_STATION_NAME_TILE_1
         );
 
-	registryClient.init();
+
+        /*
+          REGISTER RESOURCE PACK WARNING SCREEN
+        */
+
+        registryClient.eventRegistryClient.registerStartClientTick(() -> {
+            if (!resourcePackChecked) {
+                checkResourcePackVersion();
+            }
+
+            ResourcePackWarningScreen.handle();
+        });
+
+	    registryClient.init();
+    }
+
+    public static final int REQUIRED_PACK_VERSION = 1;
+    public static final String REQUIRED_PACK_VERSION_STRING = "v4.3";
+    public static final String REQUIRED_PACK_LINK = "https://modrinth.com/resourcepack/us-pids-pack/version/4.3";
+    public static boolean resourcePackChecked = false;
+    public static boolean resourcePackValid = false;
+    public static int detectedVersion = -1;
+
+    private static void checkResourcePackVersion() {
+        resourcePackChecked = true;
+
+        try {
+            net.minecraft.server.packs.resources.ResourceManager resourceManager =
+                MinecraftClient.getInstance().getResourceManager().data;
+
+            Optional<net.minecraft.server.packs.resources.Resource> resource =
+                resourceManager.getResource(new net.minecraft.resources.ResourceLocation(
+                    "uspidspack",
+                    "version.json"
+                ));
+
+            if (resource.isEmpty()) {
+                resourcePackValid = false;
+                detectedVersion = -1;
+                return;
+            }
+
+            try (Reader reader = new InputStreamReader(resource.get().open(), StandardCharsets.UTF_8)) {
+                JsonObject json = JsonParser.parseReader(reader).getAsJsonObject();
+
+                detectedVersion = json.get("version").getAsInt();
+                resourcePackValid = detectedVersion == REQUIRED_PACK_VERSION;
+            }
+        } catch (Exception e) {
+            resourcePackValid = false;
+            detectedVersion = -1;
+            e.printStackTrace();
+        }
     }
 }

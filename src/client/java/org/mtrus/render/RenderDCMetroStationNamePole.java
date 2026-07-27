@@ -167,7 +167,7 @@ public class RenderDCMetroStationNamePole extends BlockEntityRenderer<BlockDCMet
 			graphicsHolderNew.translate(
 					0,
 					-0.2,
-					-0.125
+					-0.135
 			);
 		});
 
