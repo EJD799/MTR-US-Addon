@@ -1849,7 +1849,7 @@ public final class ModBlocks {
 
         DC_METRO_TRASH_CAN = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_trash_can"),
-                () -> new Block(new OBJDoubleVerticalBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_trash_can.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                () -> new Block(new OBJDoubleVerticalBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_trash_can.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, new double[][]{{0, 0, 0, 16, 11, 16}})),
                 ModCreativeModeTabs.MAIN
         );
 

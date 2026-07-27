@@ -43,7 +43,7 @@ public class BlockDCMetroStationNamePole extends BlockExtension implements IBloc
                 6,
                 16,
                 16,
-                8,
+                7,
                 facing
         );
     }
