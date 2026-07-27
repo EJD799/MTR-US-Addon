@@ -1,5 +1,7 @@
 package org.mtrus.block;
 
+import org.mtr.mod.block.DoubleVerticalBlock;
+
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
@@ -9,7 +11,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 
-public class BlockDCMetroSystemMap2 extends Block {
+public class BlockDCMetroSystemMap2 extends Block implements DoubleVerticalBlock {
 
     public static final DirectionProperty FACING =
             BlockStateProperties.HORIZONTAL_FACING;

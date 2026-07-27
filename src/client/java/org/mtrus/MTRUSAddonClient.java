@@ -8,6 +8,7 @@ import org.mtr.mapping.registry.RegistryClient;
 import org.mtr.mod.InitClient;
 import org.mtrus.render.RenderPlatformLight;
 import org.mtrus.render.RenderOBJBlock;
+import org.mtrus.render.RenderOBJDoubleVerticalBlock;
 import org.mtrus.render.RenderOBJFareGate;
 import org.mtrus.render.RenderOBJTicketMachine;
 import org.mtrus.render.RenderDCMetroStationNameWall;
@@ -28,6 +29,8 @@ import org.mtrus.render.RenderNYCSubwayStationNameTile1;
 import org.mtrus.render.RenderNYCSubwayStationNameTile2;
 
 public class MTRUSAddonClient implements ClientModInitializer {
+
+    public static final RegistryClient registryClient = new RegistryClient(MTRUSAddon.registry);
 
     @Override
     public void onInitializeClient() {
@@ -92,9 +95,6 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 RenderType.cutout()
         );
 
-        RegistryClient registryClient =
-                new RegistryClient(MTRUSAddon.registry);
-
         /*
           REGISTER BLOCK ENTITY RENDERERS
         */
@@ -110,6 +110,13 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlockEntityTypes.OBJ_BLOCK,
                 argument -> {
                         return new RenderOBJBlock(argument);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.OBJ_DOUBLE_VERTICAL_BLOCK,
+                argument -> {
+                        return new RenderOBJDoubleVerticalBlock(argument);
                 }
         );
 

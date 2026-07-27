@@ -55,6 +55,7 @@ import org.mtrus.block.BlockNYCSubwayStationNameTile1;
 import org.mtrus.block.BlockNYCSubwayStationNameTile2;
 import org.mtrus.block.BlockNYCSubwayCeiling;
 import org.mtrus.block.OBJBlock;
+import org.mtrus.block.OBJDoubleVerticalBlock;
 import org.mtrus.block.OBJFareGate;
 import org.mtrus.block.OBJTicketMachine;
 
@@ -1848,7 +1849,7 @@ public final class ModBlocks {
 
         DC_METRO_TRASH_CAN = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_trash_can"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_trash_can.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}})),
+                () -> new Block(new OBJDoubleVerticalBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_trash_can.obj", new double[][]{{0, 0, 0, 16, 16, 16}}, new double[][]{{0, 0, 0, 16, 16, 16}})),
                 ModCreativeModeTabs.MAIN
         );
 

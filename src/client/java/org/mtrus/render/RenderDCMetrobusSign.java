@@ -3,6 +3,7 @@ package org.mtrus.render;
 import java.util.ArrayList;
 
 import org.mtr.core.data.Platform;
+//import org.mtr.core.data.SimplifiedRoute;
 import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.BlockEntityRenderer;
 import org.mtr.mapping.mapper.GraphicsHolder;
@@ -17,8 +18,7 @@ import org.mtr.mod.render.StoredMatrixTransformations;
 import org.mtr.mod.data.IGui;
 import org.mtrus.MTRUSAddon;
 import org.mtrus.block.BlockDCMetrobusSignEntity;
-
-import com.lx862.mtrscripting.mod.impl.mtr.util.TextUtil;
+import org.mtrus.api.SimplifiedRouteSchemaExtension;
 
 public class RenderDCMetrobusSign extends BlockEntityRenderer<BlockDCMetrobusSignEntity> implements IGui {
 
@@ -51,7 +51,7 @@ public class RenderDCMetrobusSign extends BlockEntityRenderer<BlockDCMetrobusSig
 						platform[0] = platformFound;
 					});
                     
-            tempRouteNumbers = getPlatformRouteNames(platform[0]);
+            tempRouteNumbers = getPlatformRouteNumbers(platform[0]);
 
             tempRouteNumbers.sort(null);
 
@@ -147,12 +147,11 @@ public class RenderDCMetrobusSign extends BlockEntityRenderer<BlockDCMetrobusSig
         }
     }
 
+    protected static ArrayList<String> getPlatformRouteNumbers(Platform platform) {
+        final ArrayList<String> routeNumbers = new ArrayList<String>();
+        final ArrayList<String> terminatingNumbers = new ArrayList<String>();
 
-    protected static ArrayList<String> getPlatformRouteNames(Platform platform) {
-        final ArrayList<String> routeNames = new ArrayList<String>();
-        final ArrayList<String> terminatingNames = new ArrayList<String>();
-
-            final long platformId = platform.getId();
+        final long platformId = platform.getId();
 
         MinecraftClientData.getInstance().simplifiedRoutes.stream()
             .filter(route -> route.getPlatformIndex(platformId) >= 0)
@@ -160,23 +159,25 @@ public class RenderDCMetrobusSign extends BlockEntityRenderer<BlockDCMetrobusSig
             .forEach(route -> {
                 final int index = route.getPlatformIndex(platformId);
 
-                String routeName = TextUtil.getNonExtraParts(route.getName());
+                String routeNumber =
+                    ((SimplifiedRouteSchemaExtension) (Object) route)
+                        .mtrus$getRouteNumber();
 
                 if (index < route.getPlatforms().size() - 1) {
-                    if (!routeNames.contains(routeName)) {
-                        routeNames.add(routeName);
+                    if (!routeNumbers.contains(routeNumber)) {
+                        routeNumbers.add(routeNumber);
                     }
                 } else {
-                    if (!terminatingNames.contains(routeName)) {
-                        terminatingNames.add(routeName);
+                    if (!terminatingNumbers.contains(routeNumber)) {
+                        terminatingNumbers.add(routeNumber);
                     }
                 }
             });
 
-        if (routeNames.isEmpty()) {
-            routeNames.addAll(terminatingNames);
+        if (routeNumbers.isEmpty()) {
+            routeNumbers.addAll(terminatingNumbers);
         }
 
-        return routeNames;
+        return routeNumbers;
     }
 }

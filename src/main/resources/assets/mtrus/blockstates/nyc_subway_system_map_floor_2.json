@@ -1,8 +1,12 @@
 {
 	"variants": {
-		"facing=north": { "model": "mtrus:block/nyc_subway_system_map_floor_2", "y": 180 },
-		"facing=east": { "model": "mtrus:block/nyc_subway_system_map_floor_2", "y": 270 },
-		"facing=south": { "model": "mtrus:block/nyc_subway_system_map_floor_2" },
-		"facing=west": { "model": "mtrus:block/nyc_subway_system_map_floor_2", "y": 90 }
+		"facing=north,half=lower": { "model": "mtrus:block/nyc_subway_system_map_floor_2", "y": 180 },
+		"facing=east,half=lower": { "model": "mtrus:block/nyc_subway_system_map_floor_2", "y": 270 },
+		"facing=south,half=lower": { "model": "mtrus:block/nyc_subway_system_map_floor_2" },
+		"facing=west,half=lower": { "model": "mtrus:block/nyc_subway_system_map_floor_2", "y": 90 },
+		"facing=north,half=upper": { "model": "mtrus:block/empty", "y": 180 },
+		"facing=east,half=upper": { "model": "mtrus:block/empty", "y": 270 },
+		"facing=south,half=upper": { "model": "mtrus:block/empty" },
+		"facing=west,half=upper": { "model": "mtrus:block/empty", "y": 90 }
 	}
 }
