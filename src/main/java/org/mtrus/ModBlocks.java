@@ -1982,7 +1982,7 @@ public final class ModBlocks {
         DC_METRO_SYSTEM_MAP_WALL = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_system_map_wall"),
                 () -> new Block(new BlockDCMetroSystemMap(
-                                createDefaultBlockSettings(false).nonOpaque().data
+                                createDefaultBlockSettings(false).nonOpaque()
                         )),
                 ModCreativeModeTabs.MAIN
         );
@@ -1990,7 +1990,7 @@ public final class ModBlocks {
         DC_METRO_SYSTEM_MAP_FLOOR = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_system_map_floor"),
                 () -> new Block(new BlockDCMetroSystemMap(
-                                createDefaultBlockSettings(false).nonOpaque().data
+                                createDefaultBlockSettings(false).nonOpaque()
                         )),
                 ModCreativeModeTabs.MAIN
         );
@@ -1998,7 +1998,7 @@ public final class ModBlocks {
         DC_METRO_SYSTEM_MAP_FLOOR_2 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_system_map_floor_2"),
                 () -> new Block(new BlockDCMetroSystemMap2(
-                                createDefaultBlockSettings(false).nonOpaque().data
+                                createDefaultBlockSettings(false).nonOpaque()
                         )),
                 ModCreativeModeTabs.MAIN
         );
@@ -2309,7 +2309,7 @@ public final class ModBlocks {
         NYC_SUBWAY_SYSTEM_MAP_WALL = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_system_map_wall"),
                 () -> new Block(new BlockDCMetroSystemMap(
-                                createDefaultBlockSettings(false).nonOpaque().data
+                                createDefaultBlockSettings(false).nonOpaque()
                         )),
                 ModCreativeModeTabs.MAIN
         );
@@ -2317,7 +2317,7 @@ public final class ModBlocks {
         NYC_SUBWAY_SYSTEM_MAP_FLOOR = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_system_map_floor"),
                 () -> new Block(new BlockDCMetroSystemMap(
-                                createDefaultBlockSettings(false).nonOpaque().data
+                                createDefaultBlockSettings(false).nonOpaque()
                         )),
                 ModCreativeModeTabs.MAIN
         );
@@ -2325,7 +2325,7 @@ public final class ModBlocks {
         NYC_SUBWAY_SYSTEM_MAP_FLOOR_2 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_system_map_floor_2"),
                 () -> new Block(new BlockDCMetroSystemMap2(
-                                createDefaultBlockSettings(false).nonOpaque().data
+                                createDefaultBlockSettings(false).nonOpaque()
                         )),
                 ModCreativeModeTabs.MAIN
         );
