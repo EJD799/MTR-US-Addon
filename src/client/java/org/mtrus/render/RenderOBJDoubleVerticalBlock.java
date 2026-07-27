@@ -43,7 +43,7 @@ public class RenderOBJDoubleVerticalBlock extends BlockEntityRenderer<OBJDoubleV
         final BlockPos pos = entity.getPos2();
         final BlockState state = world.getBlockState(pos);
 
-        //if (IBlock.getStatePropertySafe(state, OBJDoubleVerticalBlock.HALF) == DoubleBlockHalf.LOWER) {
+        if (IBlock.getStatePropertySafe(state, OBJDoubleVerticalBlock.HALF) == DoubleBlockHalf.LOWER) {
 
             final Object blockObject = state.getBlock().data;
 
@@ -102,7 +102,7 @@ public class RenderOBJDoubleVerticalBlock extends BlockEntityRenderer<OBJDoubleV
                     }
             );
             
-        //}
+        }
     }
 
     @Override

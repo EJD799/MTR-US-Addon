@@ -127,7 +127,8 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 }
         );
 
-        registryClient.registerBlockEntityRenderer(ModBlockEntityTypes.OBJ_TICKET_MACHINE,
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.OBJ_TICKET_MACHINE,
                 argument -> {
                         return new RenderOBJTicketMachine(argument);
                 }

@@ -45,7 +45,7 @@ public class OBJDoubleVerticalBlock extends Vertical2Block implements BlockWithE
             BlockPos pos,
             org.mtr.mapping.holder.BlockState state
     ) {
-        return new OBJFareGateEntity(pos, state);
+        return new OBJDoubleVerticalBlockEntity(pos, state);
     }
 
     public String getModel() {
