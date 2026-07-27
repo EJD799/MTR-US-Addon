@@ -51,20 +51,4 @@ public class OBJDoubleVerticalBlock extends Vertical2Block implements BlockWithE
     public String getModel() {
         return model;
     }
-
-    /*@Override
-    public void addBlockProperties(List<HolderBase<?>> properties) {
-        properties.add(FACING);
-    }
-
-    @Override
-    public BlockState getPlacementState2(ItemPlacementContext ctx) {
-        Direction facing = ctx.getPlayerFacing().getOpposite();
-
-        return getDefaultState2()
-                .with(
-                        new Property<>(FACING.data),
-                        facing.data
-                );
-    }*/
 }

@@ -127,7 +127,7 @@ public class RenderDCMetrobusSign extends BlockEntityRenderer<BlockDCMetrobusSig
                             int row;
                             int column;
                             int routeIndex = routeNumbers.indexOf(routeNumber);
-                            if (routeIndex > 3) {
+                            if (routeIndex > 2) {
                                 row = 1;
                                 column = routeIndex - 3;
                             } else {
