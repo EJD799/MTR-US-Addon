@@ -114,9 +114,9 @@ public class RenderOBJFareGate extends BlockEntityRenderer<OBJFareGateEntity> {
             OptimizedModelWrapper modelLightTemp;
         
             if (open == EnumTicketBarrierOpen.OPEN || open == EnumTicketBarrierOpen.OPEN_CONCESSIONARY) {
-                modelLightTemp = OBJModelResource.getModel(block.getModel2());
+                modelLightTemp = OBJModelResource.getModel(block.getModel2().replace(".obj", "_light_layer.obj"));
             } else {
-                modelLightTemp = OBJModelResource.getModel(block.getModel1());
+                modelLightTemp = OBJModelResource.getModel(block.getModel1().replace(".obj", "_light_layer.obj"));
             }
 
             final OptimizedModelWrapper modelLight = modelLightTemp;
