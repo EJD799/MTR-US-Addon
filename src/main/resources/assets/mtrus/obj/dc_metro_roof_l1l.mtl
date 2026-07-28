@@ -1,8 +1,6 @@
-# Made in Blockbench 5.1.5
-newmtl m_76ba16bf-14fa-fd3d-ad5c-b899852a3bf6
+# Made in Blockbench 5.1.6
+newmtl m_d9b89aaa-89bb-3732-6e88-7e31effdedd6
 map_Kd gray_metal.png
-newmtl m_700ace31-c71b-29ff-aff3-655afd640216
+newmtl m_0de9a8eb-c727-ef30-d234-6c8fbe87bb18
 map_Kd tysons_peak.png
-newmtl m_3fd99b96-d6f4-6316-eba8-5a834cda1b22
-map_Kd gull_i_light.png
 newmtl none

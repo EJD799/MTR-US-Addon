@@ -1,0 +1,15 @@
+# Made in Blockbench 5.1.6
+mtllib dc_metrobus_roof_4l_light_layer.mtl
+
+o part4
+v 0.5 0.6875 0
+v -0.5 0.6875 0
+v 0.5 0.6875 0.0625
+v -0.5 0.6875 0.0625
+vt 0 0.875
+vt 1 0.875
+vt 1 0.9375
+vt 0 0.9375
+vn 0 -1 0
+usemtl m_85e2d5cc-8c38-8a40-010e-977834ae111d
+f 2/1/1 1/2/1 3/3/1 4/4/1
