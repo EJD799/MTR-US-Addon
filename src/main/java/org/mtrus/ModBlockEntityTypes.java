@@ -313,6 +313,10 @@ public final class ModBlockEntityTypes {
         OBJ_FARE_GATE = MTRUSAddon.registry.registerBlockEntityType(
                 new Identifier(MTRUSAddon.MOD_ID, "obj_fare_gate"),
                 OBJFareGateEntity::new,
+                ModBlocks.DC_METRO_FARE_GATE_1_ENTRANCE::get,
+                ModBlocks.DC_METRO_FARE_GATE_1_EXIT::get,
+                ModBlocks.DC_METRO_FARE_GATE_2_ENTRANCE::get,
+                ModBlocks.DC_METRO_FARE_GATE_2_EXIT::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_1_ENTRANCE::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_1_EXIT::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_2_ENTRANCE::get,

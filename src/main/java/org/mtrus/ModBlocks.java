@@ -22,7 +22,6 @@ import org.mtrus.block.BlockDCMetroLCDPIDS;
 import org.mtrus.block.BlockDCMetroLCDPIDSPole1;
 import org.mtrus.block.BlockDCMetroLCDPIDSPole2;
 import org.mtrus.block.BlockDCMetroLCDPIDSPole3;
-import org.mtrus.block.BlockDCMetroFareGate;
 import org.mtrus.block.FacingSlabBlock;
 import org.mtrus.block.BlockDCMetroStationNameWall;
 import org.mtrus.block.BlockDCMetroStationNameWallEnd;
@@ -1949,33 +1948,25 @@ public final class ModBlocks {
 
         DC_METRO_FARE_GATE_1_ENTRANCE = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_fare_gate_1_entrance"),
-                () -> new Block(new BlockDCMetroFareGate(
-                                true
-                        )),
+                () -> new Block(new OBJFareGate("mtrus:obj/dc_metro_fare_gate_1_entrance_closed.obj", "mtrus:obj/dc_metro_fare_gate_1_entrance_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         DC_METRO_FARE_GATE_1_EXIT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_fare_gate_1_exit"),
-                () -> new Block(new BlockDCMetroFareGate(
-                                false
-                        )),
+                () -> new Block(new OBJFareGate("mtrus:obj/dc_metro_fare_gate_1_exit_closed.obj", "mtrus:obj/dc_metro_fare_gate_1_exit_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 
         DC_METRO_FARE_GATE_2_ENTRANCE = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_fare_gate_2_entrance"),
-                () -> new Block(new BlockDCMetroFareGate(
-                                true
-                        )),
+                () -> new Block(new OBJFareGate("mtrus:obj/dc_metro_fare_gate_2_entrance_closed.obj", "mtrus:obj/dc_metro_fare_gate_2_entrance_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         DC_METRO_FARE_GATE_2_EXIT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_fare_gate_2_exit"),
-                () -> new Block(new BlockDCMetroFareGate(
-                                false
-                        )),
+                () -> new Block(new OBJFareGate("mtrus:obj/dc_metro_fare_gate_2_exit_closed.obj", "mtrus:obj/dc_metro_fare_gate_2_exit_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 
