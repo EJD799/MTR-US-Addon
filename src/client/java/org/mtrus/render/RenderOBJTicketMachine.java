@@ -102,6 +102,60 @@ public class RenderOBJTicketMachine extends BlockEntityRenderer<OBJTicketMachine
                     }
             );
 
+
+            if (block.getHasLightLayer()) {
+                final OptimizedModelWrapper modelLight = OBJModelResource.getModel(block.getModel().replace(".obj", "_light_layer.obj"));
+
+                if (modelLight == null) {
+                    return;
+                }
+
+                final StoredMatrixTransformations transformLight =
+                        new StoredMatrixTransformations(
+                                pos.getX() + 0.5,
+                                pos.getY(),
+                                pos.getZ() + 0.5
+                        );
+
+                MainRenderer.scheduleRender(
+                        QueuedRenderLayer.LIGHT_TRANSLUCENT,
+                        (graphicsHolderNew, offset) -> {
+
+                            transformLight.transform(graphicsHolderNew, offset);
+
+                            graphicsHolderNew.rotateXDegrees(180);
+
+                            Direction facing = IBlock.getStatePropertySafe(state, OBJTicketMachine.FACING);
+
+                            switch (facing) {
+                                case EAST:
+                                    graphicsHolderNew.rotateYDegrees(90);
+                                    break;
+
+                                case NORTH:
+                                    break;
+
+                                case WEST:
+                                    graphicsHolderNew.rotateYDegrees(270);
+                                    break;
+
+                                case SOUTH:
+                                default:
+                                    graphicsHolderNew.rotateYDegrees(180);
+                                    break;
+                            }
+
+                            CustomResourceLoader.OPTIMIZED_RENDERER_WRAPPER.queue(
+                                    modelLight,
+                                    graphicsHolderNew,
+                                    light
+                            );
+
+                            graphicsHolderNew.pop();
+                        }
+                );
+            }
+
         }
     }
 

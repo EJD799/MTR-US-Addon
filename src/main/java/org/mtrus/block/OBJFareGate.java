@@ -10,13 +10,15 @@ public class OBJFareGate extends BlockTicketBarrier implements BlockWithEntity {
     private final String model1;
     private final String model2;
     private final double[][] boxes;
+    private final boolean hasLightLayer;
 
-    public OBJFareGate(String model1, String model2, double[][] boxes, boolean isEntrance) {
+    public OBJFareGate(String model1, String model2, double[][] boxes, boolean isEntrance, boolean hasLightLayer) {
         super(isEntrance);
 
         this.model1 = model1;
         this.model2 = model2;
         this.boxes = boxes;
+        this.hasLightLayer = hasLightLayer;
     }
 
     @Override
@@ -46,5 +48,9 @@ public class OBJFareGate extends BlockTicketBarrier implements BlockWithEntity {
 
     public String getModel2() {
         return model2;
+    }
+
+    public Boolean getHasLightLayer() {
+        return hasLightLayer;
     }
 }

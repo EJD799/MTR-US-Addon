@@ -12,13 +12,15 @@ public class OBJDoubleVerticalBlock extends Vertical2Block implements BlockWithE
     private final String model;
     private final double[][] boxes1;
     private final double[][] boxes2;
+    private final boolean hasLightLayer;
 
-    public OBJDoubleVerticalBlock(BlockSettings blockSettings, String model, double[][] boxes1, double[][] boxes2) {
+    public OBJDoubleVerticalBlock(BlockSettings blockSettings, String model, double[][] boxes1, double[][] boxes2, boolean hasLightLayer) {
         super(blockSettings);
 
         this.model = model;
         this.boxes1 = boxes1;
         this.boxes2 = boxes2;
+        this.hasLightLayer = hasLightLayer;
     }
 
     public VoxelShape getOutlineShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
@@ -50,5 +52,9 @@ public class OBJDoubleVerticalBlock extends Vertical2Block implements BlockWithE
 
     public String getModel() {
         return model;
+    }
+
+    public boolean getHasLightLayer() {
+        return hasLightLayer;
     }
 }

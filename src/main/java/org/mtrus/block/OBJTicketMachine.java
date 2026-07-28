@@ -9,11 +9,13 @@ import org.mtr.mod.block.BlockTicketMachine;
 
 public class OBJTicketMachine extends BlockTicketMachine implements BlockWithEntity {
     private final String model;
+    private final boolean hasLightLayer;
 
-    public OBJTicketMachine(String model) {
+    public OBJTicketMachine(String model, boolean hasLightLayer) {
         super(createDefaultBlockSettings(false).nonOpaque());
 
         this.model = model;
+        this.hasLightLayer = hasLightLayer;
     }
 
     @Override
@@ -26,5 +28,9 @@ public class OBJTicketMachine extends BlockTicketMachine implements BlockWithEnt
 
     public String getModel() {
         return model;
+    }
+
+    public Boolean getHasLightLayer() {
+        return hasLightLayer;
     }
 }

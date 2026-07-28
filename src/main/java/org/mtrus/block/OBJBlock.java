@@ -20,16 +20,18 @@ public class OBJBlock extends Block implements IBlock, BlockWithEntity {
 
     private final String model;
     private final double[][] boxes;
+    private final boolean hasLightLayer;
 
     public static final DirectionProperty FACING =
             BlockStateProperties.HORIZONTAL_FACING;
 
 
-    public OBJBlock(BlockSettings settings, String model, int lightLevel, double[][] boxes) {
+    public OBJBlock(BlockSettings settings, String model, int lightLevel, double[][] boxes, boolean hasLightLayer) {
         super((BlockBehaviour.Properties) settings.data.lightLevel(state -> lightLevel));
 
         this.model = model;
         this.boxes = boxes;
+        this.hasLightLayer = hasLightLayer;
 
         registerDefaultState(
             defaultBlockState().setValue(FACING, Direction.NORTH)
@@ -79,6 +81,10 @@ public class OBJBlock extends Block implements IBlock, BlockWithEntity {
 
     public String getModel() {
         return model;
+    }
+
+    public boolean getHasLightLayer() {
+        return hasLightLayer;
     }
 
 

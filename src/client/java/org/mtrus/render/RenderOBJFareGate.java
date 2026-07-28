@@ -109,6 +109,67 @@ public class RenderOBJFareGate extends BlockEntityRenderer<OBJFareGateEntity> {
                     graphicsHolderNew.pop();
                 }
         );
+
+        if (block.getHasLightLayer()) {
+            OptimizedModelWrapper modelLightTemp;
+        
+            if (open == EnumTicketBarrierOpen.OPEN || open == EnumTicketBarrierOpen.OPEN_CONCESSIONARY) {
+                modelLightTemp = OBJModelResource.getModel(block.getModel2());
+            } else {
+                modelLightTemp = OBJModelResource.getModel(block.getModel1());
+            }
+
+            final OptimizedModelWrapper modelLight = modelLightTemp;
+
+            if (modelLight == null) {
+                return;
+            }
+
+            final StoredMatrixTransformations transformLight =
+                    new StoredMatrixTransformations(
+                            pos.getX() + 0.5,
+                            pos.getY(),
+                            pos.getZ() + 0.5
+                    );
+
+            MainRenderer.scheduleRender(
+                    QueuedRenderLayer.LIGHT_TRANSLUCENT,
+                    (graphicsHolderNew, offset) -> {
+
+                        transformLight.transform(graphicsHolderNew, offset);
+
+                        graphicsHolderNew.rotateXDegrees(180);
+
+                        Direction facing = IBlock.getStatePropertySafe(state, OBJFareGate.FACING);
+
+                        switch (facing) {
+                            case EAST:
+                                graphicsHolderNew.rotateYDegrees(270);
+                                break;
+
+                            case NORTH:
+                                graphicsHolderNew.rotateYDegrees(180);
+                                break;
+
+                            case WEST:
+                                graphicsHolderNew.rotateYDegrees(90);
+                                break;
+
+                            case SOUTH:
+                            default:
+                                break;
+                        }
+
+                        CustomResourceLoader.OPTIMIZED_RENDERER_WRAPPER.queue(
+                                modelLight,
+                                graphicsHolderNew,
+                                light
+                        );
+
+                        graphicsHolderNew.pop();
+                    }
+            );
+        }
     }
 
     @Override
