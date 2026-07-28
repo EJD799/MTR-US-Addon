@@ -418,6 +418,8 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_5;
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_6;
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_7;
+    public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_8;
+    public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_9;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2621,6 +2623,18 @@ public final class ModBlocks {
         NYC_SUBWAY_TICKET_MACHINE_7 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ticket_machine_7"),
                 () -> new Block(new OBJTicketMachine("mtrus:obj/nyc_subway_ticket_machine_7.obj")),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TICKET_MACHINE_8 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ticket_machine_8"),
+                () -> new Block(new OBJTicketMachine("mtrus:obj/nyc_subway_ticket_machine_8.obj")),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TICKET_MACHINE_9 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ticket_machine_9"),
+                () -> new Block(new OBJTicketMachine("mtrus:obj/nyc_subway_ticket_machine_9.obj")),
                 ModCreativeModeTabs.MAIN
         );
     }

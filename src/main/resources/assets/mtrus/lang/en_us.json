@@ -406,6 +406,8 @@
   "block.mtrus.nyc_subway_ticket_machine_5": "LIRR Subway Ticket Machine (Old)",
   "block.mtrus.nyc_subway_ticket_machine_6": "Metro-North Ticket Machine (New)",
   "block.mtrus.nyc_subway_ticket_machine_7": "Metro-North Ticket Machine (Old)",
+  "block.mtrus.nyc_subway_ticket_machine_8": "LIRR Ticket Machine (Old, Daily Tickets Only)",
+  "block.mtrus.nyc_subway_ticket_machine_9": "Metro-North Ticket Machine (Old, Daily Tickets Only)",
 
   "itemGroup.mtrus.main": "MTR US Addon"
 }
