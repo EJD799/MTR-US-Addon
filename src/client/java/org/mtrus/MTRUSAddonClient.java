@@ -103,6 +103,16 @@ public class MTRUSAddonClient implements ClientModInitializer {
         );
 
         BlockRenderLayerMap.INSTANCE.putBlock(
+                ModBlocks.DC_METRO_PSD_2_DOOR.get().data,
+                RenderType.cutout()
+        );
+
+        BlockRenderLayerMap.INSTANCE.putBlock(
+                ModBlocks.DC_METRO_PSD_2_GLASS.get().data,
+                RenderType.cutout()
+        );
+
+        BlockRenderLayerMap.INSTANCE.putBlock(
                 ModBlocks.DC_METROBUS_SIGN.get().data,
                 RenderType.cutout()
         );
