@@ -336,7 +336,12 @@ public final class ModBlockEntityTypes {
                 OBJTicketMachineEntity::new,
                 ModBlocks.DC_METRO_TICKET_MACHINE::get,
                 ModBlocks.NYC_SUBWAY_TICKET_MACHINE_1::get,
-                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_2::get
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_2::get,
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_3::get,
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_4::get,
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_5::get,
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_6::get,
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_7::get
         );
 
         DC_METRO_STATION_NAME_WALL = MTRUSAddon.registry.registerBlockEntityType(

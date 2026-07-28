@@ -401,6 +401,11 @@
   "block.mtrus.nyc_subway_platform_barrier_4c": "NYC Subway Platform Barrier (Style 4, Right)",
   "block.mtrus.nyc_subway_ticket_machine_1": "NYC Subway Ticket Machine (MetroCard)",
   "block.mtrus.nyc_subway_ticket_machine_2": "NYC Subway Ticket Machine (OMNY)",
+  "block.mtrus.nyc_subway_ticket_machine_3": "NYC Subway Ticket Machine (MetroCard Express)",
+  "block.mtrus.nyc_subway_ticket_machine_4": "LIRR Ticket Machine (New)",
+  "block.mtrus.nyc_subway_ticket_machine_5": "LIRR Subway Ticket Machine (Old)",
+  "block.mtrus.nyc_subway_ticket_machine_6": "Metro-North Ticket Machine (New)",
+  "block.mtrus.nyc_subway_ticket_machine_7": "Metro-North Ticket Machine (Old)",
 
   "itemGroup.mtrus.main": "MTR US Addon"
 }
