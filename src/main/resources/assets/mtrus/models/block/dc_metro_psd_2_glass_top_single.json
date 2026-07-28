@@ -1,7 +1,11 @@
 {
-	"format_version": "1.21.11",
 	"textures": {
-		"particle": "mtr:item/apg_glass"
+		"frontbottom": "jsblock:block/transparent",
+		"sidebottom": "jsblock:block/transparent",
+		"fronttop": "mtrus:block/dc_metro_psd_2_glass_single_top",
+		"sidetop": "mtrus:block/psd_2_side_light",
+		"sidetriangle": "mtrus:block/apg_side_triangle",
+		"particle": "mtrus:block/psd_2_side_light"
 	},
 	"elements": [
 		{
@@ -14,17 +18,6 @@
 				"south": {"uv": [2, 14, 4, 16], "texture": "#sidetop", "cullface": "south"},
 				"west": {"uv": [0, 0, 16, 16], "texture": "#fronttop"},
 				"up": {"uv": [0, 0, 0, 0], "texture": "#sidetop"}
-			}
-		},
-		{
-			"from": [4, 0, 0],
-			"to": [6, 16, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 0]},
-			"faces": {
-				"north": {"uv": [12, 0, 14, 16], "texture": "#sidebottom", "cullface": "north"},
-				"east": {"uv": [0, 0, 16, 16], "texture": "#frontbottom"},
-				"south": {"uv": [2, 0, 4, 16], "texture": "#sidebottom", "cullface": "south"},
-				"west": {"uv": [16, 0, 0, 16], "texture": "#frontbottom"}
 			}
 		},
 		{

@@ -18,6 +18,8 @@ import org.mtrus.block.BlockDCMetroNewLEDPIDSPole2;
 import org.mtrus.block.BlockDCMetroNewLEDPIDSPole3;
 import org.mtrus.block.BlockDCMetroPSDDoor;
 import org.mtrus.block.BlockDCMetroPSDGlass;
+import org.mtrus.block.BlockDCMetroPSD2Door;
+import org.mtrus.block.BlockDCMetroPSD2Glass;
 import org.mtrus.block.BlockDCMetroLCDPIDS;
 import org.mtrus.block.BlockDCMetroLCDPIDSPole1;
 import org.mtrus.block.BlockDCMetroLCDPIDSPole2;
@@ -317,6 +319,8 @@ public final class ModBlocks {
     public static BlockRegistryObject DC_METRO_SYSTEM_MAP_FLOOR_2;
     public static BlockRegistryObject DC_METRO_PSD_DOOR;
     public static BlockRegistryObject DC_METRO_PSD_GLASS;
+    public static BlockRegistryObject DC_METRO_PSD_2_DOOR;
+    public static BlockRegistryObject DC_METRO_PSD_2_GLASS;
     public static BlockRegistryObject DC_METROBUS_SIGN;
     public static BlockRegistryObject DC_METROBUS_SIGN_POLE;
     public static BlockRegistryObject DC_METROBUS_BENCH_1;
@@ -2009,6 +2013,16 @@ public final class ModBlocks {
         DC_METRO_PSD_GLASS = registry.registerBlock(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_psd_glass"),
                 () -> new Block(new BlockDCMetroPSDGlass())
+        );
+
+        DC_METRO_PSD_2_DOOR = registry.registerBlock(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_psd_2_door"),
+                () -> new Block(new BlockDCMetroPSD2Door())
+        );
+
+        DC_METRO_PSD_2_GLASS = registry.registerBlock(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_psd_2_glass"),
+                () -> new Block(new BlockDCMetroPSD2Glass())
         );
 
         DC_METROBUS_SIGN = registry.registerBlockWithBlockItem(

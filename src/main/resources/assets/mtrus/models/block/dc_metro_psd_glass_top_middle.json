@@ -3,7 +3,8 @@
 		"frontbottom": "jsblock:block/transparent",
 		"sidebottom": "jsblock:block/transparent",
 		"fronttop": "mtrus:block/dc_metro_psd_glass_single_top",
-		"sidetop": "mtrus:block/psd_side_light"
+		"sidetop": "mtrus:block/psd_side_light",
+		"particle": "mtrus:block/psd_side_light"
 	},
 	"elements": [
 		{

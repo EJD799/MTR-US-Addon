@@ -2,10 +2,10 @@
 	"textures": {
 		"fronttop": "jsblock:block/transparent",
 		"sidetop": "jsblock:block/transparent",
-		"frontbottom": "mtrus:block/dc_metro_psd_glass_bottom",
-		"sidebottom": "mtrus:block/psd_side_light",
+		"frontbottom": "mtrus:block/dc_metro_psd_2_glass_bottom",
+		"sidebottom": "mtrus:block/psd_2_side_light",
 		"sidetriangle": "jsblock:block/transparent",
-		"particle": "mtrus:block/psd_side_light"
+		"particle": "mtrus:block/psd_2_side_light"
 	},
 	"elements": [
 		{

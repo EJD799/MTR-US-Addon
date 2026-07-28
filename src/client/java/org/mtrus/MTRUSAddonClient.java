@@ -12,6 +12,8 @@ import java.io.Reader;
 import org.mtr.mapping.holder.MinecraftClient;
 import org.mtr.mapping.registry.RegistryClient;
 import org.mtr.mod.InitClient;
+import org.mtrus.block.BlockDCMetroPSDDoorEntity;
+import org.mtrus.block.BlockDCMetroPSD2DoorEntity;
 import org.mtrus.render.RenderPlatformLight;
 import org.mtrus.render.RenderOBJBlock;
 import org.mtrus.render.RenderOBJDoubleVerticalBlock;
@@ -23,9 +25,9 @@ import org.mtrus.render.RenderDCMetroStationPole;
 import org.mtrus.render.RenderDCMetroPlatformPole;
 import org.mtrus.render.RenderDCMetroLEDPIDS;
 import org.mtrus.render.RenderDCMetroNewLEDPIDS;
-import org.mtrus.block.BlockDCMetroPSDDoorEntity;
 import org.mtrus.render.RenderDCMetroLCDPIDS;
 import org.mtrus.render.RenderDCMetroPSDDoor;
+import org.mtrus.render.RenderDCMetroPSD2Door;
 import org.mtrus.render.RenderDCMetrobusSign;
 import org.mtrus.render.RenderDCMetrobusStationName;
 import org.mtrus.render.RenderDCMetrobusPIDS;
@@ -197,6 +199,13 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlockEntityTypes.DC_METRO_PSD_DOOR,
                 argument -> {
                         return new RenderDCMetroPSDDoor<BlockDCMetroPSDDoorEntity>(argument, 2);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.DC_METRO_PSD_2_DOOR,
+                argument -> {
+                        return new RenderDCMetroPSD2Door<BlockDCMetroPSD2DoorEntity>(argument, 2);
                 }
         );
 

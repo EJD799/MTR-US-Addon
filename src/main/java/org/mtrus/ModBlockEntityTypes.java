@@ -13,6 +13,8 @@ import org.mtrus.block.BlockDCMetroLEDPIDSEntity;
 import org.mtrus.block.BlockDCMetroNewLEDPIDSEntity;
 import org.mtrus.block.BlockDCMetroPSDDoorEntity;
 import org.mtrus.block.BlockDCMetroPSDGlassEntity;
+import org.mtrus.block.BlockDCMetroPSD2DoorEntity;
+import org.mtrus.block.BlockDCMetroPSD2GlassEntity;
 import org.mtrus.block.BlockDCMetroPlatformPoleEntity;
 import org.mtrus.block.BlockDCMetroStationNamePoleEntity;
 import org.mtrus.block.BlockDCMetroStationPoleEntity;
@@ -41,6 +43,8 @@ public final class ModBlockEntityTypes {
     public static BlockEntityTypeRegistryObject<BlockDCMetroLCDPIDSEntity> DC_METRO_LCD_PIDS = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroPSDDoorEntity> DC_METRO_PSD_DOOR = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroPSDGlassEntity> DC_METRO_PSD_GLASS = null;
+    public static BlockEntityTypeRegistryObject<BlockDCMetroPSD2DoorEntity> DC_METRO_PSD_2_DOOR = null;
+    public static BlockEntityTypeRegistryObject<BlockDCMetroPSD2GlassEntity> DC_METRO_PSD_2_GLASS = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetrobusSignEntity> DC_METROBUS_SIGN = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetrobusStationNameEntity> DC_METROBUS_STATION_NAME = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetrobusPIDSEntity> DC_METROBUS_PIDS = null;
@@ -402,6 +406,18 @@ public final class ModBlockEntityTypes {
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_psd_glass"),
                 BlockDCMetroPSDGlassEntity::new,
                 ModBlocks.DC_METRO_PSD_GLASS::get
+        );
+
+        DC_METRO_PSD_2_DOOR = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_psd_2_door"),
+                BlockDCMetroPSD2DoorEntity::new,
+                ModBlocks.DC_METRO_PSD_2_DOOR::get
+        );
+
+        DC_METRO_PSD_2_GLASS = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_psd_2_glass"),
+                BlockDCMetroPSD2GlassEntity::new,
+                ModBlocks.DC_METRO_PSD_2_GLASS::get
         );
 
         DC_METROBUS_SIGN = MTRUSAddon.registry.registerBlockEntityType(

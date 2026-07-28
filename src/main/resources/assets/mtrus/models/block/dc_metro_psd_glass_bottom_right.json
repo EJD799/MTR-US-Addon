@@ -4,7 +4,8 @@
 		"sidetop": "jsblock:block/transparent",
 		"frontbottom": "mtrus:block/dc_metro_psd_glass_bottom",
 		"sidebottom": "mtrus:block/psd_side_light",
-		"sidetriangle": "jsblock:block/transparent"
+		"sidetriangle": "jsblock:block/transparent",
+		"particle": "mtrus:block/psd_side_light"
 	},
 	"elements": [
 		{
