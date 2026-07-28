@@ -1,10 +1,8 @@
 # Made in Blockbench 5.1.6
-newmtl m_cc848337-1117-2431-01bb-14a6112a6e29
+newmtl m_b244a1d9-14ad-d2ea-cef7-b53f712ed174
 map_Kd light_metal.png
-newmtl m_5a211fce-2994-3cf4-1b29-cb1f19820ec8
+newmtl m_923188b2-791b-3b6b-fb74-d5d56651c300
 map_Kd gray_metal.png
-newmtl m_9022ee8c-f6d0-f518-f735-4e7b823601fe
+newmtl m_4ca23a5b-85ff-7c83-1bf4-9ae296f869f6
 map_Kd metal.png
-newmtl m_ae54e3b4-94b4-1c54-d390-e8b49a5583bb
-map_Kd white.png
 newmtl none
