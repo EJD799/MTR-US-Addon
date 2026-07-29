@@ -56,8 +56,8 @@ public class RenderDCMetroPSD2Door<T extends BlockDCMetroPSD2DoorEntity> extends
                     if (block.data instanceof BlockAPGGlass || block.data instanceof BlockAPGGlassEnd) {
                         MainRenderer.scheduleRender(new Identifier(String.format("mtrus:textures/block/dc_metro_psd_2_door_light_%s.png", open > 0 ? "on" : "off")), false, QueuedRenderLayer.LIGHT_TRANSLUCENT, (graphicsHolderNew, offset) -> {
                             storedMatrixTransformationsLight.transform(graphicsHolderNew, offset);
-                            graphicsHolderNew.translate(side ? -0.484375 : 0.515625, 1.05, 0.1);
-                            graphicsHolderNew.scale(0.5F, 3.5F, 1);
+                            graphicsHolderNew.translate(side ? -0.484375 : 0.515625, 1.25, 0.1);
+                            graphicsHolderNew.scale(0.5F, 4.3F, 1);
                             MODEL_APG_LIGHT.render(graphicsHolderNew, light, overlay, 1, 1, 1, 1);
                             graphicsHolderNew.pop();
                         });

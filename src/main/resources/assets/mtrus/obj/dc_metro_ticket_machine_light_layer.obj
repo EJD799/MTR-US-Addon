@@ -1,0 +1,15 @@
+# Made in Blockbench 5.1.6
+mtllib dc_metro_ticket_machine_light_layer.mtl
+
+o cube
+v 0.5 0 0.375
+v 0.5 1.75 0.375
+v -0.5 0 0.375
+v -0.5 1.75 0.375
+vt 0.1666666666666671 0
+vt 0.8333333333333334 0
+vt 0.8333333333333334 1
+vt 0.1666666666666671 1
+vn 0 0 1
+usemtl m_71336d05-73cd-63e2-e86e-db8714d67580
+f 3/1/1 1/2/1 2/3/1 4/4/1
