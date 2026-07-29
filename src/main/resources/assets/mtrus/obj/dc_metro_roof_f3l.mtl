@@ -1,10 +1,12 @@
 # Made in Blockbench 5.1.6
-newmtl m_941463d1-1fd6-17f1-84b5-6577c08d8b1b
+newmtl m_cb898af7-35ca-d09f-7c75-eb8a8a6bbdb8
 map_Kd alexandria_peak_side.png
-newmtl m_6ff78c2b-2d5b-fb74-3987-66bbc044e74a
+newmtl m_58faa65d-c04b-d747-70e2-d86303e8bdd7
 map_Kd light_metal.png
-newmtl m_47713cc5-e125-fcac-172c-b42239d5ad60
+newmtl m_8744b21b-c83f-cb5d-e3cc-220329375def
 map_Kd alexandria_peak_roof.png
-newmtl m_8cabf908-097c-ecbf-8317-98bd97c19ce8
+newmtl m_f5ec4f5f-0c48-49fd-3d47-c43bd5910a72
 map_Kd metal.png
+newmtl m_d71bbefa-d0a1-3c0f-e102-3a6427fed305
+map_Kd gull_i_light.png
 newmtl none

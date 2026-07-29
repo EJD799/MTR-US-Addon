@@ -92,7 +92,7 @@ public final class OBJModelResource {
 
             OptimizedModel.ShaderType shaderType =
                 modelPath.endsWith("_light_layer.obj")
-                    ? OptimizedModel.ShaderType.CUTOUT_GLOWING
+                    ? OptimizedModel.ShaderType.TRANSLUCENT_GLOWING
                     : OptimizedModel.ShaderType.CUTOUT;
 
             wrapper.addTransformation(
