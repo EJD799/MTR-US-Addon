@@ -57,6 +57,7 @@ import org.mtrus.block.BlockNYCSubwayStationNameTile2;
 import org.mtrus.block.BlockNYCSubwayCeiling;
 import org.mtrus.block.OBJBlock;
 import org.mtrus.block.OBJDoubleVerticalBlock;
+import org.mtrus.block.OBJTripleVerticalBlock;
 import org.mtrus.block.OBJFareGate;
 import org.mtrus.block.OBJTicketMachine;
 
@@ -424,6 +425,7 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_7;
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_8;
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_9;
+    public static BlockRegistryObject NYC_SUBWAY_HELP_POINT;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2649,6 +2651,12 @@ public final class ModBlocks {
         NYC_SUBWAY_TICKET_MACHINE_9 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ticket_machine_9"),
                 () -> new Block(new OBJTicketMachine("mtrus:obj/nyc_subway_ticket_machine_9.obj", true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_HELP_POINT = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_help_point"),
+                () -> new Block(new OBJTripleVerticalBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_help_point.obj", new double[][]{{6, 8, 11, 10, 16, 16}}, new double[][]{{6, 0, 11, 10, 16, 16}}, new double[][]{{6, 0, 11, 10, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
     }

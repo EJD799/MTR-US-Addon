@@ -17,6 +17,7 @@ import org.mtrus.block.BlockDCMetroPSD2DoorEntity;
 import org.mtrus.render.RenderPlatformLight;
 import org.mtrus.render.RenderOBJBlock;
 import org.mtrus.render.RenderOBJDoubleVerticalBlock;
+import org.mtrus.render.RenderOBJTripleVerticalBlock;
 import org.mtrus.render.RenderOBJFareGate;
 import org.mtrus.render.RenderOBJTicketMachine;
 import org.mtrus.render.RenderDCMetroStationNameWall;
@@ -139,6 +140,13 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlockEntityTypes.OBJ_DOUBLE_VERTICAL_BLOCK,
                 argument -> {
                         return new RenderOBJDoubleVerticalBlock(argument);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.OBJ_TRIPLE_VERTICAL_BLOCK,
+                argument -> {
+                        return new RenderOBJTripleVerticalBlock(argument);
                 }
         );
 

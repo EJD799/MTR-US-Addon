@@ -5,6 +5,7 @@ import org.mtr.mapping.registry.BlockEntityTypeRegistryObject;
 import org.mtrus.block.BlockPlatformLightEntity;
 import org.mtrus.block.OBJBlockEntity;
 import org.mtrus.block.OBJDoubleVerticalBlockEntity;
+import org.mtrus.block.OBJTripleVerticalBlockEntity;
 import org.mtrus.block.OBJFareGateEntity;
 import org.mtrus.block.OBJTicketMachineEntity;
 import org.mtrus.block.BlockDCMetroStationNameWallEntity;
@@ -32,6 +33,7 @@ public final class ModBlockEntityTypes {
     public static BlockEntityTypeRegistryObject<BlockPlatformLightEntity> PLATFORM_LIGHT = null;
     public static BlockEntityTypeRegistryObject<OBJBlockEntity> OBJ_BLOCK = null;
     public static BlockEntityTypeRegistryObject<OBJDoubleVerticalBlockEntity> OBJ_DOUBLE_VERTICAL_BLOCK = null;
+    public static BlockEntityTypeRegistryObject<OBJTripleVerticalBlockEntity> OBJ_TRIPLE_VERTICAL_BLOCK = null;
     public static BlockEntityTypeRegistryObject<OBJFareGateEntity> OBJ_FARE_GATE = null;
     public static BlockEntityTypeRegistryObject<OBJTicketMachineEntity> OBJ_TICKET_MACHINE = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNameWallEntity> DC_METRO_STATION_NAME_WALL = null;
@@ -312,6 +314,12 @@ public final class ModBlockEntityTypes {
                 new Identifier(MTRUSAddon.MOD_ID, "obj_double_vertical_block"),
                 OBJDoubleVerticalBlockEntity::new,
                 ModBlocks.DC_METRO_TRASH_CAN::get
+        );
+
+        OBJ_TRIPLE_VERTICAL_BLOCK = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "obj_triple_vertical_block"),
+                OBJTripleVerticalBlockEntity::new,
+                ModBlocks.NYC_SUBWAY_HELP_POINT::get
         );
 
         OBJ_FARE_GATE = MTRUSAddon.registry.registerBlockEntityType(

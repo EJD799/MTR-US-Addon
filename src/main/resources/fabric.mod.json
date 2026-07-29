@@ -8,9 +8,11 @@
 		"EJD799"
 	],
 	"contact": {
+		"homepage": "https://ejd799.github.io/MTRUSAddon-Website",
+		"issues": "https://github.com/EJD799/MTR-US-Addon/issues",
 		"sources": "https://github.com/EJD799/MTR-US-Addon"
 	},
-	"license": "GPL-3.0-or-later",
+	"license": "MIT",
 	"icon": "assets/mtrus/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -33,7 +35,8 @@
 	"custom": {
 		"modmenu": {
 			"links": {
-				"GitHub": "https://github.com/EJD799/MTR-US-Addon"
+				"Modrinth": "https://modrinth.com/mod/mtr-us-addon/",
+				"Discord": "https://discord.gg/Fu9kVrmHB9"
 			}
 		}
 	}
