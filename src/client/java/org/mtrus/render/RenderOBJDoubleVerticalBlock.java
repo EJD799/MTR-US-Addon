@@ -117,7 +117,7 @@ public class RenderOBJDoubleVerticalBlock extends BlockEntityRenderer<OBJDoubleV
                         );
 
                 MainRenderer.scheduleRender(
-                        QueuedRenderLayer.LIGHT_TRANSLUCENT,
+                        QueuedRenderLayer.LIGHT,
                         (graphicsHolderNew, offset) -> {
 
                             transformLight.transform(graphicsHolderNew, offset);

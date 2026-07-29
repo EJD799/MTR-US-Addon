@@ -118,7 +118,7 @@ public class RenderOBJTicketMachine extends BlockEntityRenderer<OBJTicketMachine
                         );
 
                 MainRenderer.scheduleRender(
-                        QueuedRenderLayer.LIGHT_TRANSLUCENT,
+                        QueuedRenderLayer.LIGHT,
                         (graphicsHolderNew, offset) -> {
 
                             transformLight.transform(graphicsHolderNew, offset);

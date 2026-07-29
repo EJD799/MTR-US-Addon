@@ -115,7 +115,7 @@ public class RenderOBJBlock extends BlockEntityRenderer<OBJBlockEntity> {
                     );
 
             MainRenderer.scheduleRender(
-                    QueuedRenderLayer.LIGHT_TRANSLUCENT,
+                    QueuedRenderLayer.LIGHT,
                     (graphicsHolderNew, offset) -> {
 
                         transformLight.transform(graphicsHolderNew, offset);

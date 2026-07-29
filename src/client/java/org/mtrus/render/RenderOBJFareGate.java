@@ -133,7 +133,7 @@ public class RenderOBJFareGate extends BlockEntityRenderer<OBJFareGateEntity> {
                     );
 
             MainRenderer.scheduleRender(
-                    QueuedRenderLayer.LIGHT_TRANSLUCENT,
+                    QueuedRenderLayer.LIGHT,
                     (graphicsHolderNew, offset) -> {
 
                         transformLight.transform(graphicsHolderNew, offset);
