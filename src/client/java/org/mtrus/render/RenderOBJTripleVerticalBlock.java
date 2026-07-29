@@ -75,19 +75,19 @@ public class RenderOBJTripleVerticalBlock extends BlockEntityRenderer<OBJTripleV
 
                         switch (facing) {
                             case EAST:
-                                graphicsHolderNew.rotateYDegrees(270);
+                                graphicsHolderNew.rotateYDegrees(90);
                                 break;
 
                             case NORTH:
-                                graphicsHolderNew.rotateYDegrees(180);
                                 break;
 
                             case WEST:
-                                graphicsHolderNew.rotateYDegrees(90);
+                                graphicsHolderNew.rotateYDegrees(270);
                                 break;
 
                             case SOUTH:
                             default:
+                                graphicsHolderNew.rotateYDegrees(180);
                                 break;
                         }
 
@@ -127,19 +127,19 @@ public class RenderOBJTripleVerticalBlock extends BlockEntityRenderer<OBJTripleV
 
                             switch (facing) {
                                 case EAST:
-                                    graphicsHolderNew.rotateYDegrees(270);
+                                    graphicsHolderNew.rotateYDegrees(90);
                                     break;
 
                                 case NORTH:
-                                    graphicsHolderNew.rotateYDegrees(180);
                                     break;
 
                                 case WEST:
-                                    graphicsHolderNew.rotateYDegrees(90);
+                                    graphicsHolderNew.rotateYDegrees(270);
                                     break;
 
                                 case SOUTH:
                                 default:
+                                    graphicsHolderNew.rotateYDegrees(180);
                                     break;
                             }
 

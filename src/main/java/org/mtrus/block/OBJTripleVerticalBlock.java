@@ -50,7 +50,7 @@ public class OBJTripleVerticalBlock extends Vertical3Block implements BlockWithE
             BlockPos pos,
             org.mtr.mapping.holder.BlockState state
     ) {
-        return new OBJDoubleVerticalBlockEntity(pos, state);
+        return new OBJTripleVerticalBlockEntity(pos, state);
     }
 
     public String getModel() {

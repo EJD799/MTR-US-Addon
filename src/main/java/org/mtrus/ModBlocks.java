@@ -2656,7 +2656,7 @@ public final class ModBlocks {
 
         NYC_SUBWAY_HELP_POINT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_help_point"),
-                () -> new Block(new OBJTripleVerticalBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_help_point.obj", new double[][]{{6, 8, 11, 10, 16, 16}}, new double[][]{{6, 0, 11, 10, 16, 16}}, new double[][]{{6, 0, 11, 10, 16, 16}}, true)),
+                () -> new Block(new OBJTripleVerticalBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_help_point.obj", new double[][]{{6, 8, 0, 10, 16, 5}}, new double[][]{{6, 0, 0, 10, 16, 5}}, new double[][]{{6, 0, 0, 10, 16, 5}}, true)),
                 ModCreativeModeTabs.MAIN
         );
     }
