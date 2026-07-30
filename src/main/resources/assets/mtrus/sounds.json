@@ -3,7 +3,8 @@
         "sounds": [
             {
                 "name": "mtrus:dc_metro_fare_gate",
-                "pitch": 1
+                "pitch": 1,
+                "volume": 10
             }
         ]
     },
@@ -11,7 +12,8 @@
         "sounds": [
             {
                 "name": "mtrus:nyc_subway_turnstile_entrance",
-                "pitch": 1
+                "pitch": 1,
+                "volume": 1.4
             }
         ]
     },
@@ -19,7 +21,8 @@
         "sounds": [
             {
                 "name": "mtrus:nyc_subway_turnstile_exit",
-                "pitch": 1
+                "pitch": 1,
+                "volume": 1.4
             }
         ]
     },
@@ -27,7 +30,8 @@
         "sounds": [
             {
                 "name": "mtrus:nyc_subway_fare_gate",
-                "pitch": 1
+                "pitch": 1,
+                "volume": 9
             }
         ]
     }
