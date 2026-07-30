@@ -2,7 +2,7 @@
     "dc_metro_fare_gate": {
         "sounds": [
             {
-                "name": "mtr:dc_metro_fare_gate",
+                "name": "mtrus:dc_metro_fare_gate",
                 "pitch": 1
             }
         ]
@@ -10,7 +10,7 @@
     "nyc_subway_turnstile_entrance": {
         "sounds": [
             {
-                "name": "mtr:nyc_subway_turnstile_entrance",
+                "name": "mtrus:nyc_subway_turnstile_entrance",
                 "pitch": 1
             }
         ]
@@ -18,7 +18,7 @@
     "nyc_subway_turnstile_exit": {
         "sounds": [
             {
-                "name": "mtr:nyc_subway_turnstile_exit",
+                "name": "mtrus:nyc_subway_turnstile_exit",
                 "pitch": 1
             }
         ]
@@ -26,7 +26,7 @@
     "nyc_subway_fare_gate": {
         "sounds": [
             {
-                "name": "mtr:nyc_subway_fare_gate",
+                "name": "mtrus:nyc_subway_fare_gate",
                 "pitch": 1
             }
         ]
