@@ -426,6 +426,9 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_8;
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_9;
     public static BlockRegistryObject NYC_SUBWAY_HELP_POINT;
+    public static BlockRegistryObject NYC_SUBWAY_BRICK_WALL_1;
+    public static BlockRegistryObject NYC_SUBWAY_BRICK_WALL_2;
+    public static BlockRegistryObject NYC_SUBWAY_BRICK_WALL_3;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2657,6 +2660,24 @@ public final class ModBlocks {
         NYC_SUBWAY_HELP_POINT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_help_point"),
                 () -> new Block(new OBJTripleVerticalBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_help_point.obj", new double[][]{{6, 6, 0, 10, 16, 5}}, new double[][]{{6, 0, 0, 10, 16, 5}}, new double[][]{{6, 0, 0, 10, 14, 5}}, true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BRICK_WALL_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_brick_wall_1"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BRICK_WALL_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_brick_wall_2"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_BRICK_WALL_3 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_brick_wall_3"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
                 ModCreativeModeTabs.MAIN
         );
     }

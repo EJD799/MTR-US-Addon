@@ -1,0 +1,8 @@
+{
+    "parent": "block/cube_bottom_top",
+    "textures": {
+        "bottom": "mtrus:block/nyc_subway_brick_wall_1",
+        "top": "mtrus:block/concrete",
+        "side": "mtrus:block/nyc_subway_brick_wall_2"
+    }
+}
