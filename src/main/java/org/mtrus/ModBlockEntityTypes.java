@@ -85,6 +85,7 @@ public final class ModBlockEntityTypes {
                 ModBlocks.DC_METRO_ARCH_A11::get,
                 ModBlocks.DC_METRO_ARCH_A12::get,
                 ModBlocks.DC_METRO_ARCH_A13::get,
+                ModBlocks.DC_METRO_ARCH_CORNER::get,
                 ModBlocks.DC_METRO_ARCH_B1::get,
                 ModBlocks.DC_METRO_ARCH_B2::get,
                 ModBlocks.DC_METRO_ARCH_B3::get,
