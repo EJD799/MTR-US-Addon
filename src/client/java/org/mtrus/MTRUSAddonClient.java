@@ -15,6 +15,7 @@ import org.mtr.mod.InitClient;
 import org.mtrus.block.BlockDCMetroPSDDoorEntity;
 import org.mtrus.block.BlockDCMetroPSD2DoorEntity;
 import org.mtrus.render.RenderPlatformLight;
+import org.mtrus.render.RenderSeatEntity;
 import org.mtrus.render.RenderOBJBlock;
 import org.mtrus.render.RenderOBJDoubleVerticalBlock;
 import org.mtrus.render.RenderOBJTripleVerticalBlock;
@@ -285,6 +286,17 @@ public class MTRUSAddonClient implements ClientModInitializer {
         );
 
         /*
+          REGISTER ENTITY RENDERERS
+        */
+
+        registryClient.registerEntityRenderer(
+                ModEntityTypes.SEAT,
+                argument -> {
+                        return new RenderSeatEntity(argument);
+                }
+        );
+
+        /*
           REGISTER STATION COLORED BLOCKS
         */
 
@@ -295,7 +307,6 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlocks.NYC_SUBWAY_WALL_TILE_7,
                 ModBlocks.NYC_SUBWAY_STATION_NAME_TILE_1
         );
-
 
         /*
           REGISTER RESOURCE PACK WARNING SCREEN
