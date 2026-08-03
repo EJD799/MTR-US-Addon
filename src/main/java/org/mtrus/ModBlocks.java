@@ -96,6 +96,7 @@ public final class ModBlocks {
     public static BlockRegistryObject DC_METRO_ARCH_A11;
     public static BlockRegistryObject DC_METRO_ARCH_A12;
     public static BlockRegistryObject DC_METRO_ARCH_A13;
+    public static BlockRegistryObject DC_METRO_ARCH_CORNER;
     public static BlockRegistryObject DC_METRO_ARCH_B1;
     public static BlockRegistryObject DC_METRO_ARCH_B2;
     public static BlockRegistryObject DC_METRO_ARCH_B3;
@@ -623,6 +624,12 @@ public final class ModBlocks {
         DC_METRO_ARCH_A13 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_arch_a13"),
                 () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_arch_a13.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_ARCH_CORNER = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_arch_corner"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_arch_corner.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 
