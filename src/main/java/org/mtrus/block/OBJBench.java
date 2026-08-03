@@ -1,6 +1,8 @@
 package org.mtrus.block;
 
 import net.minecraft.core.Direction;
+import net.minecraft.server.TickTask;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
@@ -209,27 +211,34 @@ public class OBJBench extends Block implements IBlock, BlockWithEntity {
         );
 
 
-        Direction facing = state.getValue(FACING);
+        //Direction facing = state.getValue(FACING);
 
         double x = pos.getX() + 0.5;
-        double y = pos.getY() + 0.45;
+        double y = pos.getY() + 0.55;
         double z = pos.getZ() + 0.5;
 
 
         // Adjust this depending on your bench model
-        switch (facing) {
+        /*switch (facing) {
             case NORTH -> z += 0.15;
             case SOUTH -> z -= 0.15;
             case EAST -> x -= 0.15;
             case WEST -> x += 0.15;
-        }
+        }*/
 
 
         seat.setPos(x, y, z);
 
         level.addFreshEntity(seat);
 
-        player.startRiding(seat);
+        if (level instanceof ServerLevel serverLevel) {
+            serverLevel.getServer().tell(
+                new TickTask(
+                    serverLevel.getServer().getTickCount() + 1,
+                    () -> player.startRiding(seat)
+                )
+            );
+        }
 
 
         return InteractionResult.CONSUME;
