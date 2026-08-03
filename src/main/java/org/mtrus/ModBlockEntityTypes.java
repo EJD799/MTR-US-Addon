@@ -8,6 +8,7 @@ import org.mtrus.block.OBJDoubleVerticalBlockEntity;
 import org.mtrus.block.OBJTripleVerticalBlockEntity;
 import org.mtrus.block.OBJFareGateEntity;
 import org.mtrus.block.OBJTicketMachineEntity;
+import org.mtrus.block.OBJBenchEntity;
 import org.mtrus.block.BlockDCMetroStationNameWallEntity;
 import org.mtrus.block.BlockDCMetroLCDPIDSEntity;
 import org.mtrus.block.BlockDCMetroLEDPIDSEntity;
@@ -36,6 +37,7 @@ public final class ModBlockEntityTypes {
     public static BlockEntityTypeRegistryObject<OBJTripleVerticalBlockEntity> OBJ_TRIPLE_VERTICAL_BLOCK = null;
     public static BlockEntityTypeRegistryObject<OBJFareGateEntity> OBJ_FARE_GATE = null;
     public static BlockEntityTypeRegistryObject<OBJTicketMachineEntity> OBJ_TICKET_MACHINE = null;
+    public static BlockEntityTypeRegistryObject<OBJBenchEntity> OBJ_BENCH = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNameWallEntity> DC_METRO_STATION_NAME_WALL = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNamePoleEntity> DC_METRO_STATION_NAME_POLE = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationPoleEntity> DC_METRO_STATION_POLE = null;
@@ -252,13 +254,8 @@ public final class ModBlockEntityTypes {
                 ModBlocks.DC_METRO_FENCE_110::get,
                 ModBlocks.DC_METRO_FENCE_200::get,
                 ModBlocks.DC_METRO_FENCE_210::get,
-                ModBlocks.DC_METRO_BENCH_1::get,
-                ModBlocks.DC_METRO_BENCH_2::get,
                 ModBlocks.DC_METRO_PLATFORM_POLE_LIGHT_2::get,
                 ModBlocks.DC_METRO_PLATFORM_POLE_LIGHT_2_D::get,
-                ModBlocks.DC_METROBUS_BENCH_1::get,
-                ModBlocks.DC_METROBUS_BENCH_2::get,
-                ModBlocks.DC_METROBUS_BENCH_3::get,
                 ModBlocks.DC_METROBUS_WALL_1::get,
                 ModBlocks.DC_METROBUS_WALL_2::get,
                 ModBlocks.DC_METROBUS_WALL_3::get,
@@ -292,18 +289,6 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_4A::get,
                 ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_4B::get,
                 ModBlocks.NYC_SUBWAY_PLATFORM_BARRIER_4C::get,
-                ModBlocks.NYC_SUBWAY_BENCH_1A::get,
-                ModBlocks.NYC_SUBWAY_BENCH_1B::get,
-                ModBlocks.NYC_SUBWAY_BENCH_1C::get,
-                ModBlocks.NYC_SUBWAY_BENCH_2A::get,
-                ModBlocks.NYC_SUBWAY_BENCH_2B::get,
-                ModBlocks.NYC_SUBWAY_BENCH_2C::get,
-                ModBlocks.NYC_SUBWAY_BENCH_3A::get,
-                ModBlocks.NYC_SUBWAY_BENCH_3B::get,
-                ModBlocks.NYC_SUBWAY_BENCH_3C::get,
-                ModBlocks.NYC_SUBWAY_BENCH_4A::get,
-                ModBlocks.NYC_SUBWAY_BENCH_4B::get,
-                ModBlocks.NYC_SUBWAY_BENCH_4C::get,
                 ModBlocks.NYC_SUBWAY_PLATFORM_LIGHT::get,
                 ModBlocks.NYC_SUBWAY_TRACK_POLE_1::get,
                 ModBlocks.NYC_SUBWAY_TRACK_POLE_2::get,
@@ -313,7 +298,8 @@ public final class ModBlockEntityTypes {
         OBJ_DOUBLE_VERTICAL_BLOCK = MTRUSAddon.registry.registerBlockEntityType(
                 new Identifier(MTRUSAddon.MOD_ID, "obj_double_vertical_block"),
                 OBJDoubleVerticalBlockEntity::new,
-                ModBlocks.DC_METRO_TRASH_CAN::get
+                ModBlocks.DC_METRO_TRASH_CAN::get,
+                ModBlocks.NYC_SUBWAY_HELP_POINT_2::get
         );
 
         OBJ_TRIPLE_VERTICAL_BLOCK = MTRUSAddon.registry.registerBlockEntityType(
@@ -356,6 +342,28 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_TICKET_MACHINE_7::get,
                 ModBlocks.NYC_SUBWAY_TICKET_MACHINE_8::get,
                 ModBlocks.NYC_SUBWAY_TICKET_MACHINE_9::get
+        );
+
+        OBJ_BENCH = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "obj_bench"),
+                OBJBenchEntity::new,
+                ModBlocks.DC_METRO_BENCH_1::get,
+                ModBlocks.DC_METRO_BENCH_2::get,
+                ModBlocks.DC_METROBUS_BENCH_1::get,
+                ModBlocks.DC_METROBUS_BENCH_2::get,
+                ModBlocks.DC_METROBUS_BENCH_3::get,
+                ModBlocks.NYC_SUBWAY_BENCH_1A::get,
+                ModBlocks.NYC_SUBWAY_BENCH_1B::get,
+                ModBlocks.NYC_SUBWAY_BENCH_1C::get,
+                ModBlocks.NYC_SUBWAY_BENCH_2A::get,
+                ModBlocks.NYC_SUBWAY_BENCH_2B::get,
+                ModBlocks.NYC_SUBWAY_BENCH_2C::get,
+                ModBlocks.NYC_SUBWAY_BENCH_3A::get,
+                ModBlocks.NYC_SUBWAY_BENCH_3B::get,
+                ModBlocks.NYC_SUBWAY_BENCH_3C::get,
+                ModBlocks.NYC_SUBWAY_BENCH_4A::get,
+                ModBlocks.NYC_SUBWAY_BENCH_4B::get,
+                ModBlocks.NYC_SUBWAY_BENCH_4C::get
         );
 
         DC_METRO_STATION_NAME_WALL = MTRUSAddon.registry.registerBlockEntityType(

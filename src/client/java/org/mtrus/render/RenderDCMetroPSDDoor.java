@@ -19,7 +19,7 @@ public class RenderDCMetroPSDDoor<T extends BlockDCMetroPSDDoorEntity> extends B
     private static final ModelAPGDoorBottom MODEL_APG_BOTTOM = new ModelAPGDoorBottom();
     private static final ModelAPGDoorLight MODEL_APG_LIGHT = new ModelAPGDoorLight();
     private static final ModelSingleCube MODEL_DOOR_EDGE = new ModelSingleCube(16, 16, 1, 0, 0, 6, 32, 6);
-    private static final ModelSingleCube MODEL_APG_DOOR_LOCKED = new ModelSingleCube(64, 96, 5, 9, 1, 6, 6, 0);
+    private static final ModelSingleCube MODEL_APG_DOOR_LOCKED = new ModelSingleCube(6, 6, 5, 9, 1, 6, 6, 0);
     
     @SuppressWarnings("deprecation")
     public RenderDCMetroPSDDoor(Argument dispatcher, int type) {

@@ -20,6 +20,7 @@ import org.mtrus.render.RenderOBJDoubleVerticalBlock;
 import org.mtrus.render.RenderOBJTripleVerticalBlock;
 import org.mtrus.render.RenderOBJFareGate;
 import org.mtrus.render.RenderOBJTicketMachine;
+import org.mtrus.render.RenderOBJBench;
 import org.mtrus.render.RenderDCMetroStationNameWall;
 import org.mtrus.render.RenderDCMetroStationNamePole;
 import org.mtrus.render.RenderDCMetroStationPole;
@@ -161,6 +162,13 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlockEntityTypes.OBJ_TICKET_MACHINE,
                 argument -> {
                         return new RenderOBJTicketMachine(argument);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.OBJ_BENCH,
+                argument -> {
+                        return new RenderOBJBench(argument);
                 }
         );
 

@@ -22,6 +22,8 @@ public class MTRUSAddon implements ModInitializer {
         ModBlocks.registerModBlocks(registry);
         ModItems.registerModItems(registry);
         ModBlockEntityTypes.registerBlockEntityTypes();
+        ModEntityTypes.registerEntityTypes(registry);
+
         ModSoundEvents.init();
 
         registry.init();
