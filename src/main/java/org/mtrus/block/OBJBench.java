@@ -1,8 +1,6 @@
 package org.mtrus.block;
 
 import net.minecraft.core.Direction;
-import net.minecraft.server.TickTask;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
@@ -178,7 +176,6 @@ public class OBJBench extends Block implements IBlock, BlockWithEntity {
 
 
 
-    @SuppressWarnings("incomplete-switch")
     @Override
     public InteractionResult use(
             BlockState state,
@@ -231,14 +228,7 @@ public class OBJBench extends Block implements IBlock, BlockWithEntity {
 
         level.addFreshEntity(seat);
 
-        if (level instanceof ServerLevel serverLevel) {
-            serverLevel.getServer().tell(
-                new TickTask(
-                    serverLevel.getServer().getTickCount() + 1,
-                    () -> player.startRiding(seat)
-                )
-            );
-        }
+        player.startRiding(seat, true);
 
 
         return InteractionResult.CONSUME;

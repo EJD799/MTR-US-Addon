@@ -10,13 +10,19 @@ public class SeatEntity extends EntityExtension {
         super(type, world);
     }
 
+    private int lifetime = 0;
+
     @Override
     public void tick2() {
         super.tick2();
 
-        // Remove when nobody is sitting
         if (getPassengers().isEmpty()) {
-            discard();
+            lifetime++;
+            if (lifetime > 20) { // 1 second
+                discard();
+            }
+        } else {
+            lifetime = 0;
         }
     }
 
