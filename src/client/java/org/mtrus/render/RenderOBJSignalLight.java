@@ -155,7 +155,7 @@ public class RenderOBJSignalLight extends BlockEntityRenderer<OBJSignalLightEnti
 
 				OptimizedModelWrapper lightModelTemp;
 
-				if (occupiedAspect == 1) {
+				if (occupiedAspect == 1 || (occupiedAspect == 2 && aspects == 2)) {
 					lightModelTemp = OBJModelResource.getModel(block.getModelLight2(), true);
 				} else if (occupiedAspect == 2) {
 					lightModelTemp = OBJModelResource.getModel(block.getModelLight3(), true);
