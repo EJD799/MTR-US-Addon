@@ -54,9 +54,9 @@ public class RenderOBJFareGate extends BlockEntityRenderer<OBJFareGateEntity> {
         OptimizedModelWrapper modelTemp;
         
         if (open == EnumTicketBarrierOpen.OPEN || open == EnumTicketBarrierOpen.OPEN_CONCESSIONARY) {
-            modelTemp = OBJModelResource.getModel(block.getModel2());
+            modelTemp = OBJModelResource.getModel(block.getModel2(), false);
         } else {
-            modelTemp = OBJModelResource.getModel(block.getModel1());
+            modelTemp = OBJModelResource.getModel(block.getModel1(), false);
         }
 
         final OptimizedModelWrapper model = modelTemp;
@@ -114,9 +114,9 @@ public class RenderOBJFareGate extends BlockEntityRenderer<OBJFareGateEntity> {
             OptimizedModelWrapper modelLightTemp;
         
             if (open == EnumTicketBarrierOpen.OPEN || open == EnumTicketBarrierOpen.OPEN_CONCESSIONARY) {
-                modelLightTemp = OBJModelResource.getModel(block.getModel2().replace(".obj", "_light_layer.obj"));
+                modelLightTemp = OBJModelResource.getModel(block.getModel2().replace(".obj", "_light_layer.obj"), true);
             } else {
-                modelLightTemp = OBJModelResource.getModel(block.getModel1().replace(".obj", "_light_layer.obj"));
+                modelLightTemp = OBJModelResource.getModel(block.getModel1().replace(".obj", "_light_layer.obj"), true);
             }
 
             final OptimizedModelWrapper modelLight = modelLightTemp;

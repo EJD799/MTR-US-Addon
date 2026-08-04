@@ -51,7 +51,7 @@ public class RenderOBJDoubleVerticalBlock extends BlockEntityRenderer<OBJDoubleV
                 return;
             }
 
-            final OptimizedModelWrapper model = OBJModelResource.getModel(block.getModel());
+            final OptimizedModelWrapper model = OBJModelResource.getModel(block.getModel(), false);
 
             if (model == null) {
                 return;
@@ -103,7 +103,7 @@ public class RenderOBJDoubleVerticalBlock extends BlockEntityRenderer<OBJDoubleV
             );
 
             if (block.getHasLightLayer()) {
-                final OptimizedModelWrapper modelLight = OBJModelResource.getModel(block.getModel().replace(".obj", "_light_layer.obj"));
+                final OptimizedModelWrapper modelLight = OBJModelResource.getModel(block.getModel().replace(".obj", "_light_layer.obj"), true);
 
                 if (modelLight == null) {
                     return;

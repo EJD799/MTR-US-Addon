@@ -25,16 +25,16 @@ public final class OBJModelResource {
     private static final Map<String, OptimizedModelWrapper> MODELS = new HashMap<>();
 
 
-    public static OptimizedModelWrapper getModel(String modelPath) {
+    public static OptimizedModelWrapper getModel(String modelPath, boolean isLightLayer) {
 
         return MODELS.computeIfAbsent(
                 modelPath,
-                OBJModelResource::loadModel
+                path -> loadModel(path, isLightLayer)
         );
     }
 
 
-    private static OptimizedModelWrapper loadModel(String modelPath) {
+    private static OptimizedModelWrapper loadModel(String modelPath, boolean isLightLayer) {
 
         CustomResourceLoader.OPTIMIZED_RENDERER_WRAPPER.beginReload();
 
@@ -91,7 +91,8 @@ public final class OBJModelResource {
                     new OptimizedModelWrapper.ObjModelWrapper(model);
 
             OptimizedModel.ShaderType shaderType =
-                modelPath.endsWith("_light_layer.obj")
+                //modelPath.endsWith("_light_layer.obj")
+                isLightLayer
                     ? OptimizedModel.ShaderType.TRANSLUCENT_GLOWING
                     : OptimizedModel.ShaderType.CUTOUT;
 

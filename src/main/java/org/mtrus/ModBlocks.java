@@ -61,6 +61,7 @@ import org.mtrus.block.OBJTripleVerticalBlock;
 import org.mtrus.block.OBJFareGate;
 import org.mtrus.block.OBJTicketMachine;
 import org.mtrus.block.OBJBench;
+import org.mtrus.block.OBJSignalLight;
 
 import static org.mtr.mod.Blocks.createDefaultBlockSettings;
 
@@ -324,6 +325,11 @@ public final class ModBlocks {
     public static BlockRegistryObject DC_METRO_PSD_GLASS;
     public static BlockRegistryObject DC_METRO_PSD_2_DOOR;
     public static BlockRegistryObject DC_METRO_PSD_2_GLASS;
+    public static BlockRegistryObject DC_METRO_PLATFORM_END_FENCE;
+    public static BlockRegistryObject DC_METRO_SIGNAL_LIGHT_1;
+    public static BlockRegistryObject DC_METRO_SIGNAL_LIGHT_1_POLE;
+    public static BlockRegistryObject DC_METRO_SIGNAL_LIGHT_2;
+    public static BlockRegistryObject DC_METRO_SIGNAL_LIGHT_3;
     public static BlockRegistryObject DC_METROBUS_SIGN;
     public static BlockRegistryObject DC_METROBUS_SIGN_POLE;
     public static BlockRegistryObject DC_METROBUS_BENCH_1;
@@ -2037,6 +2043,36 @@ public final class ModBlocks {
         DC_METRO_PSD_2_GLASS = registry.registerBlock(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_psd_2_glass"),
                 () -> new Block(new BlockDCMetroPSD2Glass())
+        );
+
+        DC_METRO_PLATFORM_END_FENCE = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_platform_end_fence"),
+                () -> new Block(new OBJDoubleVerticalBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_platform_end_fence.obj", new double[][]{{0, 0, 15, 16, 16, 16}}, new double[][]{{0, 0, 15, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_SIGNAL_LIGHT_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_signal_light_1"),
+                () -> new Block(new OBJSignalLight(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_1.obj", false, "mtrus:obj/dc_metro_signal_light_1_white.obj", "mtrus:obj/dc_metro_signal_light_1_red.obj", "", new double[][]{{5.5, 0, 6.5, 10.5, 16, 9.5}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_SIGNAL_LIGHT_1_POLE = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_signal_light_1_pole"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_1_pole.obj", 0, new double[][]{{7, 0, 7, 9, 16, 9}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_SIGNAL_LIGHT_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_signal_light_2"),
+                () -> new Block(new OBJSignalLight(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_2.obj", false, "mtrus:obj/dc_metro_signal_light_2_white.obj", "mtrus:obj/dc_metro_signal_light_2_red.obj", "", new double[][]{{5.5, 0, 13, 10.5, 16, 16}})),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_SIGNAL_LIGHT_3 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_signal_light_3"),
+                () -> new Block(new OBJSignalLight(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_3.obj", false, "mtrus:obj/dc_metro_signal_light_3_white.obj", "mtrus:obj/dc_metro_signal_light_3_red.obj", "", new double[][]{{11, 0, 6.5, 16, 16, 9.5}})),
+                ModCreativeModeTabs.MAIN
         );
 
         DC_METROBUS_SIGN = registry.registerBlockWithBlockItem(

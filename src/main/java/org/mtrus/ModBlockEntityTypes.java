@@ -9,6 +9,7 @@ import org.mtrus.block.OBJTripleVerticalBlockEntity;
 import org.mtrus.block.OBJFareGateEntity;
 import org.mtrus.block.OBJTicketMachineEntity;
 import org.mtrus.block.OBJBenchEntity;
+import org.mtrus.block.OBJSignalLightEntity;
 import org.mtrus.block.BlockDCMetroStationNameWallEntity;
 import org.mtrus.block.BlockDCMetroLCDPIDSEntity;
 import org.mtrus.block.BlockDCMetroLEDPIDSEntity;
@@ -38,6 +39,7 @@ public final class ModBlockEntityTypes {
     public static BlockEntityTypeRegistryObject<OBJFareGateEntity> OBJ_FARE_GATE = null;
     public static BlockEntityTypeRegistryObject<OBJTicketMachineEntity> OBJ_TICKET_MACHINE = null;
     public static BlockEntityTypeRegistryObject<OBJBenchEntity> OBJ_BENCH = null;
+    public static BlockEntityTypeRegistryObject<OBJSignalLightEntity> OBJ_SIGNAL_LIGHT = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNameWallEntity> DC_METRO_STATION_NAME_WALL = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNamePoleEntity> DC_METRO_STATION_NAME_POLE = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationPoleEntity> DC_METRO_STATION_POLE = null;
@@ -365,6 +367,14 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_BENCH_4A::get,
                 ModBlocks.NYC_SUBWAY_BENCH_4B::get,
                 ModBlocks.NYC_SUBWAY_BENCH_4C::get
+        );
+
+        OBJ_SIGNAL_LIGHT = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "obj_signal_light"),
+                (pos, state) -> new OBJSignalLightEntity(OBJ_SIGNAL_LIGHT.get(), false, pos, state),
+                ModBlocks.DC_METRO_SIGNAL_LIGHT_1::get,
+                ModBlocks.DC_METRO_SIGNAL_LIGHT_2::get,
+                ModBlocks.DC_METRO_SIGNAL_LIGHT_3::get
         );
 
         DC_METRO_STATION_NAME_WALL = MTRUSAddon.registry.registerBlockEntityType(
