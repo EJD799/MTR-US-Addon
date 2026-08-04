@@ -126,4 +126,22 @@ public class OBJSignalLight extends BlockExtension implements DirectionHelper, B
     ) {
         return new OBJSignalLightEntity(ModBlockEntityTypes.OBJ_SIGNAL_LIGHT.get(), false, pos, state);
     }
+
+	@Override
+	public VoxelShape getOutlineShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        VoxelShape shape = VoxelShapes.empty();
+        Direction facing = IBlock.getStatePropertySafe(state, FACING);
+
+        for (double[] box : boxes) {
+            VoxelShape voxel = IBlock.getVoxelShapeByDirection(box[0], box[1], box[2], box[3], box[4], box[5], facing);
+            shape = VoxelShapes.union(shape, voxel);
+        }
+
+        return shape;
+    }
+
+	@Override
+	public VoxelShape getCollisionShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+		return getOutlineShape2(state, world, pos, context);
+	}
 }

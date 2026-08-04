@@ -259,6 +259,8 @@ public final class ModBlockEntityTypes {
                 ModBlocks.DC_METRO_FENCE_210::get,
                 ModBlocks.DC_METRO_PLATFORM_POLE_LIGHT_2::get,
                 ModBlocks.DC_METRO_PLATFORM_POLE_LIGHT_2_D::get,
+                ModBlocks.DC_METRO_SIGNAL_LIGHT_1_POLE::get,
+                ModBlocks.DC_METRO_PLATFORM_END_FENCE::get,
                 ModBlocks.DC_METROBUS_WALL_1::get,
                 ModBlocks.DC_METROBUS_WALL_2::get,
                 ModBlocks.DC_METROBUS_WALL_3::get,
@@ -295,7 +297,8 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_PLATFORM_LIGHT::get,
                 ModBlocks.NYC_SUBWAY_TRACK_POLE_1::get,
                 ModBlocks.NYC_SUBWAY_TRACK_POLE_2::get,
-                ModBlocks.NYC_SUBWAY_TRACK_POLE_3::get
+                ModBlocks.NYC_SUBWAY_TRACK_POLE_3::get,
+                ModBlocks.NYC_SUBWAY_SIGNAL_LIGHT_1_POLE::get
         );
 
         OBJ_DOUBLE_VERTICAL_BLOCK = MTRUSAddon.registry.registerBlockEntityType(
@@ -374,7 +377,10 @@ public final class ModBlockEntityTypes {
                 (pos, state) -> new OBJSignalLightEntity(OBJ_SIGNAL_LIGHT.get(), false, pos, state),
                 ModBlocks.DC_METRO_SIGNAL_LIGHT_1::get,
                 ModBlocks.DC_METRO_SIGNAL_LIGHT_2::get,
-                ModBlocks.DC_METRO_SIGNAL_LIGHT_3::get
+                ModBlocks.DC_METRO_SIGNAL_LIGHT_3::get,
+                ModBlocks.NYC_SUBWAY_SIGNAL_LIGHT_1::get,
+                ModBlocks.NYC_SUBWAY_SIGNAL_LIGHT_2::get,
+                ModBlocks.NYC_SUBWAY_SIGNAL_LIGHT_3::get
         );
 
         DC_METRO_STATION_NAME_WALL = MTRUSAddon.registry.registerBlockEntityType(
