@@ -260,7 +260,6 @@ public final class ModBlockEntityTypes {
                 ModBlocks.DC_METRO_PLATFORM_POLE_LIGHT_2::get,
                 ModBlocks.DC_METRO_PLATFORM_POLE_LIGHT_2_D::get,
                 ModBlocks.DC_METRO_SIGNAL_LIGHT_1_POLE::get,
-                ModBlocks.DC_METRO_PLATFORM_END_FENCE::get,
                 ModBlocks.DC_METROBUS_WALL_1::get,
                 ModBlocks.DC_METROBUS_WALL_2::get,
                 ModBlocks.DC_METROBUS_WALL_3::get,
@@ -305,6 +304,7 @@ public final class ModBlockEntityTypes {
                 new Identifier(MTRUSAddon.MOD_ID, "obj_double_vertical_block"),
                 OBJDoubleVerticalBlockEntity::new,
                 ModBlocks.DC_METRO_TRASH_CAN::get,
+                ModBlocks.DC_METRO_PLATFORM_END_FENCE::get,
                 ModBlocks.NYC_SUBWAY_HELP_POINT_2::get
         );
 

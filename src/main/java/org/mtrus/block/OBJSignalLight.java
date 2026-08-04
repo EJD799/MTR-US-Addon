@@ -1,6 +1,5 @@
 package org.mtrus.block;
 
-import org.mtr.core.tool.Angle;
 import org.mtr.mapping.holder.*;
 import org.mtr.mapping.mapper.BlockEntityExtension;
 import org.mtr.mapping.mapper.BlockExtension;
@@ -86,10 +85,10 @@ public class OBJSignalLight extends BlockExtension implements DirectionHelper, B
 		});
 	}
 
-	@Override
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public BlockState getPlacementState2(ItemPlacementContext ctx) {
-		final int quadrant = Angle.getQuadrant(ctx.getPlayerYaw(), true);
-		return getDefaultState2().with(new Property<>(FACING.data), Direction.fromHorizontal(quadrant / 4).data);
+		BlockState superState = super.getPlacementState2(ctx);
+		return superState == null ? null : superState.with(new Property((net.minecraft.world.level.block.state.properties.Property)FACING.data), Direction.fromHorizontal(ctx.getPlayerFacing().getHorizontal()).data);
 	}
 
 	@Override
