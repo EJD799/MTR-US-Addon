@@ -78,7 +78,7 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
 			graphicsHolderNew.translate(
 					0,
 					0,
-					0.49
+					0.495
 			);
 		});
 
@@ -92,8 +92,8 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
 					for (ArrayList<Object> route : routes) {
 						IDrawing.drawTexture(
                             graphicsHolderNew,
-                            -0.45F + (0.4F * routes.indexOf(route)),
-                            0.05F,
+                            0.0625F + (0.4F * routes.indexOf(route)),
+                            0.15F,
                             0.3F,
                             0.3F,
                             0,
@@ -145,7 +145,7 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
                     transform2.transform(graphicsHolderNew, offset);
                     
 					for (ArrayList<Object> route : routes) {
-						IDrawing.drawStringWithFont(graphicsHolderNew, (String) route.get(1), HorizontalAlignment.CENTER, VerticalAlignment.CENTER, -0.25F + (0.4F * routes.indexOf(route)), 0.25F, 0.2F, 0.2F, 0.05F, ARGB_WHITE, false, light, null);
+						IDrawing.drawStringWithFont(graphicsHolderNew, (String) route.get(1), HorizontalAlignment.CENTER, VerticalAlignment.CENTER, 0.0625F + (0.4F * routes.indexOf(route)), 0.25F, 0.2F, 0.2F, 0.05F, ARGB_WHITE, false, light, null);
 					}
 
                     graphicsHolderNew.pop();
@@ -167,7 +167,7 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
 
 		transform3.add(graphicsHolderNew -> {
 			// Rotate the local sign plane to match the block
-			graphicsHolderNew.rotateYDegrees(-facing.asRotation() + 90);
+			graphicsHolderNew.rotateYDegrees(-facing.asRotation() - 90);
 
 			// Flip text so it is readable
 			graphicsHolderNew.rotateXDegrees(180);
@@ -176,7 +176,7 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
 			graphicsHolderNew.translate(
 					0,
 					0,
-					0.49
+					-0.13
 			);
 		});
 
@@ -187,7 +187,7 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
                 (graphicsHolderNew, offset) -> {
                     transform3.transform(graphicsHolderNew, offset);
                     
-					IDrawing.drawStringWithFont(graphicsHolderNew, "Subway", HorizontalAlignment.RIGHT, VerticalAlignment.CENTER, 0.45F, 0.25F, 0.4F, 1, 0.08F, ARGB_WHITE, false, light, null);
+					IDrawing.drawStringWithFont(graphicsHolderNew, "Subway", HorizontalAlignment.RIGHT, VerticalAlignment.CENTER, 0.45F, 0.25F, 1, 0.4F, 0.08F, ARGB_WHITE, false, light, null);
 
                     graphicsHolderNew.pop();
                 });

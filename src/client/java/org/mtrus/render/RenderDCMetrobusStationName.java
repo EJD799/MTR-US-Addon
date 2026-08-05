@@ -89,7 +89,7 @@ public class RenderDCMetrobusStationName extends BlockEntityRenderer<BlockDCMetr
                     transform.transform(graphicsHolderNew, offset);
 
 
-                    IDrawing.drawStringWithFont(graphicsHolderNew, stationName, HorizontalAlignment.CENTER, VerticalAlignment.CENTER, 0, -0.15F, 4, 0.25F, 0.04F, ARGB_BLACK, false, light, null);	
+                    IDrawing.drawStringWithFont(graphicsHolderNew, stationName, HorizontalAlignment.CENTER, VerticalAlignment.CENTER, 0, -0.1F, 4, 0.25F, 0.04F, ARGB_BLACK, false, light, null);	
 
                     graphicsHolderNew.pop();
                 });
