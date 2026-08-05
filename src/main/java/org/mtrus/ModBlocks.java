@@ -456,6 +456,15 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_3R;
     public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_3Y;
     public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_4;
+    public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_FENCE_1;
+    public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_FENCE_2;
+    public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_FENCE_3;
+    public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_POLE;
+    public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_ROOF_1;
+    public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_ROOF_2;
+    public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_ROOF_3;
+    public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_ROOF_4;
+    public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_ROOF_5;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -2855,6 +2864,60 @@ public final class ModBlocks {
         NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_4 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_1_globe_light_4"),
                 () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_entrance_1_globe_light_4.obj", 15, new double[][]{{6.5, 0, 6.5, 9.5, 16, 9.5}}, true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_ENTRANCE_2_FENCE_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_fence_1"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_entrance_2_fence_1.obj", 0, new double[][]{{0, 0, 5.5, 16, 16, 10.5}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_ENTRANCE_2_FENCE_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_fence_2"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_entrance_2_fence_2.obj", 0, new double[][]{{5.5, 0, 5.5, 16, 16, 10.5}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_ENTRANCE_2_FENCE_3 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_fence_3"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_entrance_2_fence_3.obj", 0, new double[][]{{5.5, 0, 5.5, 16, 16, 10.5}, {5.5, 0, 0, 10.5, 16, 10.5}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_ENTRANCE_2_POLE = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_pole"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_entrance_2_pole.obj", 0, new double[][]{{6, 0, 6, 10, 16, 10}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_ENTRANCE_2_ROOF_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_roof_1"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_entrance_2_roof_1.obj", 0, new double[][]{{0, 0, 0, 16, 8, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_ENTRANCE_2_ROOF_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_roof_2"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_entrance_2_roof_2.obj", 15, new double[][]{{0, 0, 0, 8, 8, 16}}, true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_ENTRANCE_2_ROOF_3 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_roof_3"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_entrance_2_roof_3.obj", 15, new double[][]{{0, 0, 0, 16, 8, 16}}, true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_ENTRANCE_2_ROOF_4 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_roof_4"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_entrance_2_roof_4.obj", 15, new double[][]{{0, 0, 0, 8, 8, 16}}, true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_ENTRANCE_2_ROOF_5 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_roof_5"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_entrance_2_roof_5.obj", 15, new double[][]{{0, 0, 0, 8, 8, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
     }
