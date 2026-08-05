@@ -439,7 +439,7 @@
   "block.mtrus.nyc_subway_entrance_1_globe_light_3r": "NYC Subway Entrance (Style 1) Globe Light (Style 3, Red)",
   "block.mtrus.nyc_subway_entrance_1_globe_light_3y": "NYC Subway Entrance (Style 1) Globe Light (Style 3, Yellow)",
   "block.mtrus.nyc_subway_entrance_1_globe_light_4": "NYC Subway Entrance (Style 1) Globe Light (Style 4)",
-    "block.mtrus.nyc_subway_entrance_1_sign": "NYC Subway Entrance (Style 1) Sign",
+  "block.mtrus.nyc_subway_entrance_1_sign": "NYC Subway Entrance (Style 1) Sign",
   "block.mtrus.nyc_subway_entrance_2_fence_1": "NYC Subway Entrance (Style 2) Fence",
   "block.mtrus.nyc_subway_entrance_2_fence_2": "NYC Subway Entrance (Style 2) Fence (End)",
   "block.mtrus.nyc_subway_entrance_2_fence_3": "NYC Subway Entrance (Style 2) Fence (Corner)",
@@ -449,7 +449,7 @@
   "block.mtrus.nyc_subway_entrance_2_roof_3": "NYC Subway Entrance (Style 2) Roof (End)",
   "block.mtrus.nyc_subway_entrance_2_roof_4": "NYC Subway Entrance (Style 2) Roof (Corner)",
   "block.mtrus.nyc_subway_entrance_2_roof_5": "NYC Subway Entrance (Style 2) Roof (Corner, Flipped)",
-    "block.mtrus.nyc_subway_entrance_2_sign": "NYC Subway Entrance (Style 2) Sign",
+  "block.mtrus.nyc_subway_entrance_2_sign": "NYC Subway Entrance (Style 2) Sign",
 
   "itemGroup.mtrus.main": "MTR US Addon"
 }

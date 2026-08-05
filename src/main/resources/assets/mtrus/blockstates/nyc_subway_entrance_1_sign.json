@@ -1,0 +1,39 @@
+{
+	"multipart": [
+		{
+			"when": {
+				"facing": "north"
+			},
+			"apply": {
+				"model": "mtrus:block/nyc_subway_entrance_1_sign",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"facing": "east"
+			},
+			"apply": {
+				"model": "mtrus:block/nyc_subway_entrance_1_sign",
+				"y": 270
+			}
+		},
+		{
+			"when": {
+				"facing": "south"
+			},
+			"apply": {
+				"model": "mtrus:block/nyc_subway_entrance_1_sign"
+			}
+		},
+		{
+			"when": {
+				"facing": "west"
+			},
+			"apply": {
+				"model": "mtrus:block/nyc_subway_entrance_1_sign",
+				"y": 90
+			}
+		}
+	]
+}

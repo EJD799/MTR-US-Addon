@@ -28,6 +28,8 @@ import org.mtrus.block.BlockNYCSubwayStationNamePillarEntity;
 import org.mtrus.block.BlockNYCSubwayStationNameWallEntity;
 import org.mtrus.block.BlockNYCSubwayStationNameTile1Entity;
 import org.mtrus.block.BlockNYCSubwayStationNameTile2Entity;
+import org.mtrus.block.BlockNYCSubwayEntrance1SignEntity;
+import org.mtrus.block.BlockNYCSubwayEntrance2SignEntity;
 
 @SuppressWarnings({"unchecked"})
 public final class ModBlockEntityTypes {
@@ -58,6 +60,8 @@ public final class ModBlockEntityTypes {
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNameWallEntity> NYC_SUBWAY_STATION_NAME_WALL = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNameTile1Entity> NYC_SUBWAY_STATION_NAME_TILE_1 = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNameTile2Entity> NYC_SUBWAY_STATION_NAME_TILE_2 = null;
+    public static BlockEntityTypeRegistryObject<BlockNYCSubwayEntrance1SignEntity> NYC_SUBWAY_ENTRANCE_1_SIGN = null;
+    public static BlockEntityTypeRegistryObject<BlockNYCSubwayEntrance2SignEntity> NYC_SUBWAY_ENTRANCE_2_SIGN = null;
 
     public static void registerBlockEntityTypes() {
         PLATFORM_LIGHT = MTRUSAddon.registry.registerBlockEntityType(
@@ -516,6 +520,18 @@ public final class ModBlockEntityTypes {
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_station_name_tile_2"),
                 BlockNYCSubwayStationNameTile2Entity::new,
                 ModBlocks.NYC_SUBWAY_STATION_NAME_TILE_2::get
+        );
+
+        NYC_SUBWAY_ENTRANCE_1_SIGN = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_1_sign"),
+                BlockNYCSubwayEntrance1SignEntity::new,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_SIGN::get
+        );
+
+        NYC_SUBWAY_ENTRANCE_2_SIGN = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_sign"),
+                BlockNYCSubwayEntrance2SignEntity::new,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_2_SIGN::get
         );
     }
 
