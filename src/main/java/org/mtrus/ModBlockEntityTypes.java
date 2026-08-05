@@ -297,7 +297,21 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_TRACK_POLE_1::get,
                 ModBlocks.NYC_SUBWAY_TRACK_POLE_2::get,
                 ModBlocks.NYC_SUBWAY_TRACK_POLE_3::get,
-                ModBlocks.NYC_SUBWAY_SIGNAL_LIGHT_1_POLE::get
+                ModBlocks.NYC_SUBWAY_SIGNAL_LIGHT_1_POLE::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_FENCE_1::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_FENCE_2::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_FENCE_3::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_FENCE_4::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_1G::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_1R::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_1Y::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_2G::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_2R::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_2Y::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_3G::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_3R::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_3Y::get,
+                ModBlocks.NYC_SUBWAY_ENTRANCE_1_GLOBE_LIGHT_4::get
         );
 
         OBJ_DOUBLE_VERTICAL_BLOCK = MTRUSAddon.registry.registerBlockEntityType(
