@@ -26,6 +26,7 @@ import org.mtrus.block.BlockDCMetrobusStationNameEntity;
 import org.mtrus.block.BlockDCMetrobusPIDSEntity;
 import org.mtrus.block.BlockNYCSubwayStationNamePillarEntity;
 import org.mtrus.block.BlockNYCSubwayStationNameWallEntity;
+import org.mtrus.block.BlockNYCSubwayStationNameEntranceEntity;
 import org.mtrus.block.BlockNYCSubwayStationNameTile1Entity;
 import org.mtrus.block.BlockNYCSubwayStationNameTile2Entity;
 import org.mtrus.block.BlockNYCSubwayEntrance1SignEntity;
@@ -58,6 +59,7 @@ public final class ModBlockEntityTypes {
     public static BlockEntityTypeRegistryObject<BlockDCMetrobusPIDSEntity> DC_METROBUS_PIDS = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNamePillarEntity> NYC_SUBWAY_STATION_NAME_PILLAR = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNameWallEntity> NYC_SUBWAY_STATION_NAME_WALL = null;
+    public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNameEntranceEntity> NYC_SUBWAY_STATION_NAME_ENTRANCE = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNameTile1Entity> NYC_SUBWAY_STATION_NAME_TILE_1 = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNameTile2Entity> NYC_SUBWAY_STATION_NAME_TILE_2 = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayEntrance1SignEntity> NYC_SUBWAY_ENTRANCE_1_SIGN = null;
@@ -508,6 +510,12 @@ public final class ModBlockEntityTypes {
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_station_name_wall"),
                 BlockNYCSubwayStationNameWallEntity::new,
                 ModBlocks.NYC_SUBWAY_STATION_NAME_WALL::get
+        );
+
+        NYC_SUBWAY_STATION_NAME_ENTRANCE = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_station_name_entrance"),
+                BlockNYCSubwayStationNameEntranceEntity::new,
+                ModBlocks.NYC_SUBWAY_STATION_NAME_ENTRANCE::get
         );
 
         NYC_SUBWAY_STATION_NAME_TILE_1 = MTRUSAddon.registry.registerBlockEntityType(

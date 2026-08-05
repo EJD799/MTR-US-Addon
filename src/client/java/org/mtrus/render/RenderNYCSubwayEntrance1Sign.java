@@ -98,8 +98,8 @@ public class RenderNYCSubwayEntrance1Sign extends BlockEntityRenderer<BlockNYCSu
 					for (ArrayList<Object> route : routes) {
 						IDrawing.drawTexture(
                             graphicsHolderNew,
-                            -0.3F + (0.4F * routes.indexOf(route)),
-                            0.1F,
+                            -0.4F + (0.4F * routes.indexOf(route)),
+                            0.08F,
                             0.3F,
                             0.3F,
                             0,
@@ -151,10 +151,10 @@ public class RenderNYCSubwayEntrance1Sign extends BlockEntityRenderer<BlockNYCSu
                     transform2.transform(graphicsHolderNew, offset);
 
 
-                    IDrawing.drawStringWithFont(graphicsHolderNew, stationName, HorizontalAlignment.LEFT, VerticalAlignment.CENTER, -0.25F, -0.1F, 1.75F, 0.35F, 0.05F, ARGB_WHITE, false, light, null);	
+                    IDrawing.drawStringWithFont(graphicsHolderNew, stationName, HorizontalAlignment.LEFT, VerticalAlignment.CENTER, -0.45F, -0.1F, 1.75F, 0.35F, 0.05F, ARGB_WHITE, false, light, null);	
 
 					for (ArrayList<Object> route : routes) {
-						IDrawing.drawStringWithFont(graphicsHolderNew, (String) route.get(1), HorizontalAlignment.CENTER, VerticalAlignment.CENTER, -0.4F + (0.4F * routes.indexOf(route)), 0.3F, 0.2F, 0.2F, 0.05F, ARGB_WHITE, false, light, null);
+						IDrawing.drawStringWithFont(graphicsHolderNew, (String) route.get(1), HorizontalAlignment.CENTER, VerticalAlignment.CENTER, -0.25F + (0.4F * routes.indexOf(route)), 0.25F, 0.2F, 0.2F, 0.05F, ARGB_WHITE, false, light, null);
 					}
 
                     graphicsHolderNew.pop();

@@ -19,9 +19,9 @@ import org.mtr.mod.render.StoredMatrixTransformations;
 import org.mtr.mod.data.IGui;
 import org.mtrus.MTRUSAddon;
 import org.mtrus.api.SimplifiedRouteSchemaExtension;
-import org.mtrus.block.BlockNYCSubwayEntrance2SignEntity;
+import org.mtrus.block.BlockNYCSubwayStationNameEntranceEntity;
 
-public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSubwayEntrance2SignEntity> implements IGui {
+public class RenderNYCSubwayStationNameEntrance extends BlockEntityRenderer<BlockNYCSubwayStationNameEntranceEntity> implements IGui {
 
 	private static final Identifier CIRCLE = new Identifier(
 		MTRUSAddon.MOD_ID,
@@ -29,12 +29,12 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
 	);
 
     @SuppressWarnings("deprecation")
-    public RenderNYCSubwayEntrance2Sign(BlockEntityRenderer.Argument dispatcher) {
+    public RenderNYCSubwayStationNameEntrance(BlockEntityRenderer.Argument dispatcher) {
         super(dispatcher);
     }
 
 	@Override
-    public void render(BlockNYCSubwayEntrance2SignEntity entity, float tickDelta,
+    public void render(BlockNYCSubwayStationNameEntranceEntity entity, float tickDelta,
                        GraphicsHolder graphicsHolder, int light, int overlay) {
 
         final World world = entity.getWorld2();
@@ -45,6 +45,12 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
         final BlockPos pos = entity.getPos2();
 
 		final Station station = InitClient.findStation(pos);
+		String stationName;
+		if (station == null) {
+			stationName = "Untitled";
+		} else {
+			stationName = station.getName();
+		}
 
 		final ArrayList<ArrayList<Object>> routes = getStationRoutes(station);
 		
@@ -78,7 +84,7 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
 			graphicsHolderNew.translate(
 					0,
 					0,
-					0.495
+					0.465
 			);
 		});
 
@@ -92,8 +98,8 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
 					for (ArrayList<Object> route : routes) {
 						IDrawing.drawTexture(
                             graphicsHolderNew,
-                            -0.0375F + (0.4F * routes.indexOf(route)),
-                            0.1F,
+                            -0.4F + (0.4F * routes.indexOf(route)),
+                            0.08F,
                             0.3F,
                             0.3F,
                             0,
@@ -133,7 +139,7 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
 			graphicsHolderNew.translate(
 					0,
 					0,
-					0.49
+					0.46
 			);
 		});
 
@@ -143,51 +149,13 @@ public class RenderNYCSubwayEntrance2Sign extends BlockEntityRenderer<BlockNYCSu
                 QueuedRenderLayer.EXTERIOR_TRANSLUCENT,
                 (graphicsHolderNew, offset) -> {
                     transform2.transform(graphicsHolderNew, offset);
-                    
+
+
+                    IDrawing.drawStringWithFont(graphicsHolderNew, stationName, HorizontalAlignment.LEFT, VerticalAlignment.CENTER, -0.45F, -0.1F, 1.75F, 0.35F, 0.05F, ARGB_WHITE, false, light, null);	
+
 					for (ArrayList<Object> route : routes) {
-						IDrawing.drawStringWithFont(graphicsHolderNew, (String) route.get(1), HorizontalAlignment.CENTER, VerticalAlignment.CENTER, 0.1125F + (0.4F * routes.indexOf(route)), 0.25F, 0.2F, 0.2F, 0.05F, ARGB_WHITE, false, light, null);
+						IDrawing.drawStringWithFont(graphicsHolderNew, (String) route.get(1), HorizontalAlignment.CENTER, VerticalAlignment.CENTER, -0.25F + (0.4F * routes.indexOf(route)), 0.25F, 0.2F, 0.2F, 0.05F, ARGB_WHITE, false, light, null);
 					}
-
-                    graphicsHolderNew.pop();
-                });
-
-        graphicsHolder.pop();
-        
-
-
-        /*
-         * Render overlay plane 3.
-         */
-        final StoredMatrixTransformations transform3 =
-				new StoredMatrixTransformations(
-						pos.getX() + 0.5,
-						pos.getY() + 0.5,
-						pos.getZ() + 0.5
-				);
-
-		transform3.add(graphicsHolderNew -> {
-			// Rotate the local sign plane to match the block
-			graphicsHolderNew.rotateYDegrees(-facing.asRotation() - 90);
-
-			// Flip text so it is readable
-			graphicsHolderNew.rotateXDegrees(180);
-
-			// Move text on the sign surface
-			graphicsHolderNew.translate(
-					0,
-					0,
-					-0.13
-			);
-		});
-
-        graphicsHolder.push();
-
-        MainRenderer.scheduleRender(CIRCLE, false,
-                QueuedRenderLayer.EXTERIOR_TRANSLUCENT,
-                (graphicsHolderNew, offset) -> {
-                    transform3.transform(graphicsHolderNew, offset);
-                    
-					IDrawing.drawStringWithFont(graphicsHolderNew, "Subway", HorizontalAlignment.RIGHT, VerticalAlignment.CENTER, -0.55F, 0.3F, 1, 0.4F, 0.08F, ARGB_WHITE, false, light, null);
 
                     graphicsHolderNew.pop();
                 });
