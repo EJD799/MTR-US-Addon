@@ -270,6 +270,8 @@ public final class ModBlockEntityTypes {
                 ModBlocks.DC_METRO_SIGNAL_LIGHT_1W::get,
                 ModBlocks.DC_METRO_SIGNAL_LIGHT_2R::get,
                 ModBlocks.DC_METRO_SIGNAL_LIGHT_2W::get,
+                ModBlocks.DC_METRO_SIGNAL_LIGHT_3R::get,
+                ModBlocks.DC_METRO_SIGNAL_LIGHT_3W::get,
                 ModBlocks.DC_METROBUS_WALL_1::get,
                 ModBlocks.DC_METROBUS_WALL_2::get,
                 ModBlocks.DC_METROBUS_WALL_3::get,

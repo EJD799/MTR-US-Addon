@@ -2137,25 +2137,25 @@ public final class ModBlocks {
 
         DC_METRO_SIGNAL_LIGHT_2R = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_signal_light_2r"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_2r.obj", 0, new double[][]{{5.5, 0, 0, 10.5, 16, 3}}, true)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_2r.obj", 0, new double[][]{{5.5, 0, 13, 10.5, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         DC_METRO_SIGNAL_LIGHT_2W = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_signal_light_2w"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_2w.obj", 0, new double[][]{{5.5, 0, 0, 10.5, 16, 3}}, true)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_2w.obj", 0, new double[][]{{5.5, 0, 13, 10.5, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         DC_METRO_SIGNAL_LIGHT_3R = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_signal_light_3r"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_3r.obj", 0, new double[][]{{11, 0, 6.5, 16, 16, 9.5}}, true)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_3r.obj", 0, new double[][]{{0, 0, 6.5, 5, 16, 9.5}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         DC_METRO_SIGNAL_LIGHT_3W = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_signal_light_3w"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_3w.obj", 0, new double[][]{{11, 0, 6.5, 16, 16, 9.5}}, true)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_3w.obj", 0, new double[][]{{0, 0, 6.5, 5, 16, 9.5}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -2866,37 +2866,37 @@ public final class ModBlocks {
 
         NYC_SUBWAY_SIGNAL_LIGHT_2R = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_signal_light_2r"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_2r.obj", 0, new double[][]{{11, 0, 6.5, 16, 16, 9.5}}, true)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_2r.obj", 0, new double[][]{{0, 0, 6.5, 5, 16, 9.5}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_SIGNAL_LIGHT_2G = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_signal_light_2g"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_2g.obj", 0, new double[][]{{11, 0, 6.5, 16, 16, 9.5}}, true)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_2g.obj", 0, new double[][]{{0, 0, 6.5, 5, 16, 9.5}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_SIGNAL_LIGHT_2Y = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_signal_light_2y"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_2y.obj", 0, new double[][]{{11, 0, 6.5, 16, 16, 9.5}}, true)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_2y.obj", 0, new double[][]{{0, 0, 6.5, 5, 16, 9.5}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_SIGNAL_LIGHT_3R = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_signal_light_3r"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_3r.obj", 0, new double[][]{{13, 8, 6.5, 16, 16, 9.5}}, true)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_3r.obj", 0, new double[][]{{0, 8, 6.5, 3, 16, 9.5}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_SIGNAL_LIGHT_3G = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_signal_light_3g"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_3g.obj", 0, new double[][]{{13, 8, 6.5, 16, 16, 9.5}}, true)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_3g.obj", 0, new double[][]{{0, 8, 6.5, 3, 16, 9.5}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_SIGNAL_LIGHT_3Y = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_signal_light_3y"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_3y.obj", 0, new double[][]{{13, 8, 6.5, 16, 16, 9.5}}, true)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_signal_light_3y.obj", 0, new double[][]{{0, 8, 6.5, 3, 16, 9.5}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
