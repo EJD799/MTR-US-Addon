@@ -8,6 +8,7 @@ public final class ModSoundEvents {
    public static final SoundEventRegistryObject NYC_SUBWAY_TURNSTILE_ENTRANCE;
    public static final SoundEventRegistryObject NYC_SUBWAY_TURNSTILE_EXIT;
    public static final SoundEventRegistryObject NYC_SUBWAY_FARE_GATE;
+   public static final SoundEventRegistryObject NYC_SUBWAY_EMERGENCY_EXIT_DOOR;
 
    public ModSoundEvents() {
    }
@@ -21,5 +22,6 @@ public final class ModSoundEvents {
       NYC_SUBWAY_TURNSTILE_ENTRANCE = MTRUSAddon.registry.registerSoundEvent(new Identifier("mtrus", "nyc_subway_turnstile_entrance"));
       NYC_SUBWAY_TURNSTILE_EXIT = MTRUSAddon.registry.registerSoundEvent(new Identifier("mtrus", "nyc_subway_turnstile_exit"));
       NYC_SUBWAY_FARE_GATE = MTRUSAddon.registry.registerSoundEvent(new Identifier("mtrus", "nyc_subway_fare_gate"));
+      NYC_SUBWAY_EMERGENCY_EXIT_DOOR = MTRUSAddon.registry.registerSoundEvent(new Identifier("mtrus", "nyc_subway_emergency_exit_door"));
    }
 }

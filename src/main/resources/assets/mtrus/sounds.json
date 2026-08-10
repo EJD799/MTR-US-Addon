@@ -34,5 +34,14 @@
                 "volume": 9
             }
         ]
+    },
+    "nyc_subway_emergency_exit_door": {
+        "sounds": [
+            {
+                "name": "mtrus:nyc_subway_emergency_exit_door",
+                "pitch": 1,
+                "volume": 9
+            }
+        ]
     }
 }
