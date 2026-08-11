@@ -52,11 +52,11 @@ public class RenderNYCSubwayEmergencyExitDoor extends BlockEntityRenderer<BlockN
             }*/
 
             OptimizedModelWrapper modelTemp;
-            if (IBlock.getStatePropertySafe(state, BlockNYCSubwayEmergencyExitDoor.OPEN) == BlockNYCSubwayEmergencyExitDoor.EnumNYCSubwayEmergencyExitDoorOpen.OPEN) {
-                modelTemp = OBJModelResource.getModel("mtrus:obj/nyc_emergency_exit_door_open", false);
-            } else {
+            //if (IBlock.getStatePropertySafe(state, BlockNYCSubwayEmergencyExitDoor.OPEN) == BlockNYCSubwayEmergencyExitDoor.EnumNYCSubwayEmergencyExitDoorOpen.OPEN) {
+            //    modelTemp = OBJModelResource.getModel("mtrus:obj/nyc_emergency_exit_door_open", false);
+            //} else {
                 modelTemp = OBJModelResource.getModel("mtrus:obj/nyc_emergency_exit_door_closed", false);
-            }
+            //}
             final OptimizedModelWrapper model = modelTemp;
 
             if (model == null) {

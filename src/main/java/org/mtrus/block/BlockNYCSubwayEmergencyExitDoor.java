@@ -7,6 +7,7 @@ import org.mtr.mapping.mapper.BlockEntityExtension;
 import org.mtr.mapping.mapper.BlockWithEntity;
 import org.mtr.mapping.tool.HolderBase;
 import org.mtr.mod.block.IBlock;
+import org.mtr.mod.block.IBlock.DoubleBlockHalf;
 import org.mtrus.ModSoundEvents;
 
 import com.lx862.jcm.mod.block.base.Vertical2Block;
@@ -24,6 +25,19 @@ public class BlockNYCSubwayEmergencyExitDoor extends Vertical2Block implements B
         VoxelShape shape = IBlock.getVoxelShapeByDirection(0, 0, 7.75, 16, 16, 8.25, facing);
 
         return shape;
+    }
+
+    @Override
+    public VoxelShape getCollisionShape2(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        if (IBlock.getStatePropertySafe(state, BlockNYCSubwayEmergencyExitDoor.OPEN) == BlockNYCSubwayEmergencyExitDoor.EnumNYCSubwayEmergencyExitDoorOpen.OPEN) {
+            return VoxelShapes.empty();
+        } else {
+            Direction facing = IBlock.getStatePropertySafe(state, FACING);
+        
+            VoxelShape shape = IBlock.getVoxelShapeByDirection(0, 0, 7.75, 16, 16, 8.25, facing);
+
+            return shape;
+        }
     }
 
     @Override
@@ -50,6 +64,23 @@ public class BlockNYCSubwayEmergencyExitDoor extends Vertical2Block implements B
             )
         );
 
+        BlockPos otherPos = state.get(new Property((net.minecraft.world.level.block.state.properties.Property) HALF.data))
+                == DoubleBlockHalf.LOWER
+                ? pos.up()
+                : pos.down();
+
+        BlockState otherState = world.getBlockState(otherPos);
+
+        if (otherState.isOf(new Block(this))) {
+            world.setBlockState(
+                otherPos,
+                otherState.with(
+                    new Property((net.minecraft.world.level.block.state.properties.Property) OPEN.data),
+                    EnumNYCSubwayEmergencyExitDoorOpen.OPEN
+                )
+            );
+        }
+
         world.playSound((PlayerEntity)null, pos, ModSoundEvents.NYC_SUBWAY_EMERGENCY_EXIT_DOOR.get(), SoundCategory.BLOCKS, 1.0F, 1.0F);
 
         if (!hasScheduledBlockTick(world, pos, new Block(this))) {
@@ -57,6 +88,34 @@ public class BlockNYCSubwayEmergencyExitDoor extends Vertical2Block implements B
         }
 
         return ActionResult.SUCCESS;
+    }
+
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+    public void scheduledTick2(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+        world.setBlockState(
+            pos,
+            state.with(
+                new Property((net.minecraft.world.level.block.state.properties.Property) OPEN.data),
+                EnumNYCSubwayEmergencyExitDoorOpen.CLOSED
+            )
+        );
+
+        BlockPos otherPos = state.get(new Property((net.minecraft.world.level.block.state.properties.Property) HALF.data))
+                == DoubleBlockHalf.LOWER
+                ? pos.up()
+                : pos.down();
+
+        BlockState otherState = world.getBlockState(otherPos);
+
+        if (otherState.isOf(new Block(this))) {
+            world.setBlockState(
+                otherPos,
+                otherState.with(
+                    new Property((net.minecraft.world.level.block.state.properties.Property) OPEN.data),
+                    EnumNYCSubwayEmergencyExitDoorOpen.CLOSED
+                )
+            );
+        }
     }
 
     public static enum EnumNYCSubwayEmergencyExitDoorOpen implements StringIdentifiable {
