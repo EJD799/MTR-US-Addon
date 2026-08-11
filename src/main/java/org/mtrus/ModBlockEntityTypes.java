@@ -31,6 +31,7 @@ import org.mtrus.block.BlockNYCSubwayStationNameTile1Entity;
 import org.mtrus.block.BlockNYCSubwayStationNameTile2Entity;
 import org.mtrus.block.BlockNYCSubwayEntrance1SignEntity;
 import org.mtrus.block.BlockNYCSubwayEntrance2SignEntity;
+import org.mtrus.block.BlockNYCSubwayEmergencyExitDoorEntity;
 
 @SuppressWarnings({"unchecked"})
 public final class ModBlockEntityTypes {
@@ -64,6 +65,7 @@ public final class ModBlockEntityTypes {
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNameTile2Entity> NYC_SUBWAY_STATION_NAME_TILE_2 = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayEntrance1SignEntity> NYC_SUBWAY_ENTRANCE_1_SIGN = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayEntrance2SignEntity> NYC_SUBWAY_ENTRANCE_2_SIGN = null;
+    public static BlockEntityTypeRegistryObject<BlockNYCSubwayEmergencyExitDoorEntity> NYC_SUBWAY_EMERGENCY_EXIT_DOOR = null;
 
     public static void registerBlockEntityTypes() {
         PLATFORM_LIGHT = MTRUSAddon.registry.registerBlockEntityType(
@@ -341,7 +343,9 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_ENTRANCE_2_ROOF_2::get,
                 ModBlocks.NYC_SUBWAY_ENTRANCE_2_ROOF_3::get,
                 ModBlocks.NYC_SUBWAY_ENTRANCE_2_ROOF_4::get,
-                ModBlocks.NYC_SUBWAY_ENTRANCE_2_ROOF_5::get
+                ModBlocks.NYC_SUBWAY_ENTRANCE_2_ROOF_5::get,
+                ModBlocks.NYC_SUBWAY_TICKETING_AREA_FENCE_1::get,
+                ModBlocks.NYC_SUBWAY_TICKETING_AREA_FENCE_2::get
         );
 
         OBJ_DOUBLE_VERTICAL_BLOCK = MTRUSAddon.registry.registerBlockEntityType(
@@ -555,6 +559,12 @@ public final class ModBlockEntityTypes {
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_sign"),
                 BlockNYCSubwayEntrance2SignEntity::new,
                 ModBlocks.NYC_SUBWAY_ENTRANCE_2_SIGN::get
+        );
+
+        NYC_SUBWAY_EMERGENCY_EXIT_DOOR = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_emergency_exit_door"),
+                BlockNYCSubwayEmergencyExitDoorEntity::new,
+                ModBlocks.NYC_SUBWAY_EMERGENCY_EXIT_DOOR::get
         );
     }
 

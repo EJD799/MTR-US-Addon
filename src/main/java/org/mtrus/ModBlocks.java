@@ -58,6 +58,7 @@ import org.mtrus.block.BlockNYCSubwayStationNameTile2;
 import org.mtrus.block.BlockNYCSubwayCeiling;
 import org.mtrus.block.BlockNYCSubwayEntrance1Sign;
 import org.mtrus.block.BlockNYCSubwayEntrance2Sign;
+import org.mtrus.block.BlockNYCSubwayEmergencyExitDoor;
 import org.mtrus.block.OBJBlock;
 import org.mtrus.block.OBJDoubleVerticalBlock;
 import org.mtrus.block.OBJTripleVerticalBlock;
@@ -486,6 +487,9 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_ROOF_4;
     public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_ROOF_5;
     public static BlockRegistryObject NYC_SUBWAY_ENTRANCE_2_SIGN;
+    public static BlockRegistryObject NYC_SUBWAY_TICKETING_AREA_FENCE_1;
+    public static BlockRegistryObject NYC_SUBWAY_TICKETING_AREA_FENCE_2;
+    public static BlockRegistryObject NYC_SUBWAY_EMERGENCY_EXIT_DOOR;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -3047,6 +3051,24 @@ public final class ModBlocks {
         NYC_SUBWAY_ENTRANCE_2_SIGN = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_entrance_2_sign"),
                 () -> new Block(new BlockNYCSubwayEntrance2Sign(createDefaultBlockSettings(false).nonOpaque())),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TICKETING_AREA_FENCE_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ticketing_area_fence_1"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_ticketing_area_fence_1.obj", 0, new double[][]{{0, 0, 7.75, 16, 16, 8.25}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TICKETING_AREA_FENCE_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ticketing_area_fence_2"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/nyc_subway_ticketing_area_fence_2.obj", 0, new double[][]{{0, 0, 7.75, 16, 16, 8.25}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_EMERGENCY_EXIT_DOOR = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_emergency_exit_door"),
+                () -> new Block(new BlockNYCSubwayEmergencyExitDoor(createDefaultBlockSettings(false).nonOpaque())),
                 ModCreativeModeTabs.MAIN
         );
     }

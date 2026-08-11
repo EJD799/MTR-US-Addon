@@ -42,6 +42,7 @@ import org.mtrus.render.RenderNYCSubwayStationNameTile1;
 import org.mtrus.render.RenderNYCSubwayStationNameTile2;
 import org.mtrus.render.RenderNYCSubwayEntrance1Sign;
 import org.mtrus.render.RenderNYCSubwayEntrance2Sign;
+import org.mtrus.render.RenderNYCSubwayEmergencyExitDoor;
 import org.mtrus.screen.ResourcePackWarningScreen;
 
 import com.google.gson.JsonObject;
@@ -314,6 +315,13 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlockEntityTypes.NYC_SUBWAY_ENTRANCE_2_SIGN,
                 argument -> {
                         return new RenderNYCSubwayEntrance2Sign(argument);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.NYC_SUBWAY_EMERGENCY_EXIT_DOOR,
+                argument -> {
+                        return new RenderNYCSubwayEmergencyExitDoor(argument);
                 }
         );
 
