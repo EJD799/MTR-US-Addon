@@ -1,0 +1,6 @@
+# Made in Blockbench 5.1.6
+newmtl m_bcbf4210-acc6-3d37-c3bb-51b9fc50e555
+map_Kd concrete.png
+newmtl m_4a76a50a-6332-4647-e48e-1cc4a548032a
+map_Kd steel.png
+newmtl none
