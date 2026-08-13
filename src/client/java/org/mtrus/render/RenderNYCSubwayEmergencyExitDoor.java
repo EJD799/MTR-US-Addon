@@ -47,9 +47,9 @@ public class RenderNYCSubwayEmergencyExitDoor extends BlockEntityRenderer<BlockN
 
             OptimizedModelWrapper modelTemp;
             if (IBlock.getStatePropertySafe(state, BlockNYCSubwayEmergencyExitDoor.OPEN) == BlockNYCSubwayEmergencyExitDoor.EnumNYCSubwayEmergencyExitDoorOpen.OPEN) {
-                modelTemp = OBJModelResource.getModel("mtrus:obj/nyc_emergency_exit_door_open.obj", false);
+                modelTemp = OBJModelResource.getModel("mtrus:obj/nyc_subway_emergency_exit_door_open.obj", false);
             } else {
-                modelTemp = OBJModelResource.getModel("mtrus:obj/nyc_emergency_exit_door_closed.obj", false);
+                modelTemp = OBJModelResource.getModel("mtrus:obj/nyc_subway_emergency_exit_door_closed.obj", false);
             }
             final OptimizedModelWrapper model = modelTemp;
 

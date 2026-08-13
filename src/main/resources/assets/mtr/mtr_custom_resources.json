@@ -2,52 +2,36 @@
     "rails": [
 		{
 			"id": "dc_metro_rail_1",
-			"name": "DC Metro Rail (Underground)",
+			"name": "DC Metro Rail (Underground/Elevated)",
 			"color": "C4C4C4",
 			"modelResource": "mtrus:rails/dc_metro_rail_1.obj",
-			"repeatInterval": 0.0625,
+			"repeatInterval": 0.59,
 			"flipTextureV": true
 		},
         {
-			"id": "dc_metro_rail_1_third_rail_left",
-			"name": "DC Metro Rail (Underground, Third Rail Left)",
+			"id": "dc_metro_rail_1_third_rail",
+			"name": "DC Metro Rail (Underground/Elevated, with Third Rail)",
 			"color": "C4C4C4",
-			"modelResource": "mtrus:rails/dc_metro_rail_1_third_rail_left.obj",
-			"repeatInterval": 0.0625,
+			"modelResource": "mtrus:rails/dc_metro_rail_1_third_rail.obj",
+			"repeatInterval": 0.59,
 			"flipTextureV": true
 		},
-        {
-            "id": "dc_metro_rail_1_third_rail_right",
-            "name": "DC Metro Rail (Underground, Third Rail Right)",
-            "color": "C4C4C4",
-            "modelResource": "mtrus:rails/dc_metro_rail_1_third_rail_right.obj",
-            "repeatInterval": 0.0625,
-            "flipTextureV": true
-        },
         {
 			"id": "dc_metro_rail_2",
-			"name": "DC Metro Rail (Above-ground)",
+			"name": "DC Metro Rail (At-grade)",
 			"color": "C4C4C4",
 			"modelResource": "mtrus:rails/dc_metro_rail_2.obj",
-			"repeatInterval": 0.0625,
+			"repeatInterval": 0.59,
 			"flipTextureV": true
 		},
         {
-			"id": "dc_metro_rail_2_third_rail_left",
-			"name": "DC Metro Rail (Above-ground, Third Rail Left)",
+			"id": "dc_metro_rail_2_third_rail",
+			"name": "DC Metro Rail (At-grade, with Third Rail)",
 			"color": "C4C4C4",
-			"modelResource": "mtrus:rails/dc_metro_rail_2_third_rail_left.obj",
-			"repeatInterval": 0.0625,
+			"modelResource": "mtrus:rails/dc_metro_rail_2_third_rail.obj",
+			"repeatInterval": 0.59,
 			"flipTextureV": true
 		},
-        {
-            "id": "dc_metro_rail_2_third_rail_right",
-            "name": "DC Metro Rail (Above-ground, Third Rail Right)",
-            "color": "C4C4C4",
-            "modelResource": "mtrus:rails/dc_metro_rail_2_third_rail_right.obj",
-            "repeatInterval": 0.0625,
-            "flipTextureV": true
-        },
         {
             "id": "dc_metro_tunnel",
             "name": "DC Metro Tunnel",
@@ -58,52 +42,36 @@
         },
         {
 			"id": "nyc_subway_rail_1",
-			"name": "NYC Subway Rail (Underground)",
+			"name": "NYC Subway Rail (Underground/Elevated)",
 			"color": "C4C4C4",
 			"modelResource": "mtrus:rails/nyc_subway_rail_1.obj",
-			"repeatInterval": 0.0625,
+			"repeatInterval": 0.59,
 			"flipTextureV": true
 		},
         {
-			"id": "nyc_subway_rail_1_third_rail_left",
-			"name": "NYC Subway Rail (Underground, Third Rail Left)",
+			"id": "nyc_subway_rail_1_third_rail",
+			"name": "NYC Subway Rail (Underground/Elevated, with Third Rail)",
 			"color": "C4C4C4",
-			"modelResource": "mtrus:rails/nyc_subway_rail_1_third_rail_left.obj",
-			"repeatInterval": 0.0625,
+			"modelResource": "mtrus:rails/nyc_subway_rail_1_third_rail.obj",
+			"repeatInterval": 0.59,
 			"flipTextureV": true
 		},
-        {
-            "id": "nyc_subway_rail_1_third_rail_right",
-            "name": "NYC Subway Rail (Underground, Third Rail Right)",
-            "color": "C4C4C4",
-            "modelResource": "mtrus:rails/nyc_subway_rail_1_third_rail_right.obj",
-            "repeatInterval": 0.0625,
-            "flipTextureV": true
-        },
         {
 			"id": "nyc_subway_rail_2",
-			"name": "NYC Subway Rail (Above-ground)",
+			"name": "NYC Subway Rail (At-grade)",
 			"color": "C4C4C4",
 			"modelResource": "mtrus:rails/nyc_subway_rail_2.obj",
-			"repeatInterval": 0.0625,
+			"repeatInterval": 0.59,
 			"flipTextureV": true
 		},
         {
-			"id": "nyc_subway_rail_2_third_rail_left",
-			"name": "NYC Subway Rail (Above-ground, Third Rail Left)",
+			"id": "nyc_subway_rail_2_third_rail",
+			"name": "NYC Subway Rail (At-grade, with Third Rail)",
 			"color": "C4C4C4",
-			"modelResource": "mtrus:rails/nyc_subway_rail_2_third_rail_left.obj",
-			"repeatInterval": 0.0625,
+			"modelResource": "mtrus:rails/nyc_subway_rail_2_third_rail.obj",
+			"repeatInterval": 0.59,
 			"flipTextureV": true
 		},
-        {
-            "id": "nyc_subway_rail_2_third_rail_right",
-            "name": "NYC Subway Rail (Above-ground, Third Rail Right)",
-            "color": "C4C4C4",
-            "modelResource": "mtrus:rails/nyc_subway_rail_2_third_rail_right.obj",
-            "repeatInterval": 0.0625,
-            "flipTextureV": true
-        },
         {
             "id": "nyc_subway_tunnel",
             "name": "NYC Subway Tunnel",
