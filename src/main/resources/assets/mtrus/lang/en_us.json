@@ -311,6 +311,12 @@
   "block.mtrus.dc_metro_signal_light_3r": "DC Metro Signal Light (Wall-mounted, Side, Always Red)",
   "block.mtrus.dc_metro_signal_light_3w": "DC Metro Signal Light (Wall-mounted, Side, Always White)",
 
+  "block.mtrus.dc_metro_mezzanine_1": "DC Metro Mezzanine (Part 1)",
+  "block.mtrus.dc_metro_mezzanine_2": "DC Metro Mezzanine (Part 2)",
+  "block.mtrus.dc_metro_mezzanine_3": "DC Metro Mezzanine (Part 3)",
+  "block.mtrus.dc_metro_mezzanine_light_1": "DC Metro Mezzanine Light",
+  "block.mtrus.dc_metro_mezzanine_light_2": "DC Metro Mezzanine Light (with Pole)",
+
   "block.mtrus.dc_metrobus_sign": "DC Metrobus Sign",
   "block.mtrus.dc_metrobus_sign_pole": "DC Metrobus Sign Pole",
   "block.mtrus.dc_metrobus_bench_1": "DC Metrobus Bench (Left)",
