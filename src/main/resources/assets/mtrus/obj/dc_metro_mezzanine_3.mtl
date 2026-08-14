@@ -1,0 +1,8 @@
+# Made in Blockbench 5.1.6
+newmtl m_6c354b02-c1b0-9c5d-313f-b4e671151156
+map_Kd concrete.png
+newmtl m_7348e0d8-c6ae-599c-be56-6538e30fe40e
+map_Kd dc_metro_tile.png
+newmtl m_400c3830-a59d-7a16-7011-84d64c2e2917
+map_Kd dc_metro_mezzanine_bottom.png
+newmtl none

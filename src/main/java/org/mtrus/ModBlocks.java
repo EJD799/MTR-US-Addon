@@ -340,6 +340,11 @@ public final class ModBlocks {
     public static BlockRegistryObject DC_METRO_SIGNAL_LIGHT_2W;
     public static BlockRegistryObject DC_METRO_SIGNAL_LIGHT_3R;
     public static BlockRegistryObject DC_METRO_SIGNAL_LIGHT_3W;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_1;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_2;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_3;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_LIGHT_1;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_LIGHT_2;
     public static BlockRegistryObject DC_METROBUS_SIGN;
     public static BlockRegistryObject DC_METROBUS_SIGN_POLE;
     public static BlockRegistryObject DC_METROBUS_BENCH_1;
@@ -2160,6 +2165,36 @@ public final class ModBlocks {
         DC_METRO_SIGNAL_LIGHT_3W = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_signal_light_3w"),
                 () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_signal_light_3w.obj", 0, new double[][]{{0, 0, 6.5, 5, 16, 9.5}}, true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_1"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_1.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_2"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_2.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_3 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_3"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_3.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_LIGHT_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_light_1"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_light_1.obj", 15, new double[][]{{0, 0, 0, 16, 16, 16}}, true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_LIGHT_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_light_2"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_light_2.obj", 15, new double[][]{{0, 0, 0, 16, 16, 16}}, true)),
                 ModCreativeModeTabs.MAIN
         );
 
