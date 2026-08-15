@@ -11,6 +11,7 @@ import org.mtrus.block.OBJTicketMachineEntity;
 import org.mtrus.block.OBJBenchEntity;
 import org.mtrus.block.OBJSignalLightEntity;
 import org.mtrus.block.BlockDCMetroStationNameWallEntity;
+import org.mtrus.block.BlockDCMetroStationNameEntranceCeilingEntity;
 import org.mtrus.block.BlockDCMetroLCDPIDSEntity;
 import org.mtrus.block.BlockDCMetroLEDPIDSEntity;
 import org.mtrus.block.BlockDCMetroNewLEDPIDSEntity;
@@ -46,6 +47,7 @@ public final class ModBlockEntityTypes {
     public static BlockEntityTypeRegistryObject<OBJSignalLightEntity> OBJ_SIGNAL_LIGHT = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNameWallEntity> DC_METRO_STATION_NAME_WALL = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNamePoleEntity> DC_METRO_STATION_NAME_POLE = null;
+    public static BlockEntityTypeRegistryObject<BlockDCMetroStationNameEntranceCeilingEntity> DC_METRO_STATION_NAME_ENTRANCE_CEILING = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationPoleEntity> DC_METRO_STATION_POLE = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroPlatformPoleEntity> DC_METRO_PLATFORM_POLE = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroLEDPIDSEntity> DC_METRO_LED_PIDS = null;
@@ -289,6 +291,8 @@ public final class ModBlockEntityTypes {
                 ModBlocks.DC_METRO_MEZZANINE_4D::get,
                 ModBlocks.DC_METRO_MEZZANINE_LIGHT_1::get,
                 ModBlocks.DC_METRO_MEZZANINE_LIGHT_2::get,
+                ModBlocks.DC_METRO_ENTRANCE_CEILING_1::get,
+                ModBlocks.DC_METRO_ENTRANCE_CEILING_2::get,
                 ModBlocks.DC_METROBUS_WALL_1::get,
                 ModBlocks.DC_METROBUS_WALL_2::get,
                 ModBlocks.DC_METROBUS_WALL_3::get,
@@ -456,6 +460,12 @@ public final class ModBlockEntityTypes {
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_station_name_pole"),
                 BlockDCMetroStationNamePoleEntity::new,
                 ModBlocks.DC_METRO_STATION_NAME_POLE::get
+        );
+
+        DC_METRO_STATION_NAME_ENTRANCE_CEILING = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_station_name_entrance_ceiling"),
+                BlockDCMetroStationNameEntranceCeilingEntity::new,
+                ModBlocks.DC_METRO_STATION_NAME_ENTRANCE_CEILING::get
         );
 
         DC_METRO_STATION_POLE = MTRUSAddon.registry.registerBlockEntityType(

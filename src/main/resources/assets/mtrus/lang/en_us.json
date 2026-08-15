@@ -71,6 +71,7 @@
   "block.mtrus.dc_metro_station_name_wall": "DC Metro Station Name (Wall)",
   "block.mtrus.dc_metro_station_name_pole": "DC Metro Station Name (Pole)",
   "block.mtrus.dc_metro_station_name_pole_pole": "DC Metro Station Name (Pole) Pole",
+  "block.mtrus.dc_metro_station_name_entrance_ceiling": "DC Metro Station Name (Entrance Ceiling)",
   "block.mtrus.dc_metro_station_pole_1": "DC Metro Station Pylon (Bottom)",
   "block.mtrus.dc_metro_station_pole_2": "DC Metro Station Pylon (Top)",
   "block.mtrus.dc_metro_station_pole_1_d": "DC Metro Station Pylon (Bottom, Diagonal)",

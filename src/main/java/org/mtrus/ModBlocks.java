@@ -27,6 +27,7 @@ import org.mtrus.block.BlockDCMetroLCDPIDSPole3;
 import org.mtrus.block.FacingSlabBlock;
 import org.mtrus.block.BlockDCMetroStationNameWall;
 import org.mtrus.block.BlockDCMetroStationNameWallEnd;
+import org.mtrus.block.BlockDCMetroStationNameEntranceCeiling;
 import org.mtrus.block.BlockDCMetroStationPole;
 import org.mtrus.block.BlockDCMetroPlatformPole;
 import org.mtrus.block.BlockDCMetroRoofEPillar;
@@ -278,6 +279,7 @@ public final class ModBlocks {
     public static BlockRegistryObject DC_METRO_STATION_NAME_POLE;
     public static BlockRegistryObject DC_METRO_STATION_NAME_POLE_END;
     public static BlockRegistryObject DC_METRO_STATION_NAME_POLE_POLE;
+    public static BlockRegistryObject DC_METRO_STATION_NAME_ENTRANCE_CEILING;
     public static BlockRegistryObject DC_METRO_STATION_POLE_1;
     public static BlockRegistryObject DC_METRO_STATION_POLE_1_D;
     public static BlockRegistryObject DC_METRO_STATION_POLE_2;
@@ -355,6 +357,8 @@ public final class ModBlocks {
     public static BlockRegistryObject DC_METRO_MEZZANINE_4D;
     public static BlockRegistryObject DC_METRO_MEZZANINE_LIGHT_1;
     public static BlockRegistryObject DC_METRO_MEZZANINE_LIGHT_2;
+    public static BlockRegistryObject DC_METRO_ENTRANCE_CEILING_1;
+    public static BlockRegistryObject DC_METRO_ENTRANCE_CEILING_2;
     public static BlockRegistryObject DC_METROBUS_SIGN;
     public static BlockRegistryObject DC_METROBUS_SIGN_POLE;
     public static BlockRegistryObject DC_METROBUS_BENCH_1;
@@ -1787,6 +1791,12 @@ public final class ModBlocks {
                         )),
                 ModCreativeModeTabs.MAIN
         );
+
+        DC_METRO_STATION_NAME_ENTRANCE_CEILING = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_station_name_entrance_ceiling"),
+                () -> new Block(new BlockDCMetroStationNameEntranceCeiling(createDefaultBlockSettings(false).nonOpaque())),
+                ModCreativeModeTabs.MAIN
+        );
         
         DC_METRO_STATION_POLE_1 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_station_pole_1"),
@@ -2265,6 +2275,18 @@ public final class ModBlocks {
         DC_METRO_MEZZANINE_LIGHT_2 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_light_2"),
                 () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_light_2.obj", 15, new double[][]{{0, 0, 0, 16, 16, 16}}, true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_ENTRANCE_CEILING_1 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_entrance_ceiling_1"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_entrance_ceiling_1.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_ENTRANCE_CEILING_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_entrance_ceiling_2"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_entrance_ceiling_2.obj", 0, new double[][]{{0, 0, 0, 16, 16, 8}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 

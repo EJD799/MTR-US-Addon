@@ -25,6 +25,7 @@ import org.mtrus.render.RenderOBJBench;
 import org.mtrus.render.RenderOBJSignalLight;
 import org.mtrus.render.RenderDCMetroStationNameWall;
 import org.mtrus.render.RenderDCMetroStationNamePole;
+import org.mtrus.render.RenderDCMetroStationNameEntranceCeiling;
 import org.mtrus.render.RenderDCMetroStationPole;
 import org.mtrus.render.RenderDCMetroPlatformPole;
 import org.mtrus.render.RenderDCMetroLEDPIDS;
@@ -196,6 +197,13 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlockEntityTypes.DC_METRO_STATION_NAME_POLE,
                 argument -> {
                         return new RenderDCMetroStationNamePole(argument);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.DC_METRO_STATION_NAME_ENTRANCE_CEILING,
+                argument -> {
+                        return new RenderDCMetroStationNameEntranceCeiling(argument);
                 }
         );
 
