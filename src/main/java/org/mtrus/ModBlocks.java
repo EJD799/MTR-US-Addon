@@ -9,10 +9,8 @@ import org.mtr.mod.block.BlockPlatformSlab;
 import org.mtr.mod.item.ItemBlockEnchanted;
 import org.mtrus.block.BlockPlatformLight;
 import org.mtrus.block.BlockPlatformLightSlab;
-import org.mtrus.block.BlockDCMetroLEDPIDS;
 import org.mtrus.block.BlockDCMetroLEDPIDSPole;
 import org.mtrus.block.BlockDCMetroLEDPIDSCrossbar;
-import org.mtrus.block.BlockDCMetroNewLEDPIDS;
 import org.mtrus.block.BlockDCMetroNewLEDPIDSPole1;
 import org.mtrus.block.BlockDCMetroNewLEDPIDSPole2;
 import org.mtrus.block.BlockDCMetroNewLEDPIDSPole3;
@@ -20,7 +18,6 @@ import org.mtrus.block.BlockDCMetroPSDDoor;
 import org.mtrus.block.BlockDCMetroPSDGlass;
 import org.mtrus.block.BlockDCMetroPSD2Door;
 import org.mtrus.block.BlockDCMetroPSD2Glass;
-import org.mtrus.block.BlockDCMetroLCDPIDS;
 import org.mtrus.block.BlockDCMetroLCDPIDSPole1;
 import org.mtrus.block.BlockDCMetroLCDPIDSPole2;
 import org.mtrus.block.BlockDCMetroLCDPIDSPole3;
@@ -49,7 +46,6 @@ import org.mtrus.block.BlockDCMetroSystemMap2;
 import org.mtrus.block.BlockDCMetrobusSign;
 import org.mtrus.block.BlockDCMetrobusSignPole;
 import org.mtrus.block.BlockDCMetrobusStationName;
-import org.mtrus.block.BlockDCMetrobusPIDS;
 import org.mtrus.block.BlockNYCSubwayPillar;
 import org.mtrus.block.BlockNYCSubwayStationNamePillar;
 import org.mtrus.block.BlockNYCSubwayStationNameWall;
@@ -67,6 +63,7 @@ import org.mtrus.block.OBJFareGate;
 import org.mtrus.block.OBJTicketMachine;
 import org.mtrus.block.OBJBench;
 import org.mtrus.block.OBJSignalLight;
+import org.mtrus.block.OBJPIDS;
 
 import static org.mtr.mod.Blocks.createDefaultBlockSettings;
 
@@ -1974,7 +1971,7 @@ public final class ModBlocks {
 
         DC_METRO_LED_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_led_pids"),
-                () -> new Block(new BlockDCMetroLEDPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque())),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "rv_pids", "wmata_pids", 4, "mtrus:obj/dc_metro_led_pids.obj", new double[][]{{3, 2, 0, 13, 16, 12}}, false, new float[]{-0.21F, -0.48F, -0.255F, 0, 0, 0}, 136, 76)),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -1996,7 +1993,7 @@ public final class ModBlocks {
 
         DC_METRO_NEW_LED_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_new_led_pids"),
-                () -> new Block(new BlockDCMetroNewLEDPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque())),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "rv_pids", "wmata_pids_led_new", 4, "mtrus:obj/dc_metro_new_led_pids.obj", new double[][]{{4, 2, 0, 12, 16, 12}}, false, new float[]{-0.21F, -0.48F, -0.255F, 0, 0, 0}, 136, 76)),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -2026,7 +2023,7 @@ public final class ModBlocks {
 
         DC_METRO_LCD_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_lcd_pids"),
-                () -> new Block(new BlockDCMetroLCDPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque())),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "rv_pids", "wmata_pids_lcd_gray", 4, "mtrus:obj/dc_metro_lcd_pids.obj", new double[][]{{4, 2, 0, 12, 16, 12}}, false, new float[]{-0.21F, -0.48F, -0.255F, 0, 0, 0}, 136, 76)),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -2286,7 +2283,7 @@ public final class ModBlocks {
 
         DC_METRO_ENTRANCE_CEILING_2 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_entrance_ceiling_2"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_entrance_ceiling_2.obj", 0, new double[][]{{0, 0, 0, 16, 16, 8}}, false)),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_entrance_ceiling_2.obj", 0, new double[][]{{0, 0, 8, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -2452,7 +2449,7 @@ public final class ModBlocks {
 
         DC_METROBUS_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metrobus_pids"),
-                () -> new Block(new BlockDCMetrobusPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque())),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "pids_1a", "wmata_bus_pids", 2, "mtrus:obj/dc_metrobus_pids.obj", new double[][]{{6, 8, 0, 10, 19, 16}}, false, new float[]{-0.47F, -0.655F, -0.130F, 0, 0, 0}, 186, 60)),
                 ModCreativeModeTabs.MAIN
         );
 

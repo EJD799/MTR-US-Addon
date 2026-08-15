@@ -23,19 +23,16 @@ import org.mtrus.render.RenderOBJFareGate;
 import org.mtrus.render.RenderOBJTicketMachine;
 import org.mtrus.render.RenderOBJBench;
 import org.mtrus.render.RenderOBJSignalLight;
+import org.mtrus.render.RenderOBJPIDS;
 import org.mtrus.render.RenderDCMetroStationNameWall;
 import org.mtrus.render.RenderDCMetroStationNamePole;
 import org.mtrus.render.RenderDCMetroStationNameEntranceCeiling;
 import org.mtrus.render.RenderDCMetroStationPole;
 import org.mtrus.render.RenderDCMetroPlatformPole;
-import org.mtrus.render.RenderDCMetroLEDPIDS;
-import org.mtrus.render.RenderDCMetroNewLEDPIDS;
-import org.mtrus.render.RenderDCMetroLCDPIDS;
 import org.mtrus.render.RenderDCMetroPSDDoor;
 import org.mtrus.render.RenderDCMetroPSD2Door;
 import org.mtrus.render.RenderDCMetrobusSign;
 import org.mtrus.render.RenderDCMetrobusStationName;
-import org.mtrus.render.RenderDCMetrobusPIDS;
 import org.mtrus.render.RenderNYCSubwayStationNamePillar;
 import org.mtrus.render.RenderNYCSubwayStationNameWall;
 import org.mtrus.render.RenderNYCSubwayStationNameEntrance;
@@ -187,6 +184,13 @@ public class MTRUSAddonClient implements ClientModInitializer {
         );
 
         registryClient.registerBlockEntityRenderer(
+                ModBlockEntityTypes.OBJ_PIDS,
+                argument -> {
+                        return new RenderOBJPIDS(argument);
+                }
+        );
+
+        registryClient.registerBlockEntityRenderer(
                 ModBlockEntityTypes.DC_METRO_STATION_NAME_WALL,
                 argument -> {
                         return new RenderDCMetroStationNameWall(argument);
@@ -222,27 +226,6 @@ public class MTRUSAddonClient implements ClientModInitializer {
         );
 
         registryClient.registerBlockEntityRenderer(
-                ModBlockEntityTypes.DC_METRO_LED_PIDS,
-                argument -> {
-                        return new RenderDCMetroLEDPIDS(argument);
-                }
-        );
-
-        registryClient.registerBlockEntityRenderer(
-                ModBlockEntityTypes.DC_METRO_NEW_LED_PIDS,
-                argument -> {
-                        return new RenderDCMetroNewLEDPIDS(argument);
-                }
-        );
-
-        registryClient.registerBlockEntityRenderer(
-                ModBlockEntityTypes.DC_METRO_LCD_PIDS,
-                argument -> {
-                        return new RenderDCMetroLCDPIDS(argument);
-                }
-        );
-
-        registryClient.registerBlockEntityRenderer(
                 ModBlockEntityTypes.DC_METRO_PSD_DOOR,
                 argument -> {
                         return new RenderDCMetroPSDDoor<BlockDCMetroPSDDoorEntity>(argument, 2);
@@ -267,13 +250,6 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlockEntityTypes.DC_METROBUS_STATION_NAME,
                 argument -> {
                         return new RenderDCMetrobusStationName(argument);
-                }
-        );
-
-        registryClient.registerBlockEntityRenderer(
-                ModBlockEntityTypes.DC_METROBUS_PIDS,
-                argument -> {
-                        return new RenderDCMetrobusPIDS(argument);
                 }
         );
 

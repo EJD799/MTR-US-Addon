@@ -10,11 +10,9 @@ import org.mtrus.block.OBJFareGateEntity;
 import org.mtrus.block.OBJTicketMachineEntity;
 import org.mtrus.block.OBJBenchEntity;
 import org.mtrus.block.OBJSignalLightEntity;
+import org.mtrus.block.OBJPIDSEntity;
 import org.mtrus.block.BlockDCMetroStationNameWallEntity;
 import org.mtrus.block.BlockDCMetroStationNameEntranceCeilingEntity;
-import org.mtrus.block.BlockDCMetroLCDPIDSEntity;
-import org.mtrus.block.BlockDCMetroLEDPIDSEntity;
-import org.mtrus.block.BlockDCMetroNewLEDPIDSEntity;
 import org.mtrus.block.BlockDCMetroPSDDoorEntity;
 import org.mtrus.block.BlockDCMetroPSDGlassEntity;
 import org.mtrus.block.BlockDCMetroPSD2DoorEntity;
@@ -24,7 +22,6 @@ import org.mtrus.block.BlockDCMetroStationNamePoleEntity;
 import org.mtrus.block.BlockDCMetroStationPoleEntity;
 import org.mtrus.block.BlockDCMetrobusSignEntity;
 import org.mtrus.block.BlockDCMetrobusStationNameEntity;
-import org.mtrus.block.BlockDCMetrobusPIDSEntity;
 import org.mtrus.block.BlockNYCSubwayStationNamePillarEntity;
 import org.mtrus.block.BlockNYCSubwayStationNameWallEntity;
 import org.mtrus.block.BlockNYCSubwayStationNameEntranceEntity;
@@ -45,21 +42,18 @@ public final class ModBlockEntityTypes {
     public static BlockEntityTypeRegistryObject<OBJTicketMachineEntity> OBJ_TICKET_MACHINE = null;
     public static BlockEntityTypeRegistryObject<OBJBenchEntity> OBJ_BENCH = null;
     public static BlockEntityTypeRegistryObject<OBJSignalLightEntity> OBJ_SIGNAL_LIGHT = null;
+    public static BlockEntityTypeRegistryObject<OBJPIDSEntity> OBJ_PIDS = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNameWallEntity> DC_METRO_STATION_NAME_WALL = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNamePoleEntity> DC_METRO_STATION_NAME_POLE = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationNameEntranceCeilingEntity> DC_METRO_STATION_NAME_ENTRANCE_CEILING = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroStationPoleEntity> DC_METRO_STATION_POLE = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroPlatformPoleEntity> DC_METRO_PLATFORM_POLE = null;
-    public static BlockEntityTypeRegistryObject<BlockDCMetroLEDPIDSEntity> DC_METRO_LED_PIDS = null;
-    public static BlockEntityTypeRegistryObject<BlockDCMetroNewLEDPIDSEntity> DC_METRO_NEW_LED_PIDS = null;
-    public static BlockEntityTypeRegistryObject<BlockDCMetroLCDPIDSEntity> DC_METRO_LCD_PIDS = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroPSDDoorEntity> DC_METRO_PSD_DOOR = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroPSDGlassEntity> DC_METRO_PSD_GLASS = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroPSD2DoorEntity> DC_METRO_PSD_2_DOOR = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetroPSD2GlassEntity> DC_METRO_PSD_2_GLASS = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetrobusSignEntity> DC_METROBUS_SIGN = null;
     public static BlockEntityTypeRegistryObject<BlockDCMetrobusStationNameEntity> DC_METROBUS_STATION_NAME = null;
-    public static BlockEntityTypeRegistryObject<BlockDCMetrobusPIDSEntity> DC_METROBUS_PIDS = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNamePillarEntity> NYC_SUBWAY_STATION_NAME_PILLAR = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNameWallEntity> NYC_SUBWAY_STATION_NAME_WALL = null;
     public static BlockEntityTypeRegistryObject<BlockNYCSubwayStationNameEntranceEntity> NYC_SUBWAY_STATION_NAME_ENTRANCE = null;
@@ -450,6 +444,15 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_SIGNAL_LIGHT_3::get
         );
 
+        OBJ_PIDS = MTRUSAddon.registry.registerBlockEntityType(
+                new Identifier(MTRUSAddon.MOD_ID, "obj_pids"),
+                (pos, state) -> new OBJPIDSEntity(pos, state, "", "", 4),
+                ModBlocks.DC_METRO_LED_PIDS::get,
+                ModBlocks.DC_METRO_NEW_LED_PIDS::get,
+                ModBlocks.DC_METRO_LCD_PIDS::get,
+                ModBlocks.DC_METROBUS_PIDS::get
+        );
+
         DC_METRO_STATION_NAME_WALL = MTRUSAddon.registry.registerBlockEntityType(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_station_name_wall"),
                 BlockDCMetroStationNameWallEntity::new,
@@ -482,24 +485,6 @@ public final class ModBlockEntityTypes {
                 ModBlocks.DC_METRO_PLATFORM_POLE_2_D::get,
                 ModBlocks.DC_METRO_PLATFORM_POLE_3::get,
                 ModBlocks.DC_METRO_PLATFORM_POLE_3_D::get
-        );
-
-        DC_METRO_LED_PIDS = MTRUSAddon.registry.registerBlockEntityType(
-                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_led_pids"),
-                BlockDCMetroLEDPIDSEntity::new,
-                ModBlocks.DC_METRO_LED_PIDS::get
-        );
-
-        DC_METRO_NEW_LED_PIDS = MTRUSAddon.registry.registerBlockEntityType(
-                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_new_led_pids"),
-                BlockDCMetroNewLEDPIDSEntity::new,
-                ModBlocks.DC_METRO_NEW_LED_PIDS::get
-        );
-
-        DC_METRO_LCD_PIDS = MTRUSAddon.registry.registerBlockEntityType(
-                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_lcd_pids"),
-                BlockDCMetroLCDPIDSEntity::new,
-                ModBlocks.DC_METRO_LCD_PIDS::get
         );
 
         DC_METRO_PSD_DOOR = MTRUSAddon.registry.registerBlockEntityType(
@@ -536,12 +521,6 @@ public final class ModBlockEntityTypes {
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metrobus_station_name"),
                 BlockDCMetrobusStationNameEntity::new,
                 ModBlocks.DC_METROBUS_STATION_NAME::get
-        );
-
-        DC_METROBUS_PIDS = MTRUSAddon.registry.registerBlockEntityType(
-                new Identifier(MTRUSAddon.MOD_ID, "dc_metrobus_pids"),
-                BlockDCMetrobusPIDSEntity::new,
-                ModBlocks.DC_METROBUS_PIDS::get
         );
 
         NYC_SUBWAY_STATION_NAME_PILLAR = MTRUSAddon.registry.registerBlockEntityType(

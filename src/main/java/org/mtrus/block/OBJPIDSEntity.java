@@ -9,25 +9,32 @@ import org.mtrus.ModBlockEntityTypes;
 
 import static com.lx862.jcm.mod.block.base.DirectionalBlock.FACING;
 
-public class BlockDCMetroLCDPIDSEntity extends PIDSBlockEntity {
+public class OBJPIDSEntity extends PIDSBlockEntity {
+    private final String pidsType;
+    private final String defaultPreset;
+    private final int rowCount;
 
-    public BlockDCMetroLCDPIDSEntity(BlockPos blockPos, BlockState blockState) {
-        super(ModBlockEntityTypes.DC_METRO_LCD_PIDS.get(), blockPos, blockState);
+    public OBJPIDSEntity(BlockPos blockPos, BlockState blockState, String pidsType, String defaultPreset, int rowCount) {
+        super(ModBlockEntityTypes.OBJ_PIDS.get(), blockPos, blockState);
+
+        this.pidsType = pidsType;
+        this.defaultPreset = defaultPreset;
+        this.rowCount = rowCount;
     }
 
     @Override
     public String getPIDSType() {
-        return "rv_pids";
+        return pidsType;
     }
 
     @Override
     public String getDefaultPresetId() {
-        return "wmata_pids_lcd_gray";
+        return defaultPreset;
     }
 
     @Override
     public int getRowAmount() {
-        return 4;
+        return rowCount;
     }
 
     @Override
