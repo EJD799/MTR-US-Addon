@@ -341,8 +341,18 @@ public final class ModBlocks {
     public static BlockRegistryObject DC_METRO_SIGNAL_LIGHT_3R;
     public static BlockRegistryObject DC_METRO_SIGNAL_LIGHT_3W;
     public static BlockRegistryObject DC_METRO_MEZZANINE_1;
-    public static BlockRegistryObject DC_METRO_MEZZANINE_2;
-    public static BlockRegistryObject DC_METRO_MEZZANINE_3;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_2A;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_2B;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_2C;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_2D;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_3A;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_3B;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_3C;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_3D;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_4A;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_4B;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_4C;
+    public static BlockRegistryObject DC_METRO_MEZZANINE_4D;
     public static BlockRegistryObject DC_METRO_MEZZANINE_LIGHT_1;
     public static BlockRegistryObject DC_METRO_MEZZANINE_LIGHT_2;
     public static BlockRegistryObject DC_METROBUS_SIGN;
@@ -2174,15 +2184,75 @@ public final class ModBlocks {
                 ModCreativeModeTabs.MAIN
         );
 
-        DC_METRO_MEZZANINE_2 = registry.registerBlockWithBlockItem(
-                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_2"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_2.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+        DC_METRO_MEZZANINE_2A = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_2a"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_2a.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 
-        DC_METRO_MEZZANINE_3 = registry.registerBlockWithBlockItem(
-                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_3"),
-                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_3.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+        DC_METRO_MEZZANINE_2B = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_2b"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_2b.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_2C = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_2c"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_2c.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_2D = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_2d"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_2d.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_3A = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_3a"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_3a.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_3B = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_3b"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_3b.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_3C = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_3c"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_3c.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_3D = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_3d"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_3d.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_4A = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_4a"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_4a.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_4B = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_4b"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_4b.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_4C = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_4c"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_4c.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        DC_METRO_MEZZANINE_4D = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "dc_metro_mezzanine_4d"),
+                () -> new Block(new OBJBlock(createDefaultBlockSettings(false).nonOpaque(), "mtrus:obj/dc_metro_mezzanine_4d.obj", 0, new double[][]{{0, 0, 0, 16, 16, 16}}, false)),
                 ModCreativeModeTabs.MAIN
         );
 
