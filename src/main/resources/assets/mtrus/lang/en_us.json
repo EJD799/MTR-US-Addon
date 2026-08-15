@@ -328,6 +328,9 @@
   "block.mtrus.dc_metro_mezzanine_light_1": "DC Metro Mezzanine Light",
   "block.mtrus.dc_metro_mezzanine_light_2": "DC Metro Mezzanine Light (with Pole)",
 
+  "block.mtrus.dc_metro_entrance_ceiling_1": "DC Metro Entrance Ceiling",
+  "block.mtrus.dc_metro_entrance_ceiling_2": "DC Metro Entrance Ceiling (Top)",
+
   "block.mtrus.dc_metrobus_sign": "DC Metrobus Sign",
   "block.mtrus.dc_metrobus_sign_pole": "DC Metrobus Sign Pole",
   "block.mtrus.dc_metrobus_bench_1": "DC Metrobus Bench (Left)",
