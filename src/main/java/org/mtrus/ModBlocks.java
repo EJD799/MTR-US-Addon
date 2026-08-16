@@ -1971,7 +1971,7 @@ public final class ModBlocks {
 
         DC_METRO_LED_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_led_pids"),
-                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "rv_pids", "wmata_pids", 4, "mtrus:obj/dc_metro_led_pids.obj", new double[][]{{3, 2, 0, 13, 16, 12}}, false, new float[]{-0.21F, -0.48F, -0.255F, 0, 0, 0}, 136, 76)),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "rv_pids", "wmata_pids", 4, "mtrus:obj/dc_metro_led_pids.obj", new double[][]{{3, 2, 0, 13, 16, 12}}, false, new float[]{-0.21F, -0.48F, -0.255F, 0, 0, 0}, 136, 76, false)),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -1993,7 +1993,7 @@ public final class ModBlocks {
 
         DC_METRO_NEW_LED_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_new_led_pids"),
-                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "rv_pids", "wmata_pids_led_new", 4, "mtrus:obj/dc_metro_new_led_pids.obj", new double[][]{{4, 2, 0, 12, 16, 12}}, false, new float[]{-0.21F, -0.48F, -0.255F, 0, 0, 0}, 136, 76)),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "rv_pids", "wmata_pids_led_new", 4, "mtrus:obj/dc_metro_new_led_pids.obj", new double[][]{{4, 2, 0, 12, 16, 12}}, false, new float[]{-0.21F, -0.48F, -0.255F, 0, 0, 0}, 136, 76, false)),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -2023,7 +2023,7 @@ public final class ModBlocks {
 
         DC_METRO_LCD_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_lcd_pids"),
-                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "rv_pids", "wmata_pids_lcd_gray", 4, "mtrus:obj/dc_metro_lcd_pids.obj", new double[][]{{4, 2, 0, 12, 16, 12}}, false, new float[]{-0.21F, -0.48F, -0.255F, 0, 0, 0}, 136, 76)),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "rv_pids", "wmata_pids_lcd_gray", 4, "mtrus:obj/dc_metro_lcd_pids.obj", new double[][]{{4, 2, 0, 12, 16, 12}}, false, new float[]{-0.21F, -0.48F, -0.255F, 0, 0, 0}, 136, 76, false)),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -2449,7 +2449,7 @@ public final class ModBlocks {
 
         DC_METROBUS_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metrobus_pids"),
-                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "pids_1a", "wmata_bus_pids", 2, "mtrus:obj/dc_metrobus_pids.obj", new double[][]{{6, 8, 0, 10, 19, 16}}, false, new float[]{-0.47F, -0.655F, -0.130F, 0, 0, 0}, 186, 60)),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "pids_1a", "wmata_bus_pids", 2, "mtrus:obj/dc_metrobus_pids.obj", new double[][]{{6, 8, 0, 10, 19, 16}}, false, new float[]{-0.47F, -0.655F, -0.130F, 0, 0, 0}, 186, 60, true)),
                 ModCreativeModeTabs.MAIN
         );
 

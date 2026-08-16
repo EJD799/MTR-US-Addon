@@ -41,16 +41,18 @@ public class RenderOBJPIDS extends PIDSRenderer<OBJPIDSEntity> {
 
         renderBaseModel(block, pos, state, light);
 
-        final float[] pidsRenderValues = block.getPIDSRenderValues();
-        
-        storedMatrixTransformations.add(graphicsHolderNew -> {
-            graphicsHolderNew.rotateXDegrees(pidsRenderValues[3]);
-            graphicsHolderNew.rotateYDegrees(pidsRenderValues[4]);
-            graphicsHolderNew.rotateZDegrees(pidsRenderValues[5]);
+        if ((!block.getIsSingleSided()) || blockEntity.isKeyBlock()) {
+            final float[] pidsRenderValues = block.getPIDSRenderValues();
+            
+            storedMatrixTransformations.add(graphicsHolderNew -> {
+                graphicsHolderNew.rotateXDegrees(pidsRenderValues[3]);
+                graphicsHolderNew.rotateYDegrees(pidsRenderValues[4]);
+                graphicsHolderNew.rotateZDegrees(pidsRenderValues[5]);
 
-            graphicsHolderNew.translate(pidsRenderValues[0], pidsRenderValues[1], pidsRenderValues[2]);
-        });
-        pidsPreset.render(blockEntity, graphicsHolder, storedMatrixTransformations, world, blockEntity.getPos2(), facing, targetPlatformIds, arrivals, rowHidden, tickDelta, 0, 0, block.getPIDSScreenWidth(), block.getPIDSScreenHeight(), light);
+                graphicsHolderNew.translate(pidsRenderValues[0], pidsRenderValues[1], pidsRenderValues[2]);
+            });
+            pidsPreset.render(blockEntity, graphicsHolder, storedMatrixTransformations, world, blockEntity.getPos2(), facing, targetPlatformIds, arrivals, rowHidden, tickDelta, 0, 0, block.getPIDSScreenWidth(), block.getPIDSScreenHeight(), light);
+        }
     }
 
     public void renderBaseModel(OBJPIDS block, BlockPos pos, BlockState state, int light) {
