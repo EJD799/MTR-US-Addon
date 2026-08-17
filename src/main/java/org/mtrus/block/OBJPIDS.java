@@ -15,9 +15,8 @@ public class OBJPIDS extends JCMPIDSBlock {
     private final float[] pidsRenderValues;
     private final int pidsScreenWidth;
     private final int pidsScreenHeight;
-    private final boolean isSingleSided;
 
-    public OBJPIDS(BlockSettings settings, String pidsType, String defaultPreset, int rowCount, String model, double[][] boxes, boolean hasLightLayer, float[] pidsRenderValues, int pidsScreenWidth, int pidsScreenHeight, boolean isSingleSided) {
+    public OBJPIDS(BlockSettings settings, String pidsType, String defaultPreset, int rowCount, String model, double[][] boxes, boolean hasLightLayer, float[] pidsRenderValues, int pidsScreenWidth, int pidsScreenHeight) {
         super(settings);
 
         this.pidsType = pidsType;
@@ -29,7 +28,6 @@ public class OBJPIDS extends JCMPIDSBlock {
         this.pidsRenderValues = pidsRenderValues;
         this.pidsScreenWidth = pidsScreenWidth;
         this.pidsScreenHeight = pidsScreenHeight;
-        this.isSingleSided = isSingleSided;
     }
 
     @Override
@@ -47,7 +45,7 @@ public class OBJPIDS extends JCMPIDSBlock {
 
     @Override
     public BlockEntityExtension createBlockEntity(BlockPos blockPos, BlockState blockState) {
-        return new OBJPIDSEntity(blockPos, blockState, pidsType, defaultPreset, rowCount);
+        return new OBJPIDSEntity(blockPos, blockState);
     }
 
     public String getModel() {
@@ -70,7 +68,15 @@ public class OBJPIDS extends JCMPIDSBlock {
         return pidsScreenHeight;
     }
 
-    public boolean getIsSingleSided() {
-        return isSingleSided;
+    public String getPIDSType() {
+        return pidsType;
+    }
+
+    public String getDefaultPreset() {
+        return defaultPreset;
+    }
+
+    public int getRowCount() {
+        return rowCount;
     }
 }
