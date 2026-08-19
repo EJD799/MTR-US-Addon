@@ -506,6 +506,8 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_TICKETING_AREA_FENCE_1;
     public static BlockRegistryObject NYC_SUBWAY_TICKETING_AREA_FENCE_2;
     public static BlockRegistryObject NYC_SUBWAY_EMERGENCY_EXIT_DOOR;
+    public static BlockRegistryObject NYC_SUBWAY_LCD_PIDS;
+    public static BlockRegistryObject NYC_SUBWAY_LED_PIDS;
 
     public static void registerModBlocks(Registry registry) {
         System.out.println("REGISTERING MTRUS BLOCKS");
@@ -3193,6 +3195,18 @@ public final class ModBlocks {
         NYC_SUBWAY_EMERGENCY_EXIT_DOOR = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_emergency_exit_door"),
                 () -> new Block(new BlockNYCSubwayEmergencyExitDoor(createDefaultBlockSettings(false).nonOpaque())),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_LCD_PIDS = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_lcd_pids"),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "pids_1a", "nyc_subway_b_div", 2, "mtrus:obj/nyc_subway_lcd_pids.obj", new double[][]{{1.75, 0, 0, 14.25, 11.75, 16}}, true, new float[]{0.5F, -0.125F, -0.215625F, 0, 0, -167.5F}, 186, 60)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_LED_PIDS = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_led_pids"),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "pids_1a", "nyc_subway_a_div", 2, "mtrus:obj/nyc_subway_led_pids.obj", new double[][]{{1.75, 0, 0, 14.25, 11.75, 16}}, false, new float[]{0.5F, -0.125F, -0.215625F, 0, 0, -167.5F}, 186, 60)),
                 ModCreativeModeTabs.MAIN
         );
     }
