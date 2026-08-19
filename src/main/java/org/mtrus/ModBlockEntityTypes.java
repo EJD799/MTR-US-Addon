@@ -469,7 +469,9 @@ public final class ModBlockEntityTypes {
                 ModBlocks.DC_METRO_LED_PIDS::get,
                 ModBlocks.DC_METRO_NEW_LED_PIDS::get,
                 ModBlocks.DC_METRO_LCD_PIDS::get,
-                ModBlocks.DC_METROBUS_PIDS::get
+                ModBlocks.DC_METROBUS_PIDS::get,
+                ModBlocks.NYC_SUBWAY_LCD_PIDS::get,
+                ModBlocks.NYC_SUBWAY_LED_PIDS::get
         );
 
         // KEEP OLD PIDS TYPES FOR COMPATIBILITY
