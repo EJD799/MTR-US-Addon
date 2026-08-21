@@ -3200,13 +3200,13 @@ public final class ModBlocks {
 
         NYC_SUBWAY_LCD_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_lcd_pids"),
-                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "pids_1a", "nyc_subway_b_div", 2, "mtrus:obj/nyc_subway_lcd_pids.obj", new double[][]{{1.75, 0, 0, 14.25, 11.75, 16}}, true, new float[]{0.5F, -0.125F, -0.215625F, -167.5F, 0, 0}, 186, 60)),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "pids_1a", "nyc_subway_b_div", 2, "mtrus:obj/nyc_subway_lcd_pids.obj", new double[][]{{1.75, 0, 0, 14.25, 11.75, 16}}, true, new float[]{-0.47F, -0.21F, -0.325F, 12.5F, 0, 0}, 186, 60)),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_LED_PIDS = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_led_pids"),
-                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "pids_1a", "nyc_subway_a_div", 2, "mtrus:obj/nyc_subway_led_pids.obj", new double[][]{{1.75, 0, 0, 14.25, 11.75, 16}}, false, new float[]{0.5F, -0.125F, -0.215625F, -167.5F, 0, 0}, 186, 60)),
+                () -> new Block(new OBJPIDS(org.mtr.mod.Blocks.createDefaultBlockSettings(false, state -> 8).strength(2.0f).nonOpaque(), "pids_1a", "nyc_subway_a_div", 2, "mtrus:obj/nyc_subway_led_pids.obj", new double[][]{{1.75, 0, 0, 14.25, 11.75, 16}}, false, new float[]{-0.47F, -0.21F, -0.325F, 12.5F, 0, 0}, 186, 60)),
                 ModCreativeModeTabs.MAIN
         );
     }
