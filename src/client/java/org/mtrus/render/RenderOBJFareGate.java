@@ -9,12 +9,12 @@ import org.mtr.mapping.mapper.BlockEntityRenderer;
 import org.mtr.mapping.mapper.GraphicsHolder;
 import org.mtr.mod.block.IBlock;
 import org.mtr.mod.client.CustomResourceLoader;
-import org.mtr.mod.data.TicketSystem.EnumTicketBarrierOpen;
 import org.mtr.mod.render.MainRenderer;
 import org.mtr.mod.render.QueuedRenderLayer;
 import org.mtr.mod.render.StoredMatrixTransformations;
 import org.mtr.mod.resource.OptimizedModelWrapper;
 import org.mtrus.block.OBJFareGate;
+import org.mtrus.block.OBJFareGate.EnumFareGateDirection;
 import org.mtrus.block.OBJFareGateEntity;
 import org.mtrus.resource.OBJModelResource;
 
@@ -49,12 +49,14 @@ public class RenderOBJFareGate extends BlockEntityRenderer<OBJFareGateEntity> {
             return;
         }
 
-        EnumTicketBarrierOpen open = IBlock.getStatePropertySafe(state, OBJFareGate.OPEN);
+        EnumFareGateDirection open = IBlock.getStatePropertySafe(state, OBJFareGate.FARE_GATE_DIRECTION);
 
         OptimizedModelWrapper modelTemp;
         
-        if (open == EnumTicketBarrierOpen.OPEN || open == EnumTicketBarrierOpen.OPEN_CONCESSIONARY) {
+        if (open == EnumFareGateDirection.ENTRANCE) {
             modelTemp = OBJModelResource.getModel(block.getModel2(), false);
+        } else if (open == EnumFareGateDirection.EXIT) {
+            modelTemp = OBJModelResource.getModel(block.getModel3(), false);
         } else {
             modelTemp = OBJModelResource.getModel(block.getModel1(), false);
         }
@@ -113,8 +115,10 @@ public class RenderOBJFareGate extends BlockEntityRenderer<OBJFareGateEntity> {
         if (block.getHasLightLayer()) {
             OptimizedModelWrapper modelLightTemp;
         
-            if (open == EnumTicketBarrierOpen.OPEN || open == EnumTicketBarrierOpen.OPEN_CONCESSIONARY) {
+            if (open == EnumFareGateDirection.ENTRANCE) {
                 modelLightTemp = OBJModelResource.getModel(block.getModel2().replace(".obj", "_light_layer.obj"), true);
+            } else if (open == EnumFareGateDirection.EXIT) {
+                modelLightTemp = OBJModelResource.getModel(block.getModel3().replace(".obj", "_light_layer.obj"), true);
             } else {
                 modelLightTemp = OBJModelResource.getModel(block.getModel1().replace(".obj", "_light_layer.obj"), true);
             }
