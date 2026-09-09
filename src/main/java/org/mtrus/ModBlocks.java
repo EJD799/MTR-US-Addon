@@ -2082,7 +2082,7 @@ public final class ModBlocks {
 
         DC_METRO_FARE_GATE_1_TWOWAY = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_fare_gate_1_twoway"),
-                () -> new Block(new OBJFareGate("mtrus:obj/dc_metro_fare_gate_1_closed.obj", "mtrus:obj/dc_metro_fare_gate_1_open.obj", "mtrus:obj/dc_metro_fare_gate_1_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.TWOWAY, true, ModSoundEvents.DC_METRO_FARE_GATE.get(), ModSoundEvents.DC_METRO_FARE_GATE.get())),
+                () -> new Block(new OBJFareGate("mtrus:obj/dc_metro_fare_gate_1_twoway_closed.obj", "mtrus:obj/dc_metro_fare_gate_1_open.obj", "mtrus:obj/dc_metro_fare_gate_1_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.TWOWAY, true, ModSoundEvents.DC_METRO_FARE_GATE.get(), ModSoundEvents.DC_METRO_FARE_GATE.get())),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -2100,7 +2100,7 @@ public final class ModBlocks {
 
         DC_METRO_FARE_GATE_2_TWOWAY = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_fare_gate_2_twoway"),
-                () -> new Block(new OBJFareGate("mtrus:obj/dc_metro_fare_gate_2_closed.obj", "mtrus:obj/dc_metro_fare_gate_2_open.obj", "mtrus:obj/dc_metro_fare_gate_2_open2.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.TWOWAY, true, ModSoundEvents.DC_METRO_FARE_GATE.get(), ModSoundEvents.DC_METRO_FARE_GATE.get())),
+                () -> new Block(new OBJFareGate("mtrus:obj/dc_metro_fare_gate_2_twoway_closed.obj", "mtrus:obj/dc_metro_fare_gate_2_open.obj", "mtrus:obj/dc_metro_fare_gate_2_open2.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.TWOWAY, true, ModSoundEvents.DC_METRO_FARE_GATE.get(), ModSoundEvents.DC_METRO_FARE_GATE.get())),
                 ModCreativeModeTabs.MAIN
         );
 
@@ -2118,7 +2118,7 @@ public final class ModBlocks {
 
         DC_METRO_FARE_GATE_3_TWOWAY = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "dc_metro_fare_gate_3_twoway"),
-                () -> new Block(new OBJFareGate("mtrus:obj/dc_metro_fare_gate_3_closed.obj", "mtrus:obj/dc_metro_fare_gate_3_open.obj", "mtrus:obj/dc_metro_fare_gate_3_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.TWOWAY, true, ModSoundEvents.DC_METRO_FARE_GATE.get(), ModSoundEvents.DC_METRO_FARE_GATE.get())),
+                () -> new Block(new OBJFareGate("mtrus:obj/dc_metro_fare_gate_3_twoway_closed.obj", "mtrus:obj/dc_metro_fare_gate_3_open.obj", "mtrus:obj/dc_metro_fare_gate_3_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.TWOWAY, true, ModSoundEvents.DC_METRO_FARE_GATE.get(), ModSoundEvents.DC_METRO_FARE_GATE.get())),
                 ModCreativeModeTabs.MAIN
         );
 
