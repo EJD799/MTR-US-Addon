@@ -390,20 +390,34 @@ public final class ModBlockEntityTypes {
                 OBJFareGateEntity::new,
                 ModBlocks.DC_METRO_FARE_GATE_1_ENTRANCE::get,
                 ModBlocks.DC_METRO_FARE_GATE_1_EXIT::get,
+                ModBlocks.DC_METRO_FARE_GATE_1_TWOWAY::get,
                 ModBlocks.DC_METRO_FARE_GATE_2_ENTRANCE::get,
                 ModBlocks.DC_METRO_FARE_GATE_2_EXIT::get,
+                ModBlocks.DC_METRO_FARE_GATE_2_TWOWAY::get,
+                ModBlocks.DC_METRO_FARE_GATE_3_ENTRANCE::get,
+                ModBlocks.DC_METRO_FARE_GATE_3_EXIT::get,
+                ModBlocks.DC_METRO_FARE_GATE_3_TWOWAY::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_1_ENTRANCE::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_1_EXIT::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_1_TWOWAY::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_2_ENTRANCE::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_2_EXIT::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_2_TWOWAY::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_3_ENTRANCE::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_3_EXIT::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_3_TWOWAY::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_4_ENTRANCE::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_4_EXIT::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_4_TWOWAY::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_5_ENTRANCE::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_5_EXIT::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_5_TWOWAY::get,
                 ModBlocks.NYC_SUBWAY_FARE_GATE_6_ENTRANCE::get,
-                ModBlocks.NYC_SUBWAY_FARE_GATE_6_EXIT::get
+                ModBlocks.NYC_SUBWAY_FARE_GATE_6_EXIT::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_6_TWOWAY::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_7_ENTRANCE::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_7_EXIT::get,
+                ModBlocks.NYC_SUBWAY_FARE_GATE_7_TWOWAY::get
         );
 
         DC_METRO_FARE_GATE = MTRUSAddon.registry.registerBlockEntityType(
@@ -427,7 +441,8 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_TICKET_MACHINE_6::get,
                 ModBlocks.NYC_SUBWAY_TICKET_MACHINE_7::get,
                 ModBlocks.NYC_SUBWAY_TICKET_MACHINE_8::get,
-                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_9::get
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_9::get,
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_10::get
         );
 
         OBJ_BENCH = MTRUSAddon.registry.registerBlockEntityType(
