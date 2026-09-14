@@ -442,7 +442,8 @@ public final class ModBlockEntityTypes {
                 ModBlocks.NYC_SUBWAY_TICKET_MACHINE_7::get,
                 ModBlocks.NYC_SUBWAY_TICKET_MACHINE_8::get,
                 ModBlocks.NYC_SUBWAY_TICKET_MACHINE_9::get,
-                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_10::get
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_10::get,
+                ModBlocks.NYC_SUBWAY_TICKET_MACHINE_11::get
         );
 
         OBJ_BENCH = MTRUSAddon.registry.registerBlockEntityType(

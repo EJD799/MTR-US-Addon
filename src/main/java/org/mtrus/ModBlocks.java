@@ -475,6 +475,7 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_8;
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_9;
     public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_10;
+    public static BlockRegistryObject NYC_SUBWAY_TICKET_MACHINE_11;
     public static BlockRegistryObject NYC_SUBWAY_HELP_POINT;
     public static BlockRegistryObject NYC_SUBWAY_HELP_POINT_2;
     public static BlockRegistryObject NYC_SUBWAY_BRICK_WALL_1;
@@ -3024,6 +3025,12 @@ public final class ModBlocks {
         NYC_SUBWAY_TICKET_MACHINE_10 = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ticket_machine_10"),
                 () -> new Block(new OBJTicketMachine("mtrus:obj/nyc_subway_ticket_machine_10.obj", true)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_TICKET_MACHINE_11 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_ticket_machine_11"),
+                () -> new Block(new OBJTicketMachine("mtrus:obj/nyc_subway_ticket_machine_11.obj", true)),
                 ModCreativeModeTabs.MAIN
         );
 
