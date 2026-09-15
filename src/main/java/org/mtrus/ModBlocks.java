@@ -2912,19 +2912,19 @@ public final class ModBlocks {
 
         NYC_SUBWAY_FARE_GATE_7_ENTRANCE = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_7_entrance"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_7_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_7_entrance_open.obj", "", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.ENTRANCE, true, ModSoundEvents.NYC_SUBWAY_FARE_GATE.get(), ModSoundEvents.NYC_SUBWAY_FARE_GATE.get())),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_7_entrance_closed.obj", "mtrus:obj/nyc_subway_fare_gate_7_entrance_open.obj", "", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.ENTRANCE, true, ModSoundEvents.NYC_SUBWAY_TURNSTILE_ENTRANCE.get(), ModSoundEvents.NYC_SUBWAY_TURNSTILE_EXIT.get())),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_7_EXIT = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_7_exit"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_7_exit_closed.obj", "", "mtrus:obj/nyc_subway_fare_gate_7_exit_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.EXIT, true, ModSoundEvents.NYC_SUBWAY_FARE_GATE.get(), ModSoundEvents.NYC_SUBWAY_FARE_GATE.get())),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_7_exit_closed.obj", "", "mtrus:obj/nyc_subway_fare_gate_7_exit_open.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.EXIT, true, ModSoundEvents.NYC_SUBWAY_TURNSTILE_ENTRANCE.get(), ModSoundEvents.NYC_SUBWAY_TURNSTILE_EXIT.get())),
                 ModCreativeModeTabs.MAIN
         );
 
         NYC_SUBWAY_FARE_GATE_7_TWOWAY = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_fare_gate_7_twoway"),
-                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_7_twoway_closed.obj", "mtrus:obj/nyc_subway_fare_gate_7_twoway_open_entrance.obj", "mtrus:obj/nyc_subway_fare_gate_7_twoway_open_exit.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.TWOWAY, true, ModSoundEvents.NYC_SUBWAY_FARE_GATE.get(), ModSoundEvents.NYC_SUBWAY_FARE_GATE.get())),
+                () -> new Block(new OBJFareGate("mtrus:obj/nyc_subway_fare_gate_7_twoway_closed.obj", "mtrus:obj/nyc_subway_fare_gate_7_twoway_open_entrance.obj", "mtrus:obj/nyc_subway_fare_gate_7_twoway_open_exit.obj", new double[][]{{0, 0, 0, 3, 16, 16}, {13, 0, 0, 16, 16, 16}}, OBJFareGate.EnumFareGateMode.TWOWAY, true, ModSoundEvents.NYC_SUBWAY_TURNSTILE_ENTRANCE.get(), ModSoundEvents.NYC_SUBWAY_TURNSTILE_EXIT.get())),
                 ModCreativeModeTabs.MAIN
         );
 
