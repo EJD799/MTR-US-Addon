@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.entity.Entity;
@@ -50,6 +51,15 @@ public class OBJBench extends Block implements IBlock, BlockWithEntity {
     @Override
     public RenderShape getRenderShape(BlockState state) {
         return RenderShape.INVISIBLE;
+    }
+
+    @Override
+    public net.minecraft.world.phys.shapes.VoxelShape getBlockSupportShape(
+            BlockState state,
+            BlockGetter level,
+            net.minecraft.core.BlockPos pos
+    ) {
+        return net.minecraft.world.phys.shapes.Shapes.empty();
     }
 
     @Override

@@ -329,6 +329,8 @@ public class MTRUSAddonClient implements ClientModInitializer {
                 ModBlocks.NYC_SUBWAY_WALL_TILE_3,
                 ModBlocks.NYC_SUBWAY_WALL_TILE_4,
                 ModBlocks.NYC_SUBWAY_WALL_TILE_7,
+                ModBlocks.NYC_SUBWAY_WALL_TILE_8,
+                ModBlocks.NYC_SUBWAY_WALL_TILE_9,
                 ModBlocks.NYC_SUBWAY_STATION_NAME_TILE_1
         );
 
