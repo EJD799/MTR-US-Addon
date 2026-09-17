@@ -9,6 +9,7 @@ import org.mtr.mod.block.BlockPlatformSlab;
 import org.mtr.mod.item.ItemBlockEnchanted;
 import org.mtrus.block.BlockPlatformLight;
 import org.mtrus.block.BlockPlatformLightSlab;
+import org.mtrus.block.FacingBlock;
 import org.mtrus.block.BlockDCMetroLEDPIDSPole;
 import org.mtrus.block.BlockDCMetroLEDPIDSCrossbar;
 import org.mtrus.block.BlockDCMetroNewLEDPIDSPole1;
@@ -407,6 +408,10 @@ public final class ModBlocks {
     public static BlockRegistryObject NYC_SUBWAY_TRACKBED;
     public static BlockRegistryObject NYC_SUBWAY_FLOOR_TILE;
     public static BlockRegistryObject NYC_SUBWAY_FLOOR_TILE_SLAB;
+    public static BlockRegistryObject NYC_SUBWAY_FLOOR_TILE_2;
+    public static BlockRegistryObject NYC_SUBWAY_FLOOR_TILE_2_SLAB;
+    public static BlockRegistryObject NYC_SUBWAY_FLOOR_TILE_3;
+    public static BlockRegistryObject NYC_SUBWAY_FLOOR_TILE_3_SLAB;
     public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_PILLAR;
     public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_WALL;
     public static BlockRegistryObject NYC_SUBWAY_STATION_NAME_ENTRANCE;
@@ -2609,6 +2614,30 @@ public final class ModBlocks {
         NYC_SUBWAY_FLOOR_TILE_SLAB = registry.registerBlockWithBlockItem(
                 new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_floor_tile_slab"),
                 () -> new Block(new net.minecraft.world.level.block.SlabBlock(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_FLOOR_TILE_2 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_floor_tile_2"),
+                () -> new Block(new net.minecraft.world.level.block.Block(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_FLOOR_TILE_2_SLAB = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_floor_tile_2_slab"),
+                () -> new Block(new net.minecraft.world.level.block.SlabBlock(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_FLOOR_TILE_3 = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_floor_tile_3"),
+                () -> new Block(new FacingBlock(createDefaultBlockSettings(false).data)),
+                ModCreativeModeTabs.MAIN
+        );
+
+        NYC_SUBWAY_FLOOR_TILE_3_SLAB = registry.registerBlockWithBlockItem(
+                new Identifier(MTRUSAddon.MOD_ID, "nyc_subway_floor_tile_3_slab"),
+                () -> new Block(new FacingSlabBlock(createDefaultBlockSettings(false).data)),
                 ModCreativeModeTabs.MAIN
         );
 
