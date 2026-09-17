@@ -79,6 +79,38 @@
             "modelResource": "mtrus:rails/nyc_subway_tunnel.obj",
             "repeatInterval": 0.57,
             "flipTextureV": true
+        },
+		{
+            "id": "nyc_subway_metal_viaduct",
+            "name": "NYC Subway Metal Viaduct",
+            "color": "A6825E",
+            "modelResource": "mtrus:rails/nyc_subway_metal_viaduct.obj",
+            "repeatInterval": 1,
+            "flipTextureV": true
+        },
+		{
+            "id": "nyc_subway_metal_viaduct_support",
+            "name": "NYC Subway Metal Support",
+            "color": "A6825E",
+            "modelResource": "mtrus:rails/nyc_subway_metal_viaduct_support.obj",
+            "repeatInterval": 15,
+            "flipTextureV": true
+        },
+		{
+            "id": "nyc_subway_concrete_viaduct",
+            "name": "NYC Subway Concrete Viaduct",
+            "color": "A6825E",
+            "modelResource": "mtrus:rails/nyc_subway_concrete_viaduct.obj",
+            "repeatInterval": 1,
+            "flipTextureV": true
+        },
+		{
+            "id": "nyc_subway_concrete_viaduct_support",
+            "name": "NYC Subway Concrete Support",
+            "color": "A6825E",
+            "modelResource": "mtrus:rails/nyc_subway_concrete_viaduct_support.obj",
+            "repeatInterval": 15,
+            "flipTextureV": true
         }
 	]
 }

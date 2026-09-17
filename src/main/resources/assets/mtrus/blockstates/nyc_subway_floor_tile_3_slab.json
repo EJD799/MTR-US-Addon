@@ -3,7 +3,7 @@
 		{
 			"when": {
 				"type": "bottom",
-				"facing": "north"
+				"facing": "south"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3_slab_bottom"
@@ -12,7 +12,7 @@
 		{
 			"when": {
 				"type": "bottom",
-				"facing": "east"
+				"facing": "west"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3_slab_bottom",
@@ -22,7 +22,7 @@
 		{
 			"when": {
 				"type": "bottom",
-				"facing": "south"
+				"facing": "north"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3_slab_bottom",
@@ -32,7 +32,7 @@
 		{
 			"when": {
 				"type": "bottom",
-				"facing": "west"
+				"facing": "east"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3_slab_bottom",
@@ -42,7 +42,7 @@
 		{
 			"when": {
 				"type": "double",
-				"facing": "north"
+				"facing": "south"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3"
@@ -51,7 +51,7 @@
 		{
 			"when": {
 				"type": "double",
-				"facing": "east"
+				"facing": "west"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3",
@@ -61,7 +61,7 @@
 		{
 			"when": {
 				"type": "double",
-				"facing": "south"
+				"facing": "north"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3",
@@ -71,7 +71,7 @@
 		{
 			"when": {
 				"type": "double",
-				"facing": "west"
+				"facing": "east"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3",
@@ -81,7 +81,7 @@
 		{
 			"when": {
 				"type": "top",
-				"facing": "north"
+				"facing": "south"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3_slab_top"
@@ -90,7 +90,7 @@
 		{
 			"when": {
 				"type": "top",
-				"facing": "east"
+				"facing": "west"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3_slab_top",
@@ -100,7 +100,7 @@
 		{
 			"when": {
 				"type": "top",
-				"facing": "south"
+				"facing": "north"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3_slab_top",
@@ -110,7 +110,7 @@
 		{
 			"when": {
 				"type": "top",
-				"facing": "west"
+				"facing": "east"
 			},
 			"apply": {
 				"model": "mtrus:block/nyc_subway_floor_tile_3_slab_top",
