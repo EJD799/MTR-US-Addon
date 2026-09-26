@@ -5,5 +5,4 @@ Currently, only the DC Metro is included, but blocks from other transit systems 
 
 **Current block count: 293**
 
-# Check the releases page to download MTR US Addon Beta v1.0.0.
-The beta is only available for Fabric 1.20.4. When I release v2.0.0, a 1.20.1 version will also be available.
+# [Download v1.0.0 for MTR 4.0.5 and Minecraft 1.20.4 or 1.20.1 on Modrinth](https://modrinth.com/mod/mtr-us-addon)
